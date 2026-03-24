@@ -80,35 +80,28 @@ const gurveer = {
 <div align="center">
 
 <p align="center">
-  <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/redux-icon.svg" alt="Redux" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="Nginx" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/graphql-icon.svg" alt="GraphQL" width="65" height="65" />
+  <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/redux-icon.svg" alt="Redux" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="Nginx" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/graphql-icon.svg" alt="GraphQL" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="REST API" width="50" height="50" />
 </p>
 
 <p align="center">
-  <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="REST API" width="65" height="65" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase,postgres,redis,tailwind,nextjs,kafka,rabbitmq,elasticsearch,grafana,prometheus,jenkins,gitlab" />
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase,postgres,redis,tailwind,nextjs" />
-</p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=kafka,rabbitmq,elasticsearch,grafana,prometheus,jenkins,gitlab,terraform" />
-</p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,linux,bash,ansible" />
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,linux,bash,ansible,bun,vite,fastapi,pytorch,tensorflow" />
 </p>
 
 </div>
