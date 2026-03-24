@@ -1,8 +1,10 @@
+<img src="https://raw.githubusercontent.com/gurveeer/gurveeer/213fab2fae8e6345083648b3d6838a26c3bebbcd/assets/matrix.svg" width="100%" alt="Matrix Background" />
+
 <div align="center">
   
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&duration=3000&pause=1000&color=22CCB2&center=true&vCenter=true&random=false&width=800&lines=Hi+%F0%9F%91%8B+I'm+Gurveer;AI+Infrastructure+Engineer;Building+Context+Engines+%26+RAG+Systems)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&random=false&width=800&lines=Hi+%F0%9F%91%8B+I'm+Gurveer;AI+Infrastructure+Engineer;Building+Context+Engines+%26+RAG+Systems)](https://git.io/typing-svg)
 
-![Profile Views](https://komarev.com/ghpvc/?username=gurveeer&style=flat-square&color=22CCB2)
+![Profile Views](https://komarev.com/ghpvc/?username=gurveeer&style=flat-square&color=00FF41)
 
 </div>
 
