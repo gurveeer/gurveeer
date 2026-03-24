@@ -12,18 +12,18 @@
 
 ---
 
-<h2 align="left">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" height="28">
-  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">About Me</span>
+<h2 align="left" style="display: flex; align-items: center;">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="32" height="32" style="vertical-align: middle; margin-right: 10px;">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 28px; color: #00FF41; vertical-align: middle;">About Me</span>
 </h2>
 
 <table>
 <tr>
 <td width="60%" valign="top">
 
-<h3 align="left">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f468_1f4bb/512.gif" alt="👨‍💻" width="24" height="24">
-  <span style="font-family: 'Consolas', 'Monaco', monospace; font-weight: 600; font-size: 20px;">AI Infrastructure Engineer</span>
+<h3 align="left" style="display: flex; align-items: center;">
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man%20Technologist.png" alt="👨‍💻" width="28" height="28" style="vertical-align: middle; margin-right: 8px;">
+  <span style="font-family: 'Consolas', 'Monaco', monospace; font-weight: 600; font-size: 22px; vertical-align: middle;">AI Infrastructure Engineer</span>
 </h3>
 
 <p style="font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif; font-size: 16px; line-height: 1.6;">
@@ -87,9 +87,9 @@ const gurveer = {
 
 ---
 
-<h2 align="left">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6e0_fe0f/512.gif" alt="🛠️" width="28" height="28">
-  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">Tech Stack</span>
+<h2 align="left" style="display: flex; align-items: center;">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6e0_fe0f/512.gif" alt="🛠️" width="32" height="32" style="vertical-align: middle; margin-right: 10px;">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 28px; color: #00FF41; vertical-align: middle;">Tech Stack</span>
 </h2>
 
 <div align="center">
@@ -123,9 +123,9 @@ const gurveer = {
 
 ---
 
-<h2 align="left">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4ca/512.gif" alt="📊" width="28" height="28">
-  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">GitHub Stats</span>
+<h2 align="left" style="display: flex; align-items: center;">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4ca/512.gif" alt="📊" width="32" height="32" style="vertical-align: middle; margin-right: 10px;">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 28px; color: #00FF41; vertical-align: middle;">GitHub Stats</span>
 </h2>
 
 <table width="100%" align="center" style="border-collapse: collapse;">
@@ -153,9 +153,9 @@ const gurveer = {
 
 ---
 
-<h2 align="left">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" height="28">
-  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">Featured Projects</span>
+<h2 align="left" style="display: flex; align-items: center;">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="32" height="32" style="vertical-align: middle; margin-right: 10px;">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 28px; color: #00FF41; vertical-align: middle;">Featured Projects</span>
 </h2>
 
 <div align="center">
@@ -169,9 +169,9 @@ const gurveer = {
 
 ---
 
-<h2 align="left">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3c6/512.gif" alt="🏆" width="28" height="28">
-  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">GitHub Achievements</span>
+<h2 align="left" style="display: flex; align-items: center;">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3c6/512.gif" alt="🏆" width="32" height="32" style="vertical-align: middle; margin-right: 10px;">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 28px; color: #00FF41; vertical-align: middle;">GitHub Achievements</span>
 </h2>
 
 <p align="center">
@@ -180,9 +180,9 @@ const gurveer = {
 
 ---
 
-<h2 align="left">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f40d/512.gif" alt="🐍" width="28" height="28">
-  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">Contribution Graph</span>
+<h2 align="left" style="display: flex; align-items: center;">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f40d/512.gif" alt="🐍" width="32" height="32" style="vertical-align: middle; margin-right: 10px;">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 28px; color: #00FF41; vertical-align: middle;">Contribution Graph</span>
 </h2>
 
 <div align="center">
@@ -191,9 +191,9 @@ const gurveer = {
 
 ---
 
-<h2 align="left">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f517/512.gif" alt="🔗" width="28" height="28">
-  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">Connect With Me</span>
+<h2 align="left" style="display: flex; align-items: center;">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f517/512.gif" alt="🔗" width="32" height="32" style="vertical-align: middle; margin-right: 10px;">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 28px; color: #00FF41; vertical-align: middle;">Connect With Me</span>
 </h2>
 
 <div align="center">
