@@ -12,15 +12,17 @@
 
 ---
 
-## 🚀 About Me
+## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=200&lines=🚀+About+Me" alt="About Me" />
 
 <table>
 <tr>
 <td width="60%" valign="top">
 
-### 👨‍💻 AI Infrastructure Engineer
+### <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2000&pause=1000&color=00FF41&vCenter=true&width=450&lines=👨‍💻+AI+Infrastructure+Engineer" alt="AI Infrastructure Engineer" />
 
-Building next-generation **context engines** and **intelligent systems** that power AI applications at scale. Specializing in **RAG architectures**, **vector databases**, **graph databases**, and **event-driven AI pipelines** with **Kafka**. **IIT Roorkee Graduate '23**.
+<p style="font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif; font-size: 16px; line-height: 1.6;">
+Building next-generation <strong>context engines</strong> and <strong>intelligent systems</strong> that power AI applications at scale. Specializing in <strong>RAG architectures</strong>, <strong>vector databases</strong>, <strong>graph databases</strong>, and <strong>event-driven AI pipelines</strong> with <strong>Kafka</strong>. <strong>IIT Roorkee Graduate '23</strong>.
+</p>
 
 ```javascript
 const gurveer = {
@@ -53,19 +55,23 @@ const gurveer = {
 };
 ```
 
-**🔭 Currently:** Building context-aware AI systems with vector & graph DBs  
-**🌱 Learning:** Advanced RAG patterns, multi-agent systems & knowledge graphs  
-**💡 Interests:** Semantic search, LLM orchestration, real-time AI pipelines  
-**⚡ Fun fact:** Debugging vector embeddings & Kafka streams at 3 AM!
+<p style="font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif; font-size: 15px; line-height: 1.8;">
+<strong>🔭 Currently:</strong> Building context-aware AI systems with vector & graph DBs<br>
+<strong>🌱 Learning:</strong> Advanced RAG patterns, multi-agent systems & knowledge graphs<br>
+<strong>💡 Interests:</strong> Semantic search, LLM orchestration, real-time AI pipelines<br>
+<strong>⚡ Fun fact:</strong> Debugging vector embeddings & Kafka streams at 3 AM!
+</p>
 
 </td>
 
 <br>
 
-**🤖 Context Engines & RAG**  
-**🔍 Vector & Graph Search**  
-**⚡ Real-time AI Pipelines**  
-**🧠 Multi-Agent Systems**
+<p style="font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif; font-size: 15px; line-height: 1.8;">
+<strong>🤖 Context Engines & RAG</strong><br>
+<strong>🔍 Vector & Graph Search</strong><br>
+<strong>⚡ Real-time AI Pipelines</strong><br>
+<strong>🧠 Multi-Agent Systems</strong>
+</p>
 
 </div>
 
@@ -75,7 +81,7 @@ const gurveer = {
 
 ---
 
-## 🛠️ Tech Stack
+## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=250&lines=🛠️+Tech+Stack" alt="Tech Stack" />
 
 <div align="center">
 
@@ -108,7 +114,7 @@ const gurveer = {
 
 ---
 
-## 📊 GitHub Stats
+## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=280&lines=📊+GitHub+Stats" alt="GitHub Stats" />
 
 <table width="100%" align="center" style="border-collapse: collapse;">
   <tr>
@@ -135,7 +141,7 @@ const gurveer = {
 
 ---
 
-## 🚀 Featured Projects
+## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=350&lines=🚀+Featured+Projects" alt="Featured Projects" />
 
 <div align="center">
   <a href="https://github.com/gurveeer/TG-DL-BOT">
@@ -148,7 +154,7 @@ const gurveer = {
 
 ---
 
-## 🏆 GitHub Achievements
+## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=400&lines=🏆+GitHub+Achievements" alt="GitHub Achievements" />
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=gurveeer&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&include_all_commits=true&custom_title=Achievement%20Stats" alt="Achievement Stats" />
@@ -156,7 +162,7 @@ const gurveer = {
 
 ---
 
-## 🐍 Contribution Graph
+## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=380&lines=🐍+Contribution+Graph" alt="Contribution Graph" />
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/ChinmayKaitade/ChinmayKaitade/output/snake.svg" width="100%" alt="Snake Animation" />
@@ -164,7 +170,7 @@ const gurveer = {
 
 ---
 
-## 🔗 Connect With Me
+## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=330&lines=🔗+Connect+With+Me" alt="Connect With Me" />
 
 <div align="center">
 
@@ -180,5 +186,7 @@ const gurveer = {
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00FF41&height=100&section=footer&text=Access%20Granted&fontSize=30&fontAlignY=70&animation=twinkling&fontColor=000000" width="100%"/>
   
-  **💻 [ SYSTEM INITIALIZED ] - Crafted with ❤️ by Gurveer**
+  <p style="font-family: 'Courier New', 'Consolas', monospace; font-size: 16px; font-weight: bold;">
+  💻 [ SYSTEM INITIALIZED ] - Crafted with ❤️ by Gurveer
+  </p>
 </div>
