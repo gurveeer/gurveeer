@@ -120,24 +120,24 @@ const gurveer = {
 <table width="100%" align="center" style="border-collapse: collapse;">
   <tr>
     <td width="50%" align="center" style="padding: 10px;">
-      <img src="https://github-readme-stats.vercel.app/api?username=gurveeer&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" alt="GitHub Stats" width="100%" height="200" style="object-fit: contain;" />
+      <img src="https://github-readme-stats.vercel.app/api?username=gurveeer&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&rank_icon=github" alt="GitHub Stats" width="100%" height="200" style="object-fit: contain;" />
     </td>
     <td width="50%" align="center" style="padding: 10px;">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=gurveeer&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="100%" height="200" style="object-fit: contain;" />
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=gurveeer&theme=chartreuse-dark&hide_border=true" alt="GitHub Streak" width="100%" height="200" style="object-fit: contain;" />
     </td>
   </tr>
   <tr>
     <td width="50%" align="center" style="padding: 10px;">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gurveeer&layout=donut-vertical&theme=tokyonight&hide_border=true&langs_count=6" alt="Top Languages Donut" width="100%" height="200" style="object-fit: contain;" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gurveeer&layout=donut-vertical&theme=chartreuse-dark&hide_border=true&langs_count=6" alt="Top Languages Donut" width="100%" height="200" style="object-fit: contain;" />
     </td>
     <td width="50%" align="center" style="padding: 10px;">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gurveeer&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=320" alt="Top Languages" width="100%" height="200" style="object-fit: contain;" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gurveeer&layout=compact&theme=chartreuse-dark&hide_border=true&langs_count=8" alt="Top Languages" width="100%" height="200" style="object-fit: contain;" />
     </td>
   </tr>
 </table>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=gurveeer&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity" alt="Contribution Graph" width="98%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=gurveeer&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Activity&color=00FF41&point=00FF41&line=00FF41&bg_color=0d1117" alt="Contribution Graph" width="98%" />
 </p>
 
 ---
@@ -146,19 +146,19 @@ const gurveer = {
 
 <div align="center">
   <a href="https://github.com/gurveeer/TG-DL-BOT">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=gurveeer&repo=TG-DL-BOT&theme=tokyonight&hide_border=true" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=gurveeer&repo=TG-DL-BOT&theme=chartreuse-dark&hide_border=true" />
   </a>
   <a href="https://github.com/gurveeer/H-M-Online--Fashion">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=gurveeer&repo=H-M-Online--Fashion&theme=tokyonight&hide_border=true" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=gurveeer&repo=H-M-Online--Fashion&theme=chartreuse-dark&hide_border=true" />
   </a>
 </div>
 
 ---
 
-## 🏆 GitHub Trophies
+## 🏆 GitHub Achievements
 
 <p align="center">
-  <img src="https://github-trophies.vercel.app/?username=gurveeer&theme=tokyonight&no-frame=false&column=6&margin-w=10" alt="GitHub Trophies" />
+  <img src="https://github-readme-stats.vercel.app/api?username=gurveeer&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&include_all_commits=true&custom_title=Achievement%20Stats" alt="Achievement Stats" />
 </p>
 
 ---
@@ -175,17 +175,17 @@ const gurveer = {
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gurveeer/)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:singh5134957@gmail.com)
-[![Twitter](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/gurveeer)
-[![Portfolio](https://img.shields.io/badge/Portfolio-58A6FF?style=for-the-badge&logo=vercel&logoColor=white)](https://gurveeer.github.io/new-portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=00FF41)](https://www.linkedin.com/in/gurveeer/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=00FF41)](mailto:singh5134957@gmail.com)
+[![Twitter](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=00FF41)](https://twitter.com/gurveeer)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=00FF41)](https://gurveeer.github.io/new-portfolio/)
 
 </div>
 
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00FF41&height=100&section=footer&text=Access%20Granted&fontSize=30&fontAlignY=70&animation=twinkling&fontColor=000000" width="100%"/>
   
-  **💻 Crafted with ❤️ by Gurveer**
+  **💻 [ SYSTEM INITIALIZED ] - Crafted with ❤️ by Gurveer**
 </div>
