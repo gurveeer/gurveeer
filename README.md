@@ -12,13 +12,19 @@
 
 ---
 
-## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=200&lines=🚀+About+Me" alt="About Me" />
+<h2 align="left">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" height="28">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">About Me</span>
+</h2>
 
 <table>
 <tr>
 <td width="60%" valign="top">
 
-### <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2000&pause=1000&color=00FF41&vCenter=true&width=450&lines=👨‍💻+AI+Infrastructure+Engineer" alt="AI Infrastructure Engineer" />
+<h3 align="left">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f468_1f4bb/512.gif" alt="👨‍💻" width="24" height="24">
+  <span style="font-family: 'Consolas', 'Monaco', monospace; font-weight: 600; font-size: 20px;">AI Infrastructure Engineer</span>
+</h3>
 
 <p style="font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif; font-size: 16px; line-height: 1.6;">
 Building next-generation <strong>context engines</strong> and <strong>intelligent systems</strong> that power AI applications at scale. Specializing in <strong>RAG architectures</strong>, <strong>vector databases</strong>, <strong>graph databases</strong>, and <strong>event-driven AI pipelines</strong> with <strong>Kafka</strong>. <strong>IIT Roorkee Graduate '23</strong>.
@@ -81,7 +87,10 @@ const gurveer = {
 
 ---
 
-## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=250&lines=🛠️+Tech+Stack" alt="Tech Stack" />
+<h2 align="left">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6e0_fe0f/512.gif" alt="🛠️" width="28" height="28">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">Tech Stack</span>
+</h2>
 
 <div align="center">
 
@@ -114,7 +123,10 @@ const gurveer = {
 
 ---
 
-## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=280&lines=📊+GitHub+Stats" alt="GitHub Stats" />
+<h2 align="left">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4ca/512.gif" alt="📊" width="28" height="28">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">GitHub Stats</span>
+</h2>
 
 <table width="100%" align="center" style="border-collapse: collapse;">
   <tr>
@@ -141,7 +153,10 @@ const gurveer = {
 
 ---
 
-## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=350&lines=🚀+Featured+Projects" alt="Featured Projects" />
+<h2 align="left">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" height="28">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">Featured Projects</span>
+</h2>
 
 <div align="center">
   <a href="https://github.com/gurveeer/TG-DL-BOT">
@@ -154,7 +169,10 @@ const gurveer = {
 
 ---
 
-## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=400&lines=🏆+GitHub+Achievements" alt="GitHub Achievements" />
+<h2 align="left">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3c6/512.gif" alt="🏆" width="28" height="28">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">GitHub Achievements</span>
+</h2>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=gurveeer&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&include_all_commits=true&custom_title=Achievement%20Stats" alt="Achievement Stats" />
@@ -162,7 +180,10 @@ const gurveer = {
 
 ---
 
-## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=380&lines=🐍+Contribution+Graph" alt="Contribution Graph" />
+<h2 align="left">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f40d/512.gif" alt="🐍" width="28" height="28">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">Contribution Graph</span>
+</h2>
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/ChinmayKaitade/ChinmayKaitade/output/snake.svg" width="100%" alt="Snake Animation" />
@@ -170,7 +191,10 @@ const gurveer = {
 
 ---
 
-## <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2000&pause=1000&color=00FF41&vCenter=true&width=330&lines=🔗+Connect+With+Me" alt="Connect With Me" />
+<h2 align="left">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f517/512.gif" alt="🔗" width="28" height="28">
+  <span style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; color: #00FF41;">Connect With Me</span>
+</h2>
 
 <div align="center">
 
