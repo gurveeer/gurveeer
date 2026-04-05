@@ -8,7 +8,7 @@
 
 </div>
 
-<img src="./assets/header_.png" width="100%" alt="Header Banner" />
+<img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/header_.png" width="100%" alt="Header Banner" />
 
 ---
 
@@ -131,18 +131,18 @@ const gurveer = {
 <table width="100%" align="center" style="border-collapse: collapse;">
   <tr>
     <td width="50%" align="center" style="padding: 10px;">
-      <img src="https://github-readme-stats.vercel.app/api?username=gurveeer&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&rank_icon=github" alt="GitHub Stats" width="100%" height="200" style="object-fit: contain;" />
+      <img src="https://github-readme-stats-fast.vercel.app/api?username=gurveeer&theme=chartreuse-dark&hide_border=true" alt="GitHub Stats" width="100%" height="200" style="object-fit: contain;" />
     </td>
     <td width="50%" align="center" style="padding: 10px;">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=gurveeer&theme=chartreuse-dark&hide_border=true" alt="GitHub Streak" width="100%" height="200" style="object-fit: contain;" />
+      <img src="https://github-readme-stats-fast.vercel.app/api?username=gurveeer&theme=chartreuse-dark&hide_border=true" alt="GitHub Streak" width="100%" height="200" style="object-fit: contain;" />
     </td>
   </tr>
   <tr>
     <td width="50%" align="center" style="padding: 10px;">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gurveeer&layout=donut-vertical&theme=chartreuse-dark&hide_border=true&langs_count=6" alt="Top Languages Donut" width="100%" height="200" style="object-fit: contain;" />
+      <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=gurveeer&theme=chartreuse-dark&hide_border=true" alt="Top Languages Donut" width="100%" height="200" style="object-fit: contain;" />
     </td>
     <td width="50%" align="center" style="padding: 10px;">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gurveeer&layout=compact&theme=chartreuse-dark&hide_border=true&langs_count=8" alt="Top Languages" width="100%" height="200" style="object-fit: contain;" />
+      <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=gurveeer&theme=chartreuse-dark&hide_border=true&layout=compact" alt="Top Languages" width="100%" height="200" style="object-fit: contain;" />
     </td>
   </tr>
 </table>
@@ -160,10 +160,10 @@ const gurveer = {
 
 <div align="center">
   <a href="https://github.com/gurveeer/TG-DL-BOT">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=gurveeer&repo=TG-DL-BOT&theme=chartreuse-dark&hide_border=true" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin?username=gurveeer&repo=TG-DL-BOT&theme=chartreuse-dark&hide_border=true" alt="TG-DL-BOT" />
   </a>
-  <a href="https://github.com/gurveeer/H-M-Online--Fashion">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=gurveeer&repo=H-M-Online--Fashion&theme=chartreuse-dark&hide_border=true" />
+  <a href="https://github.com/gurveeer/hnm-clone">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin?username=gurveeer&repo=hnm-clone&theme=chartreuse-dark&hide_border=true" alt="hnm-clone" />
   </a>
 </div>
 
@@ -175,7 +175,7 @@ const gurveer = {
 </h2>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gurveeer&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&include_all_commits=true&custom_title=Achievement%20Stats" alt="Achievement Stats" />
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=gurveeer&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&include_all_commits=true&custom_title=Achievement%20Stats" alt="Achievement Stats" />
 </p>
 
 ---
