@@ -630,7 +630,7 @@ function footerCard() {
   <text x="28" y="52" font-family="${FONT_MONO}" font-size="13" letter-spacing="3" font-weight="700" fill="${GREEN}">[ SYSTEM ONLINE ]</text>
 
   <circle cx="420" cy="49" r="1.6" fill="${GREEN}" fill-opacity="0.5"/>
-  <text x="432" y="53" font-family="${FONT_MONO}" font-size="10" letter-spacing="1.5" fill="${MUTED}">nice to see you here</text>
+  <text x="432" y="53" font-family="${FONT_MONO}" font-size="10" letter-spacing="1.5" fill="${MUTED}">Hi stalker, nice to see you here!</text>
 
   <text x="892" y="53" text-anchor="end" font-family="${FONT_MONO}" font-size="10" letter-spacing="1" fill="${MUTED}">access granted ✓</text>
 
@@ -958,7 +958,7 @@ async function main() {
 
     const octokit = new Octokit({
         auth: token,
-        log: { debug() {}, info() {}, warn: console.warn, error: console.error },
+        log: { debug() { }, info() { }, warn: console.warn, error: console.error },
     });
 
     const user = (await octokit.request("GET /users/{username}", { username })).data;

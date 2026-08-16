@@ -33,7 +33,7 @@
   <text x="28" y="52" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="13" letter-spacing="3" font-weight="700" fill="#00FF41">[ SYSTEM ONLINE ]</text>
 
   <circle cx="420" cy="49" r="1.6" fill="#00FF41" fill-opacity="0.5"/>
-  <text x="432" y="53" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="1.5" fill="#8b949e">nice to see you here</text>
+  <text x="432" y="53" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="1.5" fill="#8b949e">Hi stalker, nice to see you here!</text>
 
   <text x="892" y="53" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="1" fill="#8b949e">access granted ✓</text>
 
