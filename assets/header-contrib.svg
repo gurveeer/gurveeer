@@ -36,7 +36,7 @@
       <text x="1042" y="30" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.05">1</text>    <text x="1042" y="44" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.085">0</text>    <text x="1042" y="58" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.12000000000000001">1</text>    <text x="1042" y="72" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.15500000000000003">0</text>    <text x="1042" y="86" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.19">1</text>
 
   <rect x="24" y="18" width="48" height="48" fill="#0a5c22" fill-opacity="0.25" stroke="#00FF41" stroke-opacity="0.6" stroke-width="1.2"/>
-  <g fill="none" stroke="#00FF41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(11 11)">
+  <g fill="none" stroke="#00FF41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(35 29)">
   <svg width="26" height="26" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><line x1="3" x2="9" y1="12" y2="12"/><line x1="15" x2="21" y1="12" y2="12"/></svg>
 </g>
 
