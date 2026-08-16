@@ -1,0 +1,38 @@
+name: Update GitHub Stats Cards
+
+on:
+  schedule:
+    - cron: "47 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate custom stats cards
+        run: node src/generate-cards.js ${{ github.repository_owner }}
+        env:
+          GHT: ${{ secrets.GHT }}
+
+      - name: Commit generated cards
+        run: |
+          git config --global user.name "Github Actions"
+          git config --global user.email "action@github.com"
+          git add assets/github-stats.svg assets/github-langs.svg
+          git commit -m "stats: update custom github stats cards" || echo "No changes to commit"
+          git push

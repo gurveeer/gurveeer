@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="200" viewBox="0 0 440 200" role="img">
+  <defs>
+    <linearGradient id="lb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00FF41"/>
+      <stop offset="100%" stop-color="#00c530"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="439" height="199" rx="12" fill="url(#lb)" stroke="#21262d"/>
+  <rect x="0.5" y="0.5" width="4" height="199" rx="2" fill="url(#lg)"/>
+
+  <text x="26" y="30" font-family="'Segoe UI', monospace" font-size="15" font-weight="700" fill="#f0f6fc">Most Used Languages</text>
+
+  
+        <g>
+          <text x="26" y="56" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+            <tspan fill="#f1e05a">●</tspan> JavaScript
+          </text>
+          <text x="414" y="56" text-anchor="end" font-family="monospace" font-size="12" fill="#f0f6fc">36%</text>
+          <rect x="26" y="62" width="388" height="6" rx="3" fill="#161b22" stroke="#21262d" stroke-width="0.5"/>
+          <rect x="26" y="62" width="388" height="6" rx="3" fill="#f1e05a"/>
+        </g>
+        <g>
+          <text x="26" y="82" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+            <tspan fill="#3572A5">●</tspan> Python
+          </text>
+          <text x="414" y="82" text-anchor="end" font-family="monospace" font-size="12" fill="#f0f6fc">20%</text>
+          <rect x="26" y="88" width="388" height="6" rx="3" fill="#161b22" stroke="#21262d" stroke-width="0.5"/>
+          <rect x="26" y="88" width="215.55555555555557" height="6" rx="3" fill="#3572A5"/>
+        </g>
+        <g>
+          <text x="26" y="108" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+            <tspan fill="#3178c6">●</tspan> TypeScript
+          </text>
+          <text x="414" y="108" text-anchor="end" font-family="monospace" font-size="12" fill="#f0f6fc">18%</text>
+          <rect x="26" y="114" width="388" height="6" rx="3" fill="#161b22" stroke="#21262d" stroke-width="0.5"/>
+          <rect x="26" y="114" width="194" height="6" rx="3" fill="#3178c6"/>
+        </g>
+        <g>
+          <text x="26" y="134" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+            <tspan fill="#e34c26">●</tspan> HTML
+          </text>
+          <text x="414" y="134" text-anchor="end" font-family="monospace" font-size="12" fill="#f0f6fc">8%</text>
+          <rect x="26" y="140" width="388" height="6" rx="3" fill="#161b22" stroke="#21262d" stroke-width="0.5"/>
+          <rect x="26" y="140" width="86.22222222222221" height="6" rx="3" fill="#e34c26"/>
+        </g>
+        <g>
+          <text x="26" y="160" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+            <tspan fill="hsl(13,70%,60%)">●</tspan> MATLAB
+          </text>
+          <text x="414" y="160" text-anchor="end" font-family="monospace" font-size="12" fill="#f0f6fc">6%</text>
+          <rect x="26" y="166" width="388" height="6" rx="3" fill="#161b22" stroke="#21262d" stroke-width="0.5"/>
+          <rect x="26" y="166" width="64.66666666666666" height="6" rx="3" fill="hsl(13,70%,60%)"/>
+        </g>
+
+  <text x="26" y="188" font-family="monospace" font-size="9" fill="#8b949e">by repo count · auto-generated</text>
+</svg>
