@@ -24,11 +24,9 @@
 
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" width="24" height="24"/> About Me
 
-<table>
-  <tr>
-    <td width="65%" valign="top">
-      <p><strong>AI Infrastructure Engineer</strong></p>
-      <p>Building next-generation <strong>context engines</strong> and <strong>intelligent systems</strong> that power AI applications at scale. Specializing in <strong>RAG architectures</strong>, <strong>vector databases</strong>, <strong>graph databases</strong>, and <strong>event-driven AI pipelines</strong> with <strong>Kafka</strong>. <strong>IIT Roorkee Graduate '23</strong>.</p>
+**AI Infrastructure Engineer**
+
+Building next-generation **context engines** and **intelligent systems** that power AI applications at scale. Specializing in **RAG architectures**, **vector databases**, **graph databases**, and **event-driven AI pipelines** with **Kafka**. **IIT Roorkee Graduate '23**.
 
 ```javascript
 const gurveer = {
@@ -57,26 +55,23 @@ const gurveer = {
   passion: "Making AI agents smarter with context"
 };
 ```
-    </td>
-    <td width="35%" valign="top">
-      <p><strong>Currently</strong></p>
-      <ul>
-        <li>🔭 Building context-aware AI systems with vector &amp; graph DBs</li>
-        <li>🌱 Learning advanced RAG patterns &amp; multi-agent systems</li>
-        <li>💡 Interested in semantic search &amp; LLM orchestration</li>
-        <li>⚡ Debugging vector embeddings &amp; Kafka streams at 3 AM!</li>
-      </ul>
-      <br/>
-      <p><strong>Core Expertise</strong></p>
-      <ul>
-        <li>🤖 Context Engines &amp; RAG</li>
-        <li>🔍 Vector &amp; Graph Search</li>
-        <li>⚡ Real-time AI Pipelines</li>
-        <li>🧠 Multi-Agent Systems</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+
+<details>
+  <summary><strong>Currently Working On</strong></summary>
+  <ul>
+    <li>🔭 Building context-aware AI systems with vector &amp; graph DBs</li>
+    <li>🌱 Learning advanced RAG patterns &amp; multi-agent systems</li>
+    <li>💡 Interested in semantic search &amp; LLM orchestration</li>
+    <li>⚡ Debugging vector embeddings &amp; Kafka streams at 3 AM!</li>
+  </ul>
+</details>
+
+**Core Expertise**
+
+- 🤖 Context Engines &amp; RAG
+- 🔍 Vector &amp; Graph Search
+- ⚡ Real-time AI Pipelines
+- 🧠 Multi-Agent Systems
 
 ---
 
