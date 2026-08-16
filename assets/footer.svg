@@ -30,12 +30,12 @@
   <path d="M 920 66 V 90 H 896" fill="none" stroke="#00FF41" stroke-opacity="0.65" stroke-width="2"/>
   <path d="M 24 90 H 0 V 66" fill="none" stroke="#00FF41" stroke-opacity="0.65" stroke-width="2"/>
 
-  <text x="28" y="52" font-family="'Segoe UI', monospace" font-size="13" letter-spacing="3" font-weight="700" fill="#00FF41">[ SYSTEM ONLINE ]</text>
+  <text x="28" y="52" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="13" letter-spacing="3" font-weight="700" fill="#00FF41">[ SYSTEM ONLINE ]</text>
 
-  <text x="420" y="52" text-anchor="middle" font-family="'Segoe UI', monospace" font-size="11" fill="#8b949e">crafted by</text>
-  <text x="460" y="52" font-family="'Segoe UI', monospace" font-size="13" font-weight="700" fill="#f0f6fc">GURVEER</text>
+  <text x="420" y="52" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" fill="#8b949e">crafted by</text>
+  <text x="460" y="52" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="13" font-weight="700" fill="#f0f6fc">GURVEER</text>
 
-  <text x="892" y="52" text-anchor="end" font-family="'Segoe UI', monospace" font-size="10" fill="#8b949e">access granted ✓</text>
+  <text x="892" y="52" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" fill="#8b949e">access granted ✓</text>
 
   
   <circle cx="892" cy="56" r="3" fill="#00FF41">

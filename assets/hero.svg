@@ -39,18 +39,150 @@
     <animate attributeName="r" values="4;10" dur="2s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.5;0" dur="2s" repeatCount="indefinite"/>
   </circle>
+    <g fill="#00FF41">
+    <circle cx="20.0" cy="15.0" r="0.80" fill-opacity="0.6">
+      <animate attributeName="cy" values="15.0;23.0;15.0" dur="5.0s" begin="0.0s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="20.0;26.0;20.0" dur="5.0s" begin="0.0s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="0.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="157.5" cy="104.3" r="1.68" fill-opacity="0.6">
+      <animate attributeName="cy" values="104.3;112.3;104.3" dur="6.0s" begin="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="157.5;151.5;157.5" dur="6.0s" begin="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="0.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="295.0" cy="193.6" r="1.30" fill-opacity="0.6">
+      <animate attributeName="cy" values="193.6;201.6;193.6" dur="7.0s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="295.0;301.0;295.0" dur="7.0s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="432.5" cy="52.9" r="0.93" fill-opacity="0.6">
+      <animate attributeName="cy" values="52.9;60.9;52.9" dur="8.0s" begin="2.1s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="432.5;426.5;432.5" dur="8.0s" begin="2.1s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="570.0" cy="142.2" r="1.80" fill-opacity="0.6">
+      <animate attributeName="cy" values="142.2;150.2;142.2" dur="9.0s" begin="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="570.0;576.0;570.0" dur="9.0s" begin="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="707.5" cy="231.5" r="1.43" fill-opacity="0.6">
+      <animate attributeName="cy" values="231.5;239.5;231.5" dur="5.0s" begin="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="707.5;701.5;707.5" dur="5.0s" begin="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="845.0" cy="90.8" r="1.05" fill-opacity="0.6">
+      <animate attributeName="cy" values="90.8;98.8;90.8" dur="6.0s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="845.0;851.0;845.0" dur="6.0s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="982.5" cy="180.1" r="1.93" fill-opacity="0.6">
+      <animate attributeName="cy" values="180.1;188.1;180.1" dur="7.0s" begin="0.9s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="982.5;976.5;982.5" dur="7.0s" begin="0.9s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="0.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100.0" cy="39.4" r="1.55" fill-opacity="0.6">
+      <animate attributeName="cy" values="39.4;47.4;39.4" dur="8.0s" begin="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="100.0;106.0;100.0" dur="8.0s" begin="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="237.5" cy="128.7" r="1.18" fill-opacity="0.6">
+      <animate attributeName="cy" values="128.7;136.7;128.7" dur="9.0s" begin="2.3s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="237.5;231.5;237.5" dur="9.0s" begin="2.3s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="375.0" cy="218.0" r="0.80" fill-opacity="0.6">
+      <animate attributeName="cy" values="218.0;226.0;218.0" dur="5.0s" begin="3.0s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="375.0;381.0;375.0" dur="5.0s" begin="3.0s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="3.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="512.5" cy="77.3" r="1.68" fill-opacity="0.6">
+      <animate attributeName="cy" values="77.3;85.3;77.3" dur="6.0s" begin="3.7s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="512.5;506.5;512.5" dur="6.0s" begin="3.7s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="3.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650.0" cy="166.6" r="1.30" fill-opacity="0.6">
+      <animate attributeName="cy" values="166.6;174.6;166.6" dur="7.0s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="650.0;656.0;650.0" dur="7.0s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="787.5" cy="25.9" r="0.93" fill-opacity="0.6">
+      <animate attributeName="cy" values="25.9;33.9;25.9" dur="8.0s" begin="1.1s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="787.5;781.5;787.5" dur="8.0s" begin="1.1s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="1.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="925.0" cy="115.2" r="1.80" fill-opacity="0.6">
+      <animate attributeName="cy" values="115.2;123.2;115.2" dur="9.0s" begin="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="925.0;931.0;925.0" dur="9.0s" begin="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="42.5" cy="204.5" r="1.43" fill-opacity="0.6">
+      <animate attributeName="cy" values="204.5;212.5;204.5" dur="5.0s" begin="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="42.5;36.5;42.5" dur="5.0s" begin="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180.0" cy="63.8" r="1.05" fill-opacity="0.6">
+      <animate attributeName="cy" values="63.8;71.8;63.8" dur="6.0s" begin="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="180.0;186.0;180.0" dur="6.0s" begin="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="317.5" cy="153.1" r="1.93" fill-opacity="0.6">
+      <animate attributeName="cy" values="153.1;161.1;153.1" dur="7.0s" begin="3.9s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="317.5;311.5;317.5" dur="7.0s" begin="3.9s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="3.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="455.0" cy="242.4" r="1.55" fill-opacity="0.6">
+      <animate attributeName="cy" values="242.4;250.4;242.4" dur="8.0s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="455.0;461.0;455.0" dur="8.0s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="592.5" cy="101.7" r="1.18" fill-opacity="0.6">
+      <animate attributeName="cy" values="101.7;109.7;101.7" dur="9.0s" begin="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="592.5;586.5;592.5" dur="9.0s" begin="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="1.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="730.0" cy="191.0" r="0.80" fill-opacity="0.6">
+      <animate attributeName="cy" values="191.0;199.0;191.0" dur="5.0s" begin="2.0s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="730.0;736.0;730.0" dur="5.0s" begin="2.0s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="867.5" cy="50.3" r="1.68" fill-opacity="0.6">
+      <animate attributeName="cy" values="50.3;58.3;50.3" dur="6.0s" begin="2.7s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="867.5;861.5;867.5" dur="6.0s" begin="2.7s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1005.0" cy="139.6" r="1.30" fill-opacity="0.6">
+      <animate attributeName="cy" values="139.6;147.6;139.6" dur="7.0s" begin="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="1005.0;1011.0;1005.0" dur="7.0s" begin="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="122.5" cy="228.9" r="0.93" fill-opacity="0.6">
+      <animate attributeName="cy" values="228.9;236.9;228.9" dur="8.0s" begin="0.1s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="122.5;116.5;122.5" dur="8.0s" begin="0.1s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="0.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="260.0" cy="88.2" r="1.80" fill-opacity="0.6">
+      <animate attributeName="cy" values="88.2;96.2;88.2" dur="9.0s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="260.0;266.0;260.0" dur="9.0s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="397.5" cy="177.5" r="1.43" fill-opacity="0.6">
+      <animate attributeName="cy" values="177.5;185.5;177.5" dur="5.0s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="397.5;391.5;397.5" dur="5.0s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
 
-  <text x="40" y="40" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="3" fill="#00FF41" fill-opacity="0.8">[ SYSTEM BOOT ]</text>
-  <text x="860" y="40" text-anchor="end" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#8b949e">gurveeer@github</text>
+  <text x="40" y="40" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="3" fill="#00FF41" fill-opacity="0.8">[ SYSTEM BOOT ]</text>
+  <text x="860" y="40" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#8b949e">gurveeer@github</text>
 
-  <text x="40" y="120" font-family="'Segoe UI', monospace" font-size="42" font-weight="700" fill="#f0f6fc">Hi, I'm <tspan fill="#00FF41">Gurveer</tspan></text>
+  <text x="40" y="120" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="42" font-weight="700" fill="#f0f6fc">Hi, I'm <tspan fill="#00FF41">Gurveer</tspan></text>
 
-  <text x="40" y="162" font-family="'Segoe UI', monospace" font-size="18" fill="#c9d1d9">AI Infrastructure Engineer</text>
+  <text x="40" y="162" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="18" fill="#c9d1d9">AI Infrastructure Engineer</text>
 
   <path d="M 40 178 H 1020" stroke="#232a33" stroke-width="1"/>
   <path d="M 40 178 H 260" stroke="#00FF41" stroke-opacity="0.8" stroke-width="2"/>
 
-  <text x="40" y="210" font-family="'Segoe UI', monospace" font-size="13" fill="#8b949e">Building context engines &amp; RAG systems · vector &amp; graph databases · event-driven AI pipelines</text>
+  <text x="40" y="210" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="13" fill="#8b949e">Building context engines &amp; RAG systems · vector &amp; graph databases · event-driven AI pipelines</text>
 
-  <text x="40" y="236" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="3" fill="#00FF41" fill-opacity="0.7">[ IIT ROORKEE '23 ]</text>
+  <text x="40" y="236" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="3" fill="#00FF41" fill-opacity="0.7">[ IIT ROORKEE '23 ]</text>
 </svg>

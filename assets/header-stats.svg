@@ -29,8 +29,8 @@
   <rect x="24" y="18" width="48" height="48" fill="#0a5c22" fill-opacity="0.25" stroke="#00FF41" stroke-opacity="0.6" stroke-width="1.2"/>
   <text x="48" y="50" text-anchor="middle" font-size="24">📊</text>
 
-  <text x="90" y="42" font-family="'Segoe UI', monospace" font-size="22" letter-spacing="2.5" font-weight="700" fill="#f0f6fc">GITHUB STATS</text>
-  <text x="90" y="62" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="#8b949e">// SECTION</text>
+  <text x="90" y="42" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="22" letter-spacing="2.5" font-weight="700" fill="#f0f6fc">GITHUB STATS</text>
+  <text x="90" y="62" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="#8b949e">// SECTION</text>
 
   <path d="M 860 42 H 1000" stroke="#232a33" stroke-width="1"/>
   

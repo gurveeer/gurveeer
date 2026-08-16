@@ -17,8 +17,8 @@
 
   <g transform="translate(13 13) scale(0.78)"><path fill="#e6edf3" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></g>
 
-  <text x="46" y="23" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="#f0f6fc">X</text>
-  <text x="46" y="38" font-family="'Segoe UI', monospace" font-size="8.5" fill="#8b949e">@gurveeer</text>
+  <text x="46" y="23" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" font-weight="700" fill="#f0f6fc">X</text>
+  <text x="46" y="38" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="8.5" fill="#8b949e">@gurveeer</text>
 
   <path d="M 158 14 H 166" stroke="#00FF41" stroke-opacity="0.5" stroke-width="1.4"/>
   <path d="M 164 8 V 46" stroke="#00FF41" stroke-opacity="0.5" stroke-width="1.4"/>

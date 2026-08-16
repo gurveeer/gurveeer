@@ -17,8 +17,8 @@
 
   <g transform="translate(13 13) scale(0.78)"><path fill="#D14836" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></g>
 
-  <text x="46" y="23" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="#f0f6fc">Gmail</text>
-  <text x="46" y="38" font-family="'Segoe UI', monospace" font-size="8.5" fill="#8b949e">singh5134957@gmail.com</text>
+  <text x="46" y="23" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" font-weight="700" fill="#f0f6fc">Gmail</text>
+  <text x="46" y="38" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="8.5" fill="#8b949e">singh5134957@gmail.com</text>
 
   <path d="M 158 14 H 166" stroke="#00FF41" stroke-opacity="0.5" stroke-width="1.4"/>
   <path d="M 164 8 V 46" stroke="#00FF41" stroke-opacity="0.5" stroke-width="1.4"/>

@@ -5,16 +5,68 @@ const { Octokit } = require("@octokit/rest");
 const token = process.env.GHT;
 const username = process.argv[2] || "gurveeer";
 
-const GREEN = "#00FF41";
-const GREEN_DARK = "#00c530";
-const GREEN_DIM = "#0a5c22";
-const BG = "#0d1117";
-const CARD = "#12181f";
-const CARD2 = "#161d26";
-const BORDER = "#232a33";
-const TEXT = "#c9d1d9";
-const MUTED = "#8b949e";
-const WHITE = "#f0f6fc";
+const THEMES = {
+    hacker: {
+        name: "hacker",
+        accent: "#00FF41",
+        accentDark: "#00c530",
+        accentDim: "#0a5c22",
+        bg: "#0d1117",
+        card: "#12181f",
+        card2: "#161d26",
+        border: "#232a33",
+        text: "#c9d1d9",
+        muted: "#8b949e",
+        white: "#f0f6fc",
+        fontMono: "'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace",
+        fontSans: "'Inter', 'Segoe UI', sans-serif",
+    },
+    dracula: {
+        name: "dracula",
+        accent: "#bd93f9",
+        accentDark: "#8be9fd",
+        accentDim: "#44475a",
+        bg: "#282a36",
+        card: "#2f3142",
+        card2: "#3a3c52",
+        border: "#44475a",
+        text: "#f8f8f2",
+        muted: "#6272a4",
+        white: "#f8f8f2",
+        fontMono: "'JetBrains Mono', 'Fira Code', monospace",
+        fontSans: "'Inter', 'Segoe UI', sans-serif",
+    },
+    light: {
+        name: "light",
+        accent: "#00c530",
+        accentDark: "#009925",
+        accentDim: "#d9f4e0",
+        bg: "#ffffff",
+        card: "#f6f8fa",
+        card2: "#eaeef2",
+        border: "#d0d7de",
+        text: "#1f2328",
+        muted: "#57606a",
+        white: "#0d1117",
+        fontMono: "'JetBrains Mono', 'Fira Code', monospace",
+        fontSans: "'Inter', 'Segoe UI', sans-serif",
+    },
+};
+
+const THEME = THEMES[process.argv[3] || "hacker"] || THEMES.hacker;
+
+const GREEN = THEME.accent;
+const GREEN_DARK = THEME.accentDark;
+const GREEN_DIM = THEME.accentDim;
+const BG = THEME.bg;
+const CARD = THEME.card;
+const CARD2 = THEME.card2;
+const BORDER = THEME.border;
+const TEXT = THEME.text;
+const MUTED = THEME.muted;
+const WHITE = THEME.white;
+const FONT_MONO = THEME.fontMono;
+const FONT_SANS = THEME.fontSans;
 
 function escapeHtml(s) {
     return String(s ?? "")
@@ -124,12 +176,30 @@ function liveDot(x, y) {
   </circle>`;
 }
 
+function particles(w, h, count = 26) {
+    let out = `  <g fill="${GREEN}">\n`;
+    for (let i = 0; i < count; i++) {
+        const x = (i * 137.5) % (w - 40) + 20;
+        const y = (i * 89.3) % (h - 30) + 15;
+        const r = 0.8 + ((i * 7) % 10) / 8;
+        const dur = (5 + (i % 5)).toFixed(1);
+        const delay = ((i * 0.7) % 4).toFixed(1);
+        const drift = (i % 2 === 0 ? 6 : -6).toFixed(1);
+        out += `    <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(2)}" fill-opacity="0.6">
+      <animate attributeName="cy" values="${y.toFixed(1)};${(y + 8).toFixed(1)};${y.toFixed(1)}" dur="${dur}s" begin="${delay}s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="${x.toFixed(1)};${(x + +drift).toFixed(1)};${x.toFixed(1)}" dur="${dur}s" begin="${delay}s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.75;0.15" dur="3.5s" begin="${delay}s" repeatCount="indefinite"/>
+    </circle>\n`;
+    }
+    return out + `  </g>`;
+}
+
 function header(w, title, tag) {
     return `
   <path d="M 16 20 H ${w - 16}" stroke="${BORDER}" stroke-width="1"/>
   <path d="M 24 20 H 150" stroke="${GREEN}" stroke-opacity="0.8" stroke-width="2"/>
-  <text x="28" y="16" font-family="'Segoe UI', monospace" font-size="12" letter-spacing="2.5" font-weight="700" fill="${WHITE}">${title}</text>
-  <text x="412" y="16" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="${MUTED}">${tag}</text>
+  <text x="28" y="16" font-family="${FONT_MONO}" font-size="12" letter-spacing="2.5" font-weight="700" fill="${WHITE}">${title}</text>
+  <text x="412" y="16" text-anchor="end" font-family="${FONT_MONO}" font-size="9" letter-spacing="1.5" fill="${MUTED}">${tag}</text>
   ${liveDot(416, 14)}`;
 }
 
@@ -154,8 +224,8 @@ function statsCard(data) {
       <path d="M ${x + 8} ${y} H ${x + 188} L ${x + 196} ${y + 8} V ${y + 50} H ${x + 8} Z" fill="${CARD2}" stroke="${BORDER}" stroke-width="1"/>
       <rect x="${x}" y="${y + 8}" width="4" height="34" fill="url(#accent)"/>
       <text x="${x + 20}" y="${y + 30}" text-anchor="middle" font-family="monospace" font-size="12" fill="${GREEN}">${m.icon}</text>
-      <text x="${x + 36}" y="${y + 20}" font-family="'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
-      <text x="${x + 36}" y="${y + 42}" font-family="'Segoe UI', monospace" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
+      <text x="${x + 36}" y="${y + 20}" font-family="${FONT_MONO}" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
+      <text x="${x + 36}" y="${y + 42}" font-family="${FONT_MONO}" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
       <path d="M ${x + 188} ${y} L ${x + 196} ${y + 8}" stroke="${GREEN}" stroke-opacity="0.4" stroke-width="1.2"/>
     </g>`;
         })
@@ -185,10 +255,10 @@ function langsCard(data) {
             const bw = Math.max(10, Math.round((l.pct / maxPct) * 360));
             return `
     <g>
-      <text x="28" y="${y}" font-family="'Segoe UI', monospace" font-size="11" fill="${TEXT}">
+      <text x="28" y="${y}" font-family="${FONT_MONO}" font-size="11" fill="${TEXT}">
         <tspan fill="${color}">■</tspan>  ${escapeHtml(l.name)}
       </text>
-      <text x="412" y="${y}" text-anchor="end" font-family="'Segoe UI', monospace" font-size="11" font-weight="700" fill="${WHITE}">${l.pct}%</text>
+      <text x="412" y="${y}" text-anchor="end" font-family="${FONT_MONO}" font-size="11" font-weight="700" fill="${WHITE}">${l.pct}%</text>
       <rect x="28" y="${y + 8}" width="384" height="5" fill="${BG}" stroke="${BORDER}" stroke-width="0.6"/>
       <rect x="28" y="${y + 8}" width="${bw}" height="5" fill="${color}"/>
       <rect x="${28 + bw}" y="${y + 8}" width="2" height="5" fill="${GREEN}" fill-opacity="0.6"/>
@@ -236,7 +306,7 @@ function projectCard(repo) {
 
     let descHtml = "";
     descLines.forEach((line, i) => {
-        descHtml += `      <text x="28" y="${56 + i * 18}" font-family="'Segoe UI', sans-serif" font-size="12" fill="${TEXT}">${escapeHtml(line)}</text>\n`;
+        descHtml += `      <text x="28" y="${56 + i * 18}" font-family="${FONT_SANS}" font-size="12" fill="${TEXT}">${escapeHtml(line)}</text>\n`;
     });
 
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
@@ -247,21 +317,21 @@ function projectCard(repo) {
   ${matrixColumn(427, 92, 160, "10")}
 
   <rect x="20" y="20" width="8" height="8" fill="${GREEN}"/>
-  <text x="36" y="29" font-family="'Segoe UI', monospace" font-size="15" font-weight="700" fill="${WHITE}">${escapeHtml(repo.name)}</text>
+  <text x="36" y="29" font-family="${FONT_MONO}" font-size="15" font-weight="700" fill="${WHITE}">${escapeHtml(repo.name)}</text>
   <rect x="${36 + repo.name.length * 9 + 4}" y="24" width="6" height="6" fill="${GREEN}" fill-opacity="0.7"/>
 
   ${descHtml}
   <line x1="28" y1="136" x2="412" y2="136" stroke="${BORDER}" stroke-width="1"/>
   <path d="M 28 136 H 120" stroke="${GREEN}" stroke-opacity="0.6" stroke-width="1.6"/>
 
-  <text x="28" y="176" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
+  <text x="28" y="176" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">
     <tspan fill="${color}">■</tspan>  ${escapeHtml(lang)}
   </text>
 
-  <text x="412" y="172" text-anchor="end" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="${WHITE}">★ ${stars}</text>
-  <text x="412" y="190" text-anchor="end" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="${WHITE}">⑂ ${forks}</text>
+  <text x="412" y="172" text-anchor="end" font-family="${FONT_MONO}" font-size="12" font-weight="700" fill="${WHITE}">★ ${stars}</text>
+  <text x="412" y="190" text-anchor="end" font-family="${FONT_MONO}" font-size="12" font-weight="700" fill="${WHITE}">⑂ ${forks}</text>
 
-  <text x="28" y="${h - 16}" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${GREEN}" fill-opacity="0.7">[ ${escapeHtml(repo.name.toUpperCase())} ]</text>
+  <text x="28" y="${h - 16}" font-family="${FONT_MONO}" font-size="9" letter-spacing="2" fill="${GREEN}" fill-opacity="0.7">[ ${escapeHtml(repo.name.toUpperCase())} ]</text>
 </svg>
 `;
 }
@@ -329,8 +399,8 @@ function streakCard(data) {
       <path d="M ${x + 8} ${y} H ${x + 188} L ${x + 196} ${y + 8} V ${y + 50} H ${x + 8} Z" fill="${CARD2}" stroke="${BORDER}" stroke-width="1"/>
       <rect x="${x}" y="${y + 8}" width="4" height="34" fill="url(#accent)"/>
       <text x="${x + 20}" y="${y + 30}" text-anchor="middle" font-family="monospace" font-size="12" fill="${GREEN}">${m.icon}</text>
-      <text x="${x + 36}" y="${y + 20}" font-family="'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
-      <text x="${x + 36}" y="${y + 42}" font-family="'Segoe UI', monospace" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
+      <text x="${x + 36}" y="${y + 20}" font-family="${FONT_MONO}" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
+      <text x="${x + 36}" y="${y + 42}" font-family="${FONT_MONO}" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
       <path d="M ${x + 188} ${y} L ${x + 196} ${y + 8}" stroke="${GREEN}" stroke-opacity="0.4" stroke-width="1.2"/>
     </g>`;
         })
@@ -369,8 +439,8 @@ function commitsCard(data) {
       <path d="M ${x + 8} ${y} H ${x + 188} L ${x + 196} ${y + 8} V ${y + 50} H ${x + 8} Z" fill="${CARD2}" stroke="${BORDER}" stroke-width="1"/>
       <rect x="${x}" y="${y + 8}" width="4" height="34" fill="url(#accent)"/>
       <text x="${x + 20}" y="${y + 30}" text-anchor="middle" font-family="monospace" font-size="12" fill="${GREEN}">${m.icon}</text>
-      <text x="${x + 36}" y="${y + 20}" font-family="'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
-      <text x="${x + 36}" y="${y + 42}" font-family="'Segoe UI', monospace" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
+      <text x="${x + 36}" y="${y + 20}" font-family="${FONT_MONO}" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
+      <text x="${x + 36}" y="${y + 42}" font-family="${FONT_MONO}" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
       <path d="M ${x + 188} ${y} L ${x + 196} ${y + 8}" stroke="${GREEN}" stroke-opacity="0.4" stroke-width="1.2"/>
     </g>`;
         })
@@ -441,14 +511,14 @@ function contributionGraphCard(data) {
     for (let wi = 0; wi < weeks.length; wi += labelStep) {
         const x = startX + wi * (cell + gap);
         const label = monthLabels[Math.floor(wi / (weeks.length / 12))] || "";
-        labels += `      <text x="${x}" y="58" font-family="'Segoe UI', monospace" font-size="8" letter-spacing="1" fill="${MUTED}">${label}</text>`;
+        labels += `      <text x="${x}" y="58" font-family="${FONT_MONO}" font-size="8" letter-spacing="1" fill="${MUTED}">${label}</text>`;
     }
 
     const weekdays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
     let dayLabels = "";
     [1, 3, 5].forEach((di) => {
         const y = startY + di * (cell + gap) + 8;
-        dayLabels += `      <text x="${startX - 12}" y="${y}" text-anchor="end" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">${weekdays[di]}</text>`;
+        dayLabels += `      <text x="${startX - 12}" y="${y}" text-anchor="end" font-family="${FONT_MONO}" font-size="8" fill="${MUTED}">${weekdays[di]}</text>`;
     });
 
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
@@ -464,16 +534,16 @@ function contributionGraphCard(data) {
   ${cells}
 
   <rect x="${startX + gridW - 214}" y="${h - 24}" width="11" height="11" fill="${BG}" stroke="${BORDER}" stroke-width="0.5"/>
-  <text x="${startX + gridW - 196}" y="${h - 15}" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">0</text>
+  <text x="${startX + gridW - 196}" y="${h - 15}" font-family="${FONT_MONO}" font-size="8" fill="${MUTED}">0</text>
   <rect x="${startX + gridW - 172}" y="${h - 24}" width="11" height="11" fill="rgba(0,255,65,0.15)" stroke="none"/>
-  <text x="${startX + gridW - 154}" y="${h - 15}" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">1-4</text>
+  <text x="${startX + gridW - 154}" y="${h - 15}" font-family="${FONT_MONO}" font-size="8" fill="${MUTED}">1-4</text>
   <rect x="${startX + gridW - 130}" y="${h - 24}" width="11" height="11" fill="rgba(0,255,65,0.45)"/>
-  <text x="${startX + gridW - 112}" y="${h - 15}" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">5-9</text>
+  <text x="${startX + gridW - 112}" y="${h - 15}" font-family="${FONT_MONO}" font-size="8" fill="${MUTED}">5-9</text>
   <rect x="${startX + gridW - 88}" y="${h - 24}" width="11" height="11" fill="rgba(0,255,65,0.75)"/>
-  <text x="${startX + gridW - 70}" y="${h - 15}" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">10+</text>
+  <text x="${startX + gridW - 70}" y="${h - 15}" font-family="${FONT_MONO}" font-size="8" fill="${MUTED}">10+</text>
 
-  <text x="${startX}" y="${h - 15}" font-family="'Segoe UI', monospace" font-size="11" font-weight="700" fill="${WHITE}">${formatNumber(total)}</text>
-  <text x="${startX + 56}" y="${h - 15}" font-family="'Segoe UI', monospace" font-size="8" letter-spacing="1" fill="${MUTED}">TOTAL CONTRIBUTIONS</text>
+  <text x="${startX}" y="${h - 15}" font-family="${FONT_MONO}" font-size="11" font-weight="700" fill="${WHITE}">${formatNumber(total)}</text>
+  <text x="${startX + 56}" y="${h - 15}" font-family="${FONT_MONO}" font-size="8" letter-spacing="1" fill="${MUTED}">TOTAL CONTRIBUTIONS</text>
 </svg>
 `;
 }
@@ -512,8 +582,8 @@ function connectCard(platform, handle, url, color, icon, note) {
 
   <g transform="translate(13 13) scale(0.78)">${logo}</g>
 
-  <text x="46" y="23" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="${WHITE}">${platform}</text>
-  <text x="46" y="38" font-family="'Segoe UI', monospace" font-size="8.5" fill="${MUTED}">${handle}</text>
+  <text x="46" y="23" font-family="${FONT_MONO}" font-size="12" font-weight="700" fill="${WHITE}">${platform}</text>
+  <text x="46" y="38" font-family="${FONT_MONO}" font-size="8.5" fill="${MUTED}">${handle}</text>
 
   <path d="M 158 14 H 166" stroke="${GREEN}" stroke-opacity="0.5" stroke-width="1.4"/>
   <path d="M 164 8 V 46" stroke="${GREEN}" stroke-opacity="0.5" stroke-width="1.4"/>
@@ -530,12 +600,12 @@ function footerCard() {
   ${frame(w, h)}
   ${corners(w, h)}
 
-  <text x="28" y="52" font-family="'Segoe UI', monospace" font-size="13" letter-spacing="3" font-weight="700" fill="${GREEN}">[ SYSTEM ONLINE ]</text>
+  <text x="28" y="52" font-family="${FONT_MONO}" font-size="13" letter-spacing="3" font-weight="700" fill="${GREEN}">[ SYSTEM ONLINE ]</text>
 
-  <text x="420" y="52" text-anchor="middle" font-family="'Segoe UI', monospace" font-size="11" fill="${MUTED}">crafted by</text>
-  <text x="460" y="52" font-family="'Segoe UI', monospace" font-size="13" font-weight="700" fill="${WHITE}">GURVEER</text>
+  <text x="420" y="52" text-anchor="middle" font-family="${FONT_MONO}" font-size="11" fill="${MUTED}">crafted by</text>
+  <text x="460" y="52" font-family="${FONT_MONO}" font-size="13" font-weight="700" fill="${WHITE}">GURVEER</text>
 
-  <text x="892" y="52" text-anchor="end" font-family="'Segoe UI', monospace" font-size="10" fill="${MUTED}">access granted ✓</text>
+  <text x="892" y="52" text-anchor="end" font-family="${FONT_MONO}" font-size="10" fill="${MUTED}">access granted ✓</text>
 
   ${liveDot(892, 56)}
 </svg>
@@ -636,7 +706,7 @@ function snakeCard(data) {
     <animateMotion dur="26s" repeatCount="indefinite" path="${pathD}"/>
   </circle>
 
-  <text x="${startX}" y="${h - 18}" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${GREEN}" fill-opacity="0.7">[ FEED THE SERPENT ]</text>
+  <text x="${startX}" y="${h - 18}" font-family="${FONT_MONO}" font-size="9" letter-spacing="2" fill="${GREEN}" fill-opacity="0.7">[ FEED THE SERPENT ]</text>
 </svg>
 `;
 }
@@ -652,20 +722,21 @@ function heroCard() {
   ${matrixColumn(24, 80, 180, "01")}
   ${matrixColumn(w - 24, 80, 180, "10")}
   ${liveDot(w - 60, 40)}
+  ${particles(w, h)}
 
-  <text x="40" y="40" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="3" fill="${GREEN}" fill-opacity="0.8">[ SYSTEM BOOT ]</text>
-  <text x="${w - 200}" y="40" text-anchor="end" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${MUTED}">gurveeer@github</text>
+  <text x="40" y="40" font-family="${FONT_MONO}" font-size="10" letter-spacing="3" fill="${GREEN}" fill-opacity="0.8">[ SYSTEM BOOT ]</text>
+  <text x="${w - 200}" y="40" text-anchor="end" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${MUTED}">gurveeer@github</text>
 
-  <text x="40" y="120" font-family="'Segoe UI', monospace" font-size="42" font-weight="700" fill="${WHITE}">Hi, I'm <tspan fill="${GREEN}">Gurveer</tspan></text>
+  <text x="40" y="120" font-family="${FONT_MONO}" font-size="42" font-weight="700" fill="${WHITE}">Hi, I'm <tspan fill="${GREEN}">Gurveer</tspan></text>
 
-  <text x="40" y="162" font-family="'Segoe UI', monospace" font-size="18" fill="${TEXT}">AI Infrastructure Engineer</text>
+  <text x="40" y="162" font-family="${FONT_MONO}" font-size="18" fill="${TEXT}">AI Infrastructure Engineer</text>
 
   <path d="M 40 178 H 1020" stroke="${BORDER}" stroke-width="1"/>
   <path d="M 40 178 H 260" stroke="${GREEN}" stroke-opacity="0.8" stroke-width="2"/>
 
-  <text x="40" y="210" font-family="'Segoe UI', monospace" font-size="13" fill="${MUTED}">Building context engines &amp; RAG systems · vector &amp; graph databases · event-driven AI pipelines</text>
+  <text x="40" y="210" font-family="${FONT_MONO}" font-size="13" fill="${MUTED}">Building context engines &amp; RAG systems · vector &amp; graph databases · event-driven AI pipelines</text>
 
-  <text x="40" y="${h - 24}" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="3" fill="${GREEN}" fill-opacity="0.7">[ IIT ROORKEE '23 ]</text>
+  <text x="40" y="${h - 24}" font-family="${FONT_MONO}" font-size="10" letter-spacing="3" fill="${GREEN}" fill-opacity="0.7">[ IIT ROORKEE '23 ]</text>
 </svg>
 `;
 }
@@ -673,8 +744,8 @@ function heroCard() {
 function aboutCard() {
     const w = 1060;
     const h = 560;
-    const A = "#f0f6fc";
-    const AMUTED = "#aab3c0";
+    const A = WHITE;
+    const AMUTED = MUTED;
 
     const spec = [
         "Context Engines & RAG Systems",
@@ -709,7 +780,7 @@ function aboutCard() {
 
     let specRows = spec
         .map(
-            (s, i) => `    <text x="72" y="${190 + i * 22}" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
+            (s, i) => `    <text x="72" y="${190 + i * 22}" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">
       <tspan fill="${GREEN}" fill-opacity="0.8">▸</tspan>  ${escapeHtml(s)}
     </text>`
         )
@@ -717,7 +788,7 @@ function aboutCard() {
 
     let stackRows = stack
         .map(
-            (s, i) => `    <text x="560" y="${190 + i * 22}" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
+            (s, i) => `    <text x="560" y="${190 + i * 22}" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">
       <tspan fill="${AMUTED}">${escapeHtml(s.k)}</tspan><tspan fill="${GREEN}" fill-opacity="0.6">:</tspan> <tspan fill="${A}">${escapeHtml(s.v)}</tspan>
     </text>`
         )
@@ -725,7 +796,7 @@ function aboutCard() {
 
     let workRows = working
         .map(
-            (s, i) => `    <text x="72" y="${432 + i * 22}" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
+            (s, i) => `    <text x="72" y="${432 + i * 22}" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">
       <tspan fill="${GREEN}" fill-opacity="0.8">▸</tspan>  ${escapeHtml(s)}
     </text>`
         )
@@ -733,7 +804,7 @@ function aboutCard() {
 
     let expRows = expertise
         .map(
-            (s, i) => `    <text x="560" y="${432 + i * 22}" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
+            (s, i) => `    <text x="560" y="${432 + i * 22}" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">
       <tspan fill="${GREEN}" fill-opacity="0.8">▸</tspan>  ${escapeHtml(s)}
     </text>`
         )
@@ -773,35 +844,35 @@ function aboutCard() {
 
   <path d="M 16 20 H 1044" stroke="${BORDER}" stroke-width="1"/>
   <path d="M 24 20 H 150" stroke="${A}" stroke-opacity="0.7" stroke-width="2"/>
-  <text x="28" y="16" font-family="'Segoe UI', monospace" font-size="12" letter-spacing="2.5" font-weight="700" fill="${A}">USER_PROFILE</text>
-  <text x="${w - 200}" y="16" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="${AMUTED}">gurveeer@github</text>
+  <text x="28" y="16" font-family="${FONT_MONO}" font-size="12" letter-spacing="2.5" font-weight="700" fill="${A}">USER_PROFILE</text>
+  <text x="${w - 200}" y="16" text-anchor="end" font-family="${FONT_MONO}" font-size="9" letter-spacing="1.5" fill="${AMUTED}">gurveeer@github</text>
   ${liveDot(w - 44, 14)}
 
-  <text x="40" y="66" font-family="'Segoe UI', monospace" font-size="18" font-weight="700" fill="${A}">AI Infrastructure Engineer</text>
-  <text x="40" y="88" font-family="'Segoe UI', monospace" font-size="12" fill="${AMUTED}">IIT Roorkee '23 · specializing in RAG architectures, vector &amp; graph databases, event-driven AI pipelines</text>
+  <text x="40" y="66" font-family="${FONT_MONO}" font-size="18" font-weight="700" fill="${A}">AI Infrastructure Engineer</text>
+  <text x="40" y="88" font-family="${FONT_MONO}" font-size="12" fill="${AMUTED}">IIT Roorkee '23 · specializing in RAG architectures, vector &amp; graph databases, event-driven AI pipelines</text>
 
-  <text x="40" y="112" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}" fill-opacity="0.9">Building next-generation context engines &amp; intelligent systems that power AI applications at scale.</text>
+  <text x="40" y="112" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}" fill-opacity="0.9">Building next-generation context engines &amp; intelligent systems that power AI applications at scale.</text>
 
-  <text x="40" y="156" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ SPECIALIZATION</text>
+  <text x="40" y="156" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ SPECIALIZATION</text>
   <path d="M 40 164 H 500" stroke="${BORDER}" stroke-width="1"/>
   ${specRows}
 
-  <text x="528" y="156" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ TECH STACK</text>
+  <text x="528" y="156" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ TECH STACK</text>
   <path d="M 528 164 H 1020" stroke="${BORDER}" stroke-width="1"/>
   ${stackRows}
 
   <line x1="40" y1="384" x2="1020" y2="384" stroke="${BORDER}" stroke-width="1"/>
 
-  <text x="40" y="412" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ CURRENTLY WORKING ON</text>
+  <text x="40" y="412" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ CURRENTLY WORKING ON</text>
   <path d="M 40 420 H 500" stroke="${BORDER}" stroke-width="1"/>
   ${workRows}
 
-  <text x="528" y="412" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ CORE EXPERTISE</text>
+  <text x="528" y="412" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ CORE EXPERTISE</text>
   <path d="M 528 420 H 1020" stroke="${BORDER}" stroke-width="1"/>
   ${expRows}
 
-  <text x="40" y="${h - 20}" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${A}" fill-opacity="0.6">[ RAG · VECTOR · GRAPH · STREAM ]</text>
-  <text x="${w - 40}" y="${h - 20}" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${A}" fill-opacity="0.6">[ IIT ROORKEE '23 ]</text>
+  <text x="40" y="${h - 20}" font-family="${FONT_MONO}" font-size="9" letter-spacing="2" fill="${A}" fill-opacity="0.6">[ RAG · VECTOR · GRAPH · STREAM ]</text>
+  <text x="${w - 40}" y="${h - 20}" text-anchor="end" font-family="${FONT_MONO}" font-size="9" letter-spacing="2" fill="${A}" fill-opacity="0.6">[ IIT ROORKEE '23 ]</text>
 </svg>
 `;
 }
@@ -841,8 +912,8 @@ function sectionHeader(title, icon) {
   <rect x="24" y="18" width="48" height="48" fill="${GREEN_DIM}" fill-opacity="0.25" stroke="${GREEN}" stroke-opacity="0.6" stroke-width="1.2"/>
   <text x="48" y="50" text-anchor="middle" font-size="24">${icon}</text>
 
-  <text x="90" y="42" font-family="'Segoe UI', monospace" font-size="22" letter-spacing="2.5" font-weight="700" fill="${WHITE}">${title}</text>
-  <text x="90" y="62" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="${MUTED}">// SECTION</text>
+  <text x="90" y="42" font-family="${FONT_MONO}" font-size="22" letter-spacing="2.5" font-weight="700" fill="${WHITE}">${title}</text>
+  <text x="90" y="62" font-family="${FONT_MONO}" font-size="9" letter-spacing="1.5" fill="${MUTED}">// SECTION</text>
 
   <path d="M ${w - 200} 42 H ${w - 60}" stroke="${BORDER}" stroke-width="1"/>
   ${liveDot(w - 40, 42)}
@@ -993,4 +1064,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { statsCard, langsCard, projectCard, wrapText, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, heroCard, aboutCard, sectionHeader, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };
+module.exports = { statsCard, langsCard, projectCard, wrapText, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, heroCard, aboutCard, sectionHeader, particles, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };

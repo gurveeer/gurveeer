@@ -34,8 +34,8 @@
   
   <path d="M 16 20 H 424" stroke="#232a33" stroke-width="1"/>
   <path d="M 24 20 H 150" stroke="#00FF41" stroke-opacity="0.8" stroke-width="2"/>
-  <text x="28" y="16" font-family="'Segoe UI', monospace" font-size="12" letter-spacing="2.5" font-weight="700" fill="#f0f6fc">LANG_MATRIX</text>
-  <text x="412" y="16" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="#8b949e">by repo count</text>
+  <text x="28" y="16" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" letter-spacing="2.5" font-weight="700" fill="#f0f6fc">LANG_MATRIX</text>
+  <text x="412" y="16" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="#8b949e">by repo count</text>
   
   <circle cx="416" cy="14" r="3" fill="#00FF41">
     <animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/>
@@ -46,46 +46,46 @@
   </circle>
   
     <g>
-      <text x="28" y="42" font-family="'Segoe UI', monospace" font-size="11" fill="#c9d1d9">
-        <tspan fill="#f1e05a">■</tspan>  JavaScript
+      <text x="28" y="42" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" fill="#c9d1d9">
+        <tspan fill="#f1d60c">■</tspan>  JavaScript
       </text>
-      <text x="412" y="42" text-anchor="end" font-family="'Segoe UI', monospace" font-size="11" font-weight="700" fill="#f0f6fc">36%</text>
+      <text x="412" y="42" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" font-weight="700" fill="#f0f6fc">36%</text>
       <rect x="28" y="50" width="384" height="5" fill="#0d1117" stroke="#232a33" stroke-width="0.6"/>
-      <rect x="28" y="50" width="360" height="5" fill="#f1e05a"/>
+      <rect x="28" y="50" width="360" height="5" fill="#f1d60c"/>
       <rect x="388" y="50" width="2" height="5" fill="#00FF41" fill-opacity="0.6"/>
     </g>
     <g>
-      <text x="28" y="69" font-family="'Segoe UI', monospace" font-size="11" fill="#c9d1d9">
-        <tspan fill="#3572A5">■</tspan>  Python
+      <text x="28" y="69" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" fill="#c9d1d9">
+        <tspan fill="#0a3960">■</tspan>  Python
       </text>
-      <text x="412" y="69" text-anchor="end" font-family="'Segoe UI', monospace" font-size="11" font-weight="700" fill="#f0f6fc">20%</text>
+      <text x="412" y="69" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" font-weight="700" fill="#f0f6fc">20%</text>
       <rect x="28" y="77" width="384" height="5" fill="#0d1117" stroke="#232a33" stroke-width="0.6"/>
-      <rect x="28" y="77" width="200" height="5" fill="#3572A5"/>
+      <rect x="28" y="77" width="200" height="5" fill="#0a3960"/>
       <rect x="228" y="77" width="2" height="5" fill="#00FF41" fill-opacity="0.6"/>
     </g>
     <g>
-      <text x="28" y="96" font-family="'Segoe UI', monospace" font-size="11" fill="#c9d1d9">
-        <tspan fill="#3178c6">■</tspan>  TypeScript
+      <text x="28" y="96" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" fill="#c9d1d9">
+        <tspan fill="#0b74e5">■</tspan>  TypeScript
       </text>
-      <text x="412" y="96" text-anchor="end" font-family="'Segoe UI', monospace" font-size="11" font-weight="700" fill="#f0f6fc">18%</text>
+      <text x="412" y="96" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" font-weight="700" fill="#f0f6fc">18%</text>
       <rect x="28" y="104" width="384" height="5" fill="#0d1117" stroke="#232a33" stroke-width="0.6"/>
-      <rect x="28" y="104" width="180" height="5" fill="#3178c6"/>
+      <rect x="28" y="104" width="180" height="5" fill="#0b74e5"/>
       <rect x="208" y="104" width="2" height="5" fill="#00FF41" fill-opacity="0.6"/>
     </g>
     <g>
-      <text x="28" y="123" font-family="'Segoe UI', monospace" font-size="11" fill="#c9d1d9">
-        <tspan fill="#e34c26">■</tspan>  HTML
+      <text x="28" y="123" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" fill="#c9d1d9">
+        <tspan fill="#ff3604">■</tspan>  HTML
       </text>
-      <text x="412" y="123" text-anchor="end" font-family="'Segoe UI', monospace" font-size="11" font-weight="700" fill="#f0f6fc">8%</text>
+      <text x="412" y="123" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" font-weight="700" fill="#f0f6fc">8%</text>
       <rect x="28" y="131" width="384" height="5" fill="#0d1117" stroke="#232a33" stroke-width="0.6"/>
-      <rect x="28" y="131" width="80" height="5" fill="#e34c26"/>
+      <rect x="28" y="131" width="80" height="5" fill="#ff3604"/>
       <rect x="108" y="131" width="2" height="5" fill="#00FF41" fill-opacity="0.6"/>
     </g>
     <g>
-      <text x="28" y="150" font-family="'Segoe UI', monospace" font-size="11" fill="#c9d1d9">
+      <text x="28" y="150" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" fill="#c9d1d9">
         <tspan fill="#0076a8">■</tspan>  MATLAB
       </text>
-      <text x="412" y="150" text-anchor="end" font-family="'Segoe UI', monospace" font-size="11" font-weight="700" fill="#f0f6fc">6%</text>
+      <text x="412" y="150" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" font-weight="700" fill="#f0f6fc">6%</text>
       <rect x="28" y="158" width="384" height="5" fill="#0d1117" stroke="#232a33" stroke-width="0.6"/>
       <rect x="28" y="158" width="60" height="5" fill="#0076a8"/>
       <rect x="88" y="158" width="2" height="5" fill="#00FF41" fill-opacity="0.6"/>

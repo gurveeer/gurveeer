@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "47 2 * * *"
   workflow_dispatch:
+    inputs:
+      theme:
+        description: "Theme preset (hacker / dracula / light)"
+        required: false
+        default: "hacker"
 
 permissions:
   contents: write
@@ -25,7 +30,7 @@ jobs:
         run: npm install
 
       - name: Generate custom stats cards
-        run: node src/generate-cards.js ${{ github.repository_owner }}
+        run: node src/generate-cards.js ${{ github.repository_owner }} ${{ inputs.theme || 'hacker' }}
         env:
           GHT: ${{ secrets.GHT }}
 

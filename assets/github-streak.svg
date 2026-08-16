@@ -34,8 +34,8 @@
   
   <path d="M 16 20 H 424" stroke="#232a33" stroke-width="1"/>
   <path d="M 24 20 H 150" stroke="#00FF41" stroke-opacity="0.8" stroke-width="2"/>
-  <text x="28" y="16" font-family="'Segoe UI', monospace" font-size="12" letter-spacing="2.5" font-weight="700" fill="#f0f6fc">STREAK_TRACK</text>
-  <text x="412" y="16" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="#8b949e">gurveeer</text>
+  <text x="28" y="16" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" letter-spacing="2.5" font-weight="700" fill="#f0f6fc">STREAK_TRACK</text>
+  <text x="412" y="16" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="#8b949e">gurveeer</text>
   
   <circle cx="416" cy="14" r="3" fill="#00FF41">
     <animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/>
@@ -49,32 +49,32 @@
       <path d="M 28 40 H 208 L 216 48 V 90 H 28 Z" fill="#161d26" stroke="#232a33" stroke-width="1"/>
       <rect x="20" y="48" width="4" height="34" fill="url(#accent)"/>
       <text x="40" y="70" text-anchor="middle" font-family="monospace" font-size="12" fill="#00FF41">▮</text>
-      <text x="56" y="60" font-family="'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="#8b949e">CURRENT STREAK</text>
-      <text x="56" y="82" font-family="'Segoe UI', monospace" font-size="18" font-weight="700" fill="#f0f6fc">13 DAYS</text>
+      <text x="56" y="60" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="#8b949e">CURRENT STREAK</text>
+      <text x="56" y="82" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="18" font-weight="700" fill="#f0f6fc">13 DAYS</text>
       <path d="M 208 40 L 216 48" stroke="#00FF41" stroke-opacity="0.4" stroke-width="1.2"/>
     </g>
     <g>
       <path d="M 238 40 H 418 L 426 48 V 90 H 238 Z" fill="#161d26" stroke="#232a33" stroke-width="1"/>
       <rect x="230" y="48" width="4" height="34" fill="url(#accent)"/>
       <text x="250" y="70" text-anchor="middle" font-family="monospace" font-size="12" fill="#00FF41">◭</text>
-      <text x="266" y="60" font-family="'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="#8b949e">LONGEST STREAK</text>
-      <text x="266" y="82" font-family="'Segoe UI', monospace" font-size="18" font-weight="700" fill="#f0f6fc">13 DAYS</text>
+      <text x="266" y="60" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="#8b949e">LONGEST STREAK</text>
+      <text x="266" y="82" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="18" font-weight="700" fill="#f0f6fc">13 DAYS</text>
       <path d="M 418 40 L 426 48" stroke="#00FF41" stroke-opacity="0.4" stroke-width="1.2"/>
     </g>
     <g>
       <path d="M 28 112 H 208 L 216 120 V 162 H 28 Z" fill="#161d26" stroke="#232a33" stroke-width="1"/>
       <rect x="20" y="120" width="4" height="34" fill="url(#accent)"/>
       <text x="40" y="142" text-anchor="middle" font-family="monospace" font-size="12" fill="#00FF41">◆</text>
-      <text x="56" y="132" font-family="'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="#8b949e">TOTAL CONTRIB</text>
-      <text x="56" y="154" font-family="'Segoe UI', monospace" font-size="18" font-weight="700" fill="#f0f6fc">516</text>
+      <text x="56" y="132" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="#8b949e">TOTAL CONTRIB</text>
+      <text x="56" y="154" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="18" font-weight="700" fill="#f0f6fc">521</text>
       <path d="M 208 112 L 216 120" stroke="#00FF41" stroke-opacity="0.4" stroke-width="1.2"/>
     </g>
     <g>
       <path d="M 238 112 H 418 L 426 120 V 162 H 238 Z" fill="#161d26" stroke="#232a33" stroke-width="1"/>
       <rect x="230" y="120" width="4" height="34" fill="url(#accent)"/>
       <text x="250" y="142" text-anchor="middle" font-family="monospace" font-size="12" fill="#00FF41">▣</text>
-      <text x="266" y="132" font-family="'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="#8b949e">ACTIVE DAYS</text>
-      <text x="266" y="154" font-family="'Segoe UI', monospace" font-size="18" font-weight="700" fill="#f0f6fc">121</text>
+      <text x="266" y="132" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="#8b949e">ACTIVE DAYS</text>
+      <text x="266" y="154" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="18" font-weight="700" fill="#f0f6fc">121</text>
       <path d="M 418 112 L 426 120" stroke="#00FF41" stroke-opacity="0.4" stroke-width="1.2"/>
     </g>
 </svg>
