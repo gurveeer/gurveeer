@@ -134,6 +134,27 @@ function langColor(name) {
     return `hsl(${h},70%,60%)`;
 }
 
+// Lucide icon path data (ISC). Each entry is inner SVG markup rendered with stroke=currentColor.
+const LUCIDE_ICONS = {
+    user: '<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+    cpu: '<path d="M12 20v2"/><path d="M12 2v2"/><path d="M17 20v2"/><path d="M17 2v2"/><path d="M2 12h2"/><path d="M2 17h2"/><path d="M2 7h2"/><path d="M20 12h2"/><path d="M20 17h2"/><path d="M20 7h2"/><path d="M7 20v2"/><path d="M7 2v2"/><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/>',
+    "bar-chart-3": '<path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/>',
+    "folder-git-2": '<path d="M18 19a5 5 0 0 1-5-5v8"/><path d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5"/><circle cx="13" cy="12" r="2"/><circle cx="20" cy="19" r="2"/>',
+    "git-commit-horizontal": '<circle cx="12" cy="12" r="3"/><line x1="3" x2="9" y1="12" y2="12"/><line x1="15" x2="21" y1="12" y2="12"/>',
+    flame: '<path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"/>',
+    boxes: '<path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/>',
+    activity: '<path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/>',
+    rocket: '<path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/>',
+};
+
+function lucideIcon(name, size, color, sw = 1.8) {
+    const path = LUCIDE_ICONS[name];
+    if (!path) return "";
+    return `<g fill="none" stroke="${color}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" transform="translate(${(48 - size) / 2} ${(48 - size) / 2})">
+  <svg width="${size}" height="${size}" viewBox="0 0 24 24">${path}</svg>
+</g>`;
+}
+
 function defs() {
     return `
   <defs>
@@ -908,6 +929,7 @@ function aboutCard() {
 function sectionHeader(title, icon) {
     const w = 1060;
     const h = 84;
+    const iconMark = lucideIcon(icon, 26, GREEN, 2);
 
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
   ${fontFace()}
@@ -939,7 +961,7 @@ function sectionHeader(title, icon) {
   ${matrixColumn(w - 18, 30, 70, "10")}
 
   <rect x="24" y="18" width="48" height="48" fill="${GREEN_DIM}" fill-opacity="0.25" stroke="${GREEN}" stroke-opacity="0.6" stroke-width="1.2"/>
-  <text x="48" y="50" text-anchor="middle" font-size="24">${icon}</text>
+  ${iconMark}
 
   <text x="90" y="42" font-family="${FONT_DISPLAY}" font-size="22" letter-spacing="2.5" font-weight="700" fill="${WHITE}">${title}</text>
   <text x="90" y="62" font-family="${FONT_MONO}" font-size="9" letter-spacing="1.5" fill="${MUTED}">// SECTION</text>
@@ -1069,12 +1091,12 @@ async function main() {
     fs.writeFileSync(path.join(__dirname, "..", "assets", "about.svg"), aboutCard());
 
     const headers = [
-        { file: "header-about", title: "ABOUT ME", icon: "🚀" },
-        { file: "header-techstack", title: "TECH STACK", icon: "🛠️" },
-        { file: "header-stats", title: "GITHUB STATS", icon: "📊" },
-        { file: "header-projects", title: "FEATURED PROJECTS", icon: "🚀" },
-        { file: "header-contrib", title: "CONTRIBUTION GRAPH", icon: "🐍" },
-        { file: "header-connect", title: "CONNECT WITH ME", icon: "🔗" },
+        { file: "header-about", title: "ABOUT ME", icon: "user" },
+        { file: "header-techstack", title: "TECH STACK", icon: "cpu" },
+        { file: "header-stats", title: "GITHUB STATS", icon: "bar-chart-3" },
+        { file: "header-projects", title: "FEATURED PROJECTS", icon: "folder-git-2" },
+        { file: "header-contrib", title: "CONTRIBUTION GRAPH", icon: "git-commit-horizontal" },
+        { file: "header-connect", title: "CONNECT WITH ME", icon: "boxes" },
     ];
     headers.forEach((h) => {
         fs.writeFileSync(
@@ -1093,4 +1115,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { statsCard, langsCard, projectCard, wrapText, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, heroCard, aboutCard, sectionHeader, particles, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };
+module.exports = { statsCard, langsCard, projectCard, wrapText, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, heroCard, aboutCard, sectionHeader, particles, lucideIcon, LUCIDE_ICONS, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };
