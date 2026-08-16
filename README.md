@@ -78,7 +78,7 @@ const gurveer = {
   <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="50" height="50" />
   <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++" width="50" height="50" />
   <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/go-icon.svg" alt="Go" width="50" height="50" />
+  <img src="https://skillicons.dev/icons?i=go" alt="Go" width="50" height="50" />
 </p>
 
 <h3 align="center">⚙️ Frameworks, Databases &amp; Tools</h3>
