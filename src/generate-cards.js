@@ -650,6 +650,143 @@ function heroCard() {
 `;
 }
 
+function aboutCard() {
+    const w = 1060;
+    const h = 520;
+    const A = "#f0f6fc";
+    const AMUTED = "#aab3c0";
+
+    const spec = [
+        "Context Engines & RAG Systems",
+        "Vector Databases (Qdrant, Pinecone)",
+        "Graph Databases (Neo4j, ArangoDB)",
+        "Event Streaming (Kafka, RabbitMQ)",
+        "Search Engines (OpenSearch, Elasticsearch)",
+        "AI Agent Orchestration",
+    ];
+    const stack = [
+        { k: "vectorDB", v: "Qdrant, Pinecone, Weaviate" },
+        { k: "graphDB", v: "Neo4j, ArangoDB" },
+        { k: "search", v: "OpenSearch, Elasticsearch" },
+        { k: "streaming", v: "Kafka, RabbitMQ" },
+        { k: "databases", v: "PostgreSQL, MongoDB, Redis" },
+        { k: "ai", v: "LangChain, LlamaIndex, CrewAI" },
+        { k: "backend", v: "Node.js, Python, FastAPI" },
+        { k: "cloud", v: "AWS, Docker, Kubernetes" },
+    ];
+    const working = [
+        "Building context-aware AI systems with vector & graph DBs",
+        "Learning advanced RAG patterns & multi-agent systems",
+        "Interested in semantic search & LLM orchestration",
+        "Debugging vector embeddings & Kafka streams at 3 AM!",
+    ];
+    const expertise = [
+        "Context Engines & RAG",
+        "Vector & Graph Search",
+        "Real-time AI Pipelines",
+        "Multi-Agent Systems",
+    ];
+
+    let specRows = spec
+        .map(
+            (s, i) => `    <text x="72" y="${190 + i * 22}" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
+      <tspan fill="${GREEN}" fill-opacity="0.8">▸</tspan>  ${escapeHtml(s)}
+    </text>`
+        )
+        .join("");
+
+    let stackRows = stack
+        .map(
+            (s, i) => `    <text x="560" y="${190 + i * 22}" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
+      <tspan fill="${AMUTED}">${escapeHtml(s.k)}</tspan><tspan fill="${GREEN}" fill-opacity="0.6">:</tspan> <tspan fill="${A}">${escapeHtml(s.v)}</tspan>
+    </text>`
+        )
+        .join("");
+
+    let workRows = working
+        .map(
+            (s, i) => `    <text x="72" y="${412 + i * 22}" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
+      <tspan fill="${GREEN}" fill-opacity="0.8">▸</tspan>  ${escapeHtml(s)}
+    </text>`
+        )
+        .join("");
+
+    let expRows = expertise
+        .map(
+            (s, i) => `    <text x="560" y="${412 + i * 22}" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
+      <tspan fill="${GREEN}" fill-opacity="0.8">▸</tspan>  ${escapeHtml(s)}
+    </text>`
+        )
+        .join("");
+
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
+  <defs>
+    <linearGradient id="ab" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f14"/>
+      <stop offset="100%" stop-color="#131920"/>
+    </linearGradient>
+    <linearGradient id="aw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="${A}"/>
+      <stop offset="100%" stop-color="${AMUTED}"/>
+    </linearGradient>
+    <radialGradient id="ag" cx="90%" cy="6%" r="50%">
+      <stop offset="0%" stop-color="${A}" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="${A}" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="aw-grid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="${A}" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <path d="M 12 0 H 1048 L 1060 12 V 508 L 1048 520 H 12 L 0 508 V 12 Z" fill="url(#ab)"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 508 L 1048 520 H 12 L 0 508 V 12 Z" fill="url(#ag)"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 508 L 1048 520 H 12 L 0 508 V 12 Z" fill="none" stroke="${BORDER}"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 508 L 1048 520 H 12 L 0 508 V 12 Z" fill="none" stroke="${A}" stroke-opacity="0.22" stroke-width="1.2"/>
+  <rect x="0" y="0" width="${w}" height="${h}" fill="url(#aw-grid)"/>
+
+  <path d="M 0 24 V 0 H 24" fill="none" stroke="${A}" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M 1036 0 H 1060 V 24" fill="none" stroke="${A}" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M 1060 496 V 520 H 1036" fill="none" stroke="${A}" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M 24 520 H 0 V 496" fill="none" stroke="${A}" stroke-opacity="0.5" stroke-width="2"/>
+  ${matrixColumn(24, 90, 180, "01")}
+  ${matrixColumn(w - 24, 200, 300, "10")}
+
+  <path d="M 16 20 H 1044" stroke="${BORDER}" stroke-width="1"/>
+  <path d="M 24 20 H 150" stroke="${A}" stroke-opacity="0.7" stroke-width="2"/>
+  <text x="28" y="16" font-family="'Segoe UI', monospace" font-size="12" letter-spacing="2.5" font-weight="700" fill="${A}">USER_PROFILE</text>
+  <text x="412" y="16" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="${AMUTED}">gurveeer@github</text>
+  ${liveDot(416, 14)}
+
+  <text x="40" y="64" font-family="'Segoe UI', monospace" font-size="22" font-weight="700" fill="${A}">Gurveer <tspan fill="${GREEN}">Singh</tspan></text>
+  <text x="40" y="86" font-family="'Segoe UI', monospace" font-size="13" fill="${AMUTED}">AI Infrastructure Engineer · IIT Roorkee '23</text>
+
+  <text x="40" y="116" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}" fill-opacity="0.9">Building next-generation context engines &amp; intelligent systems</text>
+  <text x="40" y="136" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}" fill-opacity="0.9">that power AI applications at scale.</text>
+
+  <text x="40" y="168" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ SPECIALIZATION</text>
+  <path d="M 40 176 H 500" stroke="${BORDER}" stroke-width="1"/>
+  ${specRows}
+
+  <text x="528" y="168" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ TECH STACK</text>
+  <path d="M 528 176 H 1020" stroke="${BORDER}" stroke-width="1"/>
+  ${stackRows}
+
+  <line x1="40" y1="384" x2="1020" y2="384" stroke="${BORDER}" stroke-width="1"/>
+
+  <text x="40" y="404" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ CURRENTLY WORKING ON</text>
+  <path d="M 40 412 H 500" stroke="${BORDER}" stroke-width="1"/>
+  ${workRows}
+
+  <text x="528" y="404" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ CORE EXPERTISE</text>
+  <path d="M 528 412 H 1020" stroke="${BORDER}" stroke-width="1"/>
+  ${expRows}
+
+  <text x="40" y="${h - 24}" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${A}" fill-opacity="0.6">[ SINGH / GURVEER ]</text>
+  <text x="${w - 40}" y="${h - 24}" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${A}" fill-opacity="0.6">[ RAG · VECTOR · GRAPH · STREAM ]</text>
+</svg>
+`;
+}
+
 async function main() {
     if (!token) {
         console.error("GHT token not provided");
@@ -746,7 +883,7 @@ async function main() {
     const connects = [
         { file: "connect-linkedin", platform: "LinkedIn", handle: "@gurveeer", url: "https://www.linkedin.com/in/gurveeer/", color: "#0A66C2", icon: "in", note: "Connect on LinkedIn" },
         { file: "connect-gmail", platform: "Gmail", handle: "singh5134957@gmail.com", url: "mailto:singh5134957@gmail.com", color: "#D14836", icon: "@", note: "Drop an email anytime" },
-        { file: "connect-x", platform: "X", handle: "@gurveeer", url: "https://twitter.com/gurveeer", color: "#e6edf3", icon: "𝕏", note: "Follow on X / Twitter" },
+        { file: "connect-x", platform: "X", handle: "@gurveeer", url: "https://twitter.com/Gurveeeeeer", color: "#e6edf3", icon: "𝕏", note: "Follow on X / Twitter" },
         { file: "connect-portfolio", platform: "Portfolio", handle: "gurveeer.github.io", url: "https://gurveeer.github.io/new-portfolio/", color: "#00FF41", icon: "◉", note: "Explore my work" },
     ];
     connects.forEach((c) => {
@@ -758,6 +895,7 @@ async function main() {
 
     fs.writeFileSync(path.join(__dirname, "..", "assets", "footer.svg"), footerCard());
     fs.writeFileSync(path.join(__dirname, "..", "assets", "hero.svg"), heroCard());
+    fs.writeFileSync(path.join(__dirname, "..", "assets", "about.svg"), aboutCard());
 
     console.log("Custom stats, streak, commits, heatmap, connect, footer & project cards generated for", username);
 }
@@ -769,4 +907,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { statsCard, langsCard, projectCard, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, heroCard, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };
+module.exports = { statsCard, langsCard, projectCard, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, heroCard, aboutCard, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };

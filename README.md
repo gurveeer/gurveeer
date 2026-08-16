@@ -10,54 +10,9 @@
 
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" width="24" height="24"/> About Me
 
-**AI Infrastructure Engineer**
-
-Building next-generation **context engines** and **intelligent systems** that power AI applications at scale. Specializing in **RAG architectures**, **vector databases**, **graph databases**, and **event-driven AI pipelines** with **Kafka**. **IIT Roorkee Graduate '23**.
-
-```javascript
-const gurveer = {
-  role: "AI Infrastructure Engineer",
-  location: "India",
-  education: "IIT Roorkee '23",
-  specialization: [
-    "Context Engines & RAG Systems",
-    "Vector Databases (Qdrant, Pinecone)",
-    "Graph Databases (Neo4j, ArangoDB)",
-    "Event Streaming (Kafka, RabbitMQ)",
-    "Search Engines (OpenSearch, Elasticsearch)",
-    "AI Agent Orchestration"
-  ],
-  techStack: {
-    vectorDBs: ["Qdrant", "Pinecone", "Weaviate"],
-    graphDBs: ["Neo4j", "ArangoDB"],
-    search: ["OpenSearch", "Elasticsearch"],
-    streaming: ["Kafka", "RabbitMQ"],
-    databases: ["PostgreSQL", "MongoDB", "Redis"],
-    aiFrameworks: ["LangChain", "LlamaIndex", "CrewAI"],
-    backend: ["Node.js", "Python", "FastAPI"],
-    cloud: ["AWS", "Docker", "Kubernetes"]
-  },
-  currentFocus: "Production-grade RAG & context engines",
-  passion: "Making AI agents smarter with context"
-};
-```
-
-<details>
-  <summary><strong>Currently Working On</strong></summary>
-  <ul>
-    <li>🔭 Building context-aware AI systems with vector &amp; graph DBs</li>
-    <li>🌱 Learning advanced RAG patterns &amp; multi-agent systems</li>
-    <li>💡 Interested in semantic search &amp; LLM orchestration</li>
-    <li>⚡ Debugging vector embeddings &amp; Kafka streams at 3 AM!</li>
-  </ul>
-</details>
-
-**Core Expertise**
-
-- 🤖 Context Engines &amp; RAG
-- 🔍 Vector &amp; Graph Search
-- ⚡ Real-time AI Pipelines
-- 🧠 Multi-Agent Systems
+<div align="center">
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/about.svg" width="100%" alt="About Me" />
+</div>
 
 ---
 

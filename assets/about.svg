@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="520" viewBox="0 0 1060 520" role="img">
+  <defs>
+    <linearGradient id="ab" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f14"/>
+      <stop offset="100%" stop-color="#131920"/>
+    </linearGradient>
+    <linearGradient id="aw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0f6fc"/>
+      <stop offset="100%" stop-color="#aab3c0"/>
+    </linearGradient>
+    <radialGradient id="ag" cx="90%" cy="6%" r="50%">
+      <stop offset="0%" stop-color="#f0f6fc" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#f0f6fc" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="aw-grid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="#f0f6fc" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <path d="M 12 0 H 1048 L 1060 12 V 508 L 1048 520 H 12 L 0 508 V 12 Z" fill="url(#ab)"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 508 L 1048 520 H 12 L 0 508 V 12 Z" fill="url(#ag)"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 508 L 1048 520 H 12 L 0 508 V 12 Z" fill="none" stroke="#232a33"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 508 L 1048 520 H 12 L 0 508 V 12 Z" fill="none" stroke="#f0f6fc" stroke-opacity="0.22" stroke-width="1.2"/>
+  <rect x="0" y="0" width="1060" height="520" fill="url(#aw-grid)"/>
+
+  <path d="M 0 24 V 0 H 24" fill="none" stroke="#f0f6fc" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M 1036 0 H 1060 V 24" fill="none" stroke="#f0f6fc" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M 1060 496 V 520 H 1036" fill="none" stroke="#f0f6fc" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M 24 520 H 0 V 496" fill="none" stroke="#f0f6fc" stroke-opacity="0.5" stroke-width="2"/>
+      <text x="24" y="90" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.05">0</text>    <text x="24" y="104" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.085">1</text>    <text x="24" y="118" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.12000000000000001">0</text>    <text x="24" y="132" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.15500000000000003">1</text>    <text x="24" y="146" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.19">0</text>
+      <text x="1036" y="200" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.05">1</text>    <text x="1036" y="214" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.085">0</text>    <text x="1036" y="228" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.12000000000000001">1</text>    <text x="1036" y="242" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.15500000000000003">0</text>    <text x="1036" y="256" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.19">1</text>
+
+  <path d="M 16 20 H 1044" stroke="#232a33" stroke-width="1"/>
+  <path d="M 24 20 H 150" stroke="#f0f6fc" stroke-opacity="0.7" stroke-width="2"/>
+  <text x="28" y="16" font-family="'Segoe UI', monospace" font-size="12" letter-spacing="2.5" font-weight="700" fill="#f0f6fc">USER_PROFILE</text>
+  <text x="412" y="16" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="#aab3c0">gurveeer@github</text>
+  
+  <circle cx="416" cy="14" r="3" fill="#00FF41">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="416" cy="14" r="7" fill="none" stroke="#00FF41" stroke-opacity="0.35">
+    <animate attributeName="r" values="4;10" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="40" y="64" font-family="'Segoe UI', monospace" font-size="22" font-weight="700" fill="#f0f6fc">Gurveer <tspan fill="#00FF41">Singh</tspan></text>
+  <text x="40" y="86" font-family="'Segoe UI', monospace" font-size="13" fill="#aab3c0">AI Infrastructure Engineer · IIT Roorkee '23</text>
+
+  <text x="40" y="116" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9" fill-opacity="0.9">Building next-generation context engines &amp; intelligent systems</text>
+  <text x="40" y="136" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9" fill-opacity="0.9">that power AI applications at scale.</text>
+
+  <text x="40" y="168" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ SPECIALIZATION</text>
+  <path d="M 40 176 H 500" stroke="#232a33" stroke-width="1"/>
+      <text x="72" y="190" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Context Engines &amp; RAG Systems
+    </text>    <text x="72" y="212" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Vector Databases (Qdrant, Pinecone)
+    </text>    <text x="72" y="234" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Graph Databases (Neo4j, ArangoDB)
+    </text>    <text x="72" y="256" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Event Streaming (Kafka, RabbitMQ)
+    </text>    <text x="72" y="278" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Search Engines (OpenSearch, Elasticsearch)
+    </text>    <text x="72" y="300" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  AI Agent Orchestration
+    </text>
+
+  <text x="528" y="168" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ TECH STACK</text>
+  <path d="M 528 176 H 1020" stroke="#232a33" stroke-width="1"/>
+      <text x="560" y="190" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#aab3c0">vectorDB</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Qdrant, Pinecone, Weaviate</tspan>
+    </text>    <text x="560" y="212" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#aab3c0">graphDB</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Neo4j, ArangoDB</tspan>
+    </text>    <text x="560" y="234" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#aab3c0">search</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">OpenSearch, Elasticsearch</tspan>
+    </text>    <text x="560" y="256" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#aab3c0">streaming</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Kafka, RabbitMQ</tspan>
+    </text>    <text x="560" y="278" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#aab3c0">databases</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">PostgreSQL, MongoDB, Redis</tspan>
+    </text>    <text x="560" y="300" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#aab3c0">ai</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">LangChain, LlamaIndex, CrewAI</tspan>
+    </text>    <text x="560" y="322" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#aab3c0">backend</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Node.js, Python, FastAPI</tspan>
+    </text>    <text x="560" y="344" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#aab3c0">cloud</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">AWS, Docker, Kubernetes</tspan>
+    </text>
+
+  <line x1="40" y1="384" x2="1020" y2="384" stroke="#232a33" stroke-width="1"/>
+
+  <text x="40" y="404" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ CURRENTLY WORKING ON</text>
+  <path d="M 40 412 H 500" stroke="#232a33" stroke-width="1"/>
+      <text x="72" y="412" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Building context-aware AI systems with vector &amp; graph DBs
+    </text>    <text x="72" y="434" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Learning advanced RAG patterns &amp; multi-agent systems
+    </text>    <text x="72" y="456" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Interested in semantic search &amp; LLM orchestration
+    </text>    <text x="72" y="478" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Debugging vector embeddings &amp; Kafka streams at 3 AM!
+    </text>
+
+  <text x="528" y="404" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ CORE EXPERTISE</text>
+  <path d="M 528 412 H 1020" stroke="#232a33" stroke-width="1"/>
+      <text x="560" y="412" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Context Engines &amp; RAG
+    </text>    <text x="560" y="434" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Vector &amp; Graph Search
+    </text>    <text x="560" y="456" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Real-time AI Pipelines
+    </text>    <text x="560" y="478" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Multi-Agent Systems
+    </text>
+
+  <text x="40" y="496" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.6">[ SINGH / GURVEER ]</text>
+  <text x="1020" y="496" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.6">[ RAG · VECTOR · GRAPH · STREAM ]</text>
+</svg>
