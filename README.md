@@ -87,7 +87,8 @@ const gurveer = {
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4ca/512.gif" width="24" height="24"/> GitHub Stats
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/github_stats.svg" alt="Custom GitHub Stats Card" width="100%" />
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=gurveeer&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" width="49%" />
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=gurveeer&theme=chartreuse-dark&hide_border=true&layout=compact&langs_count=8" alt="Top Languages" width="49%" />
 </p>
 
 <p align="center">
