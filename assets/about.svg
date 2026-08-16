@@ -48,67 +48,161 @@
 
   <text x="40" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9" fill-opacity="0.9">Building next-generation context engines &amp; intelligent systems that power AI applications at scale.</text>
 
-  <text x="40" y="156" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ SPECIALIZATION</text>
+  <g fill="none" stroke="#f0f6fc" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(42 144)">
+  <svg width="12" height="12" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+</g>
+  <text x="60" y="156" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">SPECIALIZATION</text>
   <path d="M 40 164 H 500" stroke="#232a33" stroke-width="1"/>
-      <text x="72" y="190" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Context Engines &amp; RAG Systems
-    </text>    <text x="72" y="212" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Vector Databases (Qdrant, Pinecone)
-    </text>    <text x="72" y="234" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Graph Databases (Neo4j, ArangoDB)
-    </text>    <text x="72" y="256" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Event Streaming (Kafka, RabbitMQ)
-    </text>    <text x="72" y="278" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Search Engines (OpenSearch, Elasticsearch)
-    </text>    <text x="72" y="300" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  AI Agent Orchestration
-    </text>
+      <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(47.5 193.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 20v2"/><path d="M12 2v2"/><path d="M17 20v2"/><path d="M17 2v2"/><path d="M2 12h2"/><path d="M2 17h2"/><path d="M2 7h2"/><path d="M20 12h2"/><path d="M20 17h2"/><path d="M20 7h2"/><path d="M7 20v2"/><path d="M7 2v2"/><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg>
+</g>
+      <text x="68" y="203" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Context Engines &amp; RAG Systems</text>
+    </g>    <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(47.5 215.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+</g>
+      <text x="68" y="225" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Vector Databases (Qdrant, Pinecone)</text>
+    </g>    <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(47.5 237.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+</g>
+      <text x="68" y="247" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Graph Databases (Neo4j, ArangoDB)</text>
+    </g>    <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(47.5 259.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"/></svg>
+</g>
+      <text x="68" y="269" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Event Streaming (Kafka, RabbitMQ)</text>
+    </g>    <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(47.5 281.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+</g>
+      <text x="68" y="291" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Search Engines (OpenSearch, Elasticsearch)</text>
+    </g>    <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(47.5 303.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+</g>
+      <text x="68" y="313" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">AI Agent Orchestration</text>
+    </g>
 
-  <text x="528" y="156" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ TECH STACK</text>
+  <g fill="none" stroke="#f0f6fc" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(530 144)">
+  <svg width="12" height="12" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg>
+</g>
+  <text x="548" y="156" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">TECH STACK</text>
   <path d="M 528 164 H 1020" stroke="#232a33" stroke-width="1"/>
-      <text x="560" y="190" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#8b949e">vectorDB</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Qdrant, Pinecone, Weaviate</tspan>
-    </text>    <text x="560" y="212" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#8b949e">graphDB</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Neo4j, ArangoDB</tspan>
-    </text>    <text x="560" y="234" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#8b949e">search</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">OpenSearch, Elasticsearch</tspan>
-    </text>    <text x="560" y="256" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#8b949e">streaming</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Kafka, RabbitMQ</tspan>
-    </text>    <text x="560" y="278" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#8b949e">databases</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">PostgreSQL, MongoDB, Redis</tspan>
-    </text>    <text x="560" y="300" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#8b949e">ai</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">LangChain, LlamaIndex, CrewAI</tspan>
-    </text>    <text x="560" y="322" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#8b949e">backend</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Node.js, Python, FastAPI</tspan>
-    </text>    <text x="560" y="344" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#8b949e">cloud</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">AWS, Docker, Kubernetes</tspan>
-    </text>
+      <g>
+      <g fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(535.5 193.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+</g>
+      <text x="556" y="203" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+        <tspan fill="#8b949e">vectorDB</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Qdrant, Pinecone, Weaviate</tspan>
+      </text>
+    </g>    <g>
+      <g fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(535.5 215.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+</g>
+      <text x="556" y="225" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+        <tspan fill="#8b949e">graphDB</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Neo4j, ArangoDB</tspan>
+      </text>
+    </g>    <g>
+      <g fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(535.5 237.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+</g>
+      <text x="556" y="247" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+        <tspan fill="#8b949e">search</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">OpenSearch, Elasticsearch</tspan>
+      </text>
+    </g>    <g>
+      <g fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(535.5 259.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"/></svg>
+</g>
+      <text x="556" y="269" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+        <tspan fill="#8b949e">streaming</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Kafka, RabbitMQ</tspan>
+      </text>
+    </g>    <g>
+      <g fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(535.5 281.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+</g>
+      <text x="556" y="291" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+        <tspan fill="#8b949e">databases</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">PostgreSQL, MongoDB, Redis</tspan>
+      </text>
+    </g>    <g>
+      <g fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(535.5 303.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+</g>
+      <text x="556" y="313" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+        <tspan fill="#8b949e">ai</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">LangChain, LlamaIndex, CrewAI</tspan>
+      </text>
+    </g>    <g>
+      <g fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(535.5 325.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+</g>
+      <text x="556" y="335" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+        <tspan fill="#8b949e">backend</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Node.js, Python, FastAPI</tspan>
+      </text>
+    </g>    <g>
+      <g fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(535.5 347.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+</g>
+      <text x="556" y="357" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+        <tspan fill="#8b949e">cloud</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">AWS, Docker, Kubernetes</tspan>
+      </text>
+    </g>
 
   <line x1="40" y1="384" x2="1020" y2="384" stroke="#232a33" stroke-width="1"/>
 
-  <text x="40" y="412" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ CURRENTLY WORKING ON</text>
+  <g fill="none" stroke="#f0f6fc" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(42 400)">
+  <svg width="12" height="12" viewBox="0 0 24 24"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg>
+</g>
+  <text x="60" y="412" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">CURRENTLY WORKING ON</text>
   <path d="M 40 420 H 500" stroke="#232a33" stroke-width="1"/>
-      <text x="72" y="432" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Building context-aware AI systems with vector &amp; graph DBs
-    </text>    <text x="72" y="454" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Learning advanced RAG patterns &amp; multi-agent systems
-    </text>    <text x="72" y="476" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Interested in semantic search &amp; LLM orchestration
-    </text>    <text x="72" y="498" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Debugging vector embeddings &amp; Kafka streams at 3 AM!
-    </text>
+      <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(47.5 435.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg>
+</g>
+      <text x="68" y="445" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Building context-aware AI systems with vector &amp; graph DBs</text>
+    </g>    <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(47.5 457.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 5v16"/><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"/></svg>
+</g>
+      <text x="68" y="467" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Learning advanced RAG patterns &amp; multi-agent systems</text>
+    </g>    <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(47.5 479.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+</g>
+      <text x="68" y="489" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Interested in semantic search &amp; LLM orchestration</text>
+    </g>    <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(47.5 501.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 20v-9"/><path d="M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z"/><path d="M14.12 3.88 16 2"/><path d="M21 21a4 4 0 0 0-3.81-4"/><path d="M21 5a4 4 0 0 1-3.55 3.97"/><path d="M22 13h-4"/><path d="M3 21a4 4 0 0 1 3.81-4"/><path d="M3 5a4 4 0 0 0 3.55 3.97"/><path d="M6 13H2"/><path d="m8 2 1.88 1.88"/><path d="M9 7.13V6a3 3 0 1 1 6 0v1.13"/></svg>
+</g>
+      <text x="68" y="511" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Debugging vector embeddings &amp; Kafka streams at 3 AM!</text>
+    </g>
 
-  <text x="528" y="412" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ CORE EXPERTISE</text>
+  <g fill="none" stroke="#f0f6fc" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(530 400)">
+  <svg width="12" height="12" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+</g>
+  <text x="548" y="412" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">CORE EXPERTISE</text>
   <path d="M 528 420 H 1020" stroke="#232a33" stroke-width="1"/>
-      <text x="560" y="432" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Context Engines &amp; RAG
-    </text>    <text x="560" y="454" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Vector &amp; Graph Search
-    </text>    <text x="560" y="476" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Real-time AI Pipelines
-    </text>    <text x="560" y="498" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-      <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Multi-Agent Systems
-    </text>
+      <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(535.5 435.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 20v2"/><path d="M12 2v2"/><path d="M17 20v2"/><path d="M17 2v2"/><path d="M2 12h2"/><path d="M2 17h2"/><path d="M2 7h2"/><path d="M20 12h2"/><path d="M20 17h2"/><path d="M20 7h2"/><path d="M7 20v2"/><path d="M7 2v2"/><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg>
+</g>
+      <text x="556" y="445" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Context Engines &amp; RAG</text>
+    </g>    <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(535.5 457.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+</g>
+      <text x="556" y="467" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Vector &amp; Graph Search</text>
+    </g>    <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(535.5 479.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"/></svg>
+</g>
+      <text x="556" y="489" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Real-time AI Pipelines</text>
+    </g>    <g>
+      <g fill="none" stroke="#00FF41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(535.5 501.5)">
+  <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+</g>
+      <text x="556" y="511" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="12" fill="#c9d1d9">Multi-Agent Systems</text>
+    </g>
 
   <text x="40" y="540" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.6">[ RAG · VECTOR · GRAPH · STREAM ]</text>
   <text x="1020" y="540" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.6">[ IIT ROORKEE '23 ]</text>

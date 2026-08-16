@@ -145,6 +145,29 @@ const LUCIDE_ICONS = {
     boxes: '<path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/>',
     activity: '<path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/>',
     rocket: '<path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/>',
+    folder: '<path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>',
+    star: '<path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>',
+    "git-fork": '<circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"/><path d="M12 12v3"/>',
+    users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/>',
+    trophy: '<path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2"/><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2"/><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3"/>',
+    "calendar-days": '<path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M8 13h.01"/><path d="M12 13h.01"/><path d="M16 13h.01"/><path d="M8 17h.01"/><path d="M12 17h.01"/><path d="M16 17h.01"/>',
+    "git-pull-request": '<circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" x2="6" y1="9" y2="21"/>',
+    "circle-alert": '<circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/>',
+    calendar: '<path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/>',
+    database: '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/>',
+    "share-2": '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/>',
+    zap: '<path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"/>',
+    search: '<path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/>',
+    bot: '<path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/>',
+    "code-2": '<path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>',
+    cloud: '<path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>',
+    "book-open": '<path d="M12 5v16"/><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"/>',
+    lightbulb: '<path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/>',
+    bug: '<path d="M12 20v-9"/><path d="M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z"/><path d="M14.12 3.88 16 2"/><path d="M21 21a4 4 0 0 0-3.81-4"/><path d="M21 5a4 4 0 0 1-3.55 3.97"/><path d="M22 13h-4"/><path d="M3 21a4 4 0 0 1 3.81-4"/><path d="M3 5a4 4 0 0 0 3.55 3.97"/><path d="M6 13H2"/><path d="m8 2 1.88 1.88"/><path d="M9 7.13V6a3 3 0 1 1 6 0v1.13"/>',
+    target: '<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
+    layers: '<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/>',
+    workflow: '<rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/>',
+    award: '<path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/>',
 };
 
 function lucideIcon(name, size, color, sw = 1.8, x = 24, y = 18) {
@@ -153,6 +176,16 @@ function lucideIcon(name, size, color, sw = 1.8, x = 24, y = 18) {
     const px = x + (48 - size) / 2;
     const py = y + (48 - size) / 2;
     return `<g fill="none" stroke="${color}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" transform="translate(${px} ${py})">
+  <svg width="${size}" height="${size}" viewBox="0 0 24 24">${path}</svg>
+</g>`;
+}
+
+function tileIcon(name, cx, cy, size, color, sw = 1.8) {
+    const path = LUCIDE_ICONS[name];
+    if (!path) return "";
+    const x = cx - size / 2;
+    const y = cy - size / 2;
+    return `<g fill="none" stroke="${color}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" transform="translate(${x} ${y})">
   <svg width="${size}" height="${size}" viewBox="0 0 24 24">${path}</svg>
 </g>`;
 }
@@ -257,10 +290,10 @@ function statsCard(data) {
     const w = 440;
     const h = 200;
     const metrics = [
-        { label: "REPOSITORIES", value: formatNumber(data.repos), icon: "▤" },
-        { label: "STARS EARNED", value: formatNumber(data.stars), icon: "★" },
-        { label: "TOTAL FORKS", value: formatNumber(data.forks), icon: "⑂" },
-        { label: "FOLLOWERS", value: formatNumber(data.followers), icon: "●" },
+        { label: "REPOSITORIES", value: formatNumber(data.repos), icon: "folder" },
+        { label: "STARS EARNED", value: formatNumber(data.stars), icon: "star" },
+        { label: "TOTAL FORKS", value: formatNumber(data.forks), icon: "git-fork" },
+        { label: "FOLLOWERS", value: formatNumber(data.followers), icon: "users" },
     ];
 
     const rows = metrics
@@ -273,9 +306,9 @@ function statsCard(data) {
     <g>
       <path d="M ${x + 8} ${y} H ${x + 188} L ${x + 196} ${y + 8} V ${y + 50} H ${x + 8} Z" fill="${CARD2}" stroke="${BORDER}" stroke-width="1"/>
       <rect x="${x}" y="${y + 8}" width="4" height="34" fill="url(#accent)"/>
-      <text x="${x + 20}" y="${y + 30}" text-anchor="middle" font-family="monospace" font-size="12" fill="${GREEN}">${m.icon}</text>
-      <text x="${x + 36}" y="${y + 20}" font-family="${FONT_MONO}" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
-      <text x="${x + 36}" y="${y + 42}" font-family="${FONT_MONO}" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
+      ${tileIcon(m.icon, x + 20, y + 30, 16, GREEN, 1.8)}
+      <text x="${x + 34}" y="${y + 20}" font-family="${FONT_MONO}" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
+      <text x="${x + 34}" y="${y + 42}" font-family="${FONT_MONO}" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
       <path d="M ${x + 188} ${y} L ${x + 196} ${y + 8}" stroke="${GREEN}" stroke-opacity="0.4" stroke-width="1.2"/>
     </g>`;
         })
@@ -374,12 +407,13 @@ function projectCard(repo) {
   <line x1="28" y1="136" x2="412" y2="136" stroke="${BORDER}" stroke-width="1"/>
   <path d="M 28 136 H 120" stroke="${GREEN}" stroke-opacity="0.6" stroke-width="1.6"/>
 
-  <text x="28" y="176" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">
-    <tspan fill="${color}">■</tspan>  ${escapeHtml(lang)}
-  </text>
+  <circle cx="34" cy="170" r="4" fill="${color}"/>
+  <text x="44" y="176" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">${escapeHtml(lang)}</text>
 
-  <text x="412" y="172" text-anchor="end" font-family="${FONT_MONO}" font-size="12" font-weight="700" fill="${WHITE}">★ ${stars}</text>
-  <text x="412" y="190" text-anchor="end" font-family="${FONT_MONO}" font-size="12" font-weight="700" fill="${WHITE}">⑂ ${forks}</text>
+  ${tileIcon("star", 402, 164, 14, "#e3b341", 1.6)}
+  <text x="412" y="168" text-anchor="end" font-family="${FONT_MONO}" font-size="12" font-weight="700" fill="${WHITE}">${stars}</text>
+  ${tileIcon("git-fork", 402, 182, 14, GREEN, 1.6)}
+  <text x="412" y="186" text-anchor="end" font-family="${FONT_MONO}" font-size="12" font-weight="700" fill="${WHITE}">${forks}</text>
 
   <text x="28" y="${h - 16}" font-family="${FONT_MONO}" font-size="9" letter-spacing="2" fill="${GREEN}" fill-opacity="0.7">[ ${escapeHtml(repo.name.toUpperCase())} ]</text>
 </svg>
@@ -432,10 +466,10 @@ function streakCard(data) {
     const w = 440;
     const h = 200;
     const metrics = [
-        { label: "CURRENT STREAK", value: `${data.current} ${data.current === 1 ? "DAY" : "DAYS"}`, icon: "▮" },
-        { label: "LONGEST STREAK", value: `${data.longest} ${data.longest === 1 ? "DAY" : "DAYS"}`, icon: "◭" },
-        { label: "TOTAL CONTRIB", value: formatNumber(data.total), icon: "◆" },
-        { label: "ACTIVE DAYS", value: formatNumber(data.activeDays), icon: "▣" },
+        { label: "CURRENT STREAK", value: `${data.current} ${data.current === 1 ? "DAY" : "DAYS"}`, icon: "flame" },
+        { label: "LONGEST STREAK", value: `${data.longest} ${data.longest === 1 ? "DAY" : "DAYS"}`, icon: "trophy" },
+        { label: "TOTAL CONTRIB", value: formatNumber(data.total), icon: "bar-chart-3" },
+        { label: "ACTIVE DAYS", value: formatNumber(data.activeDays), icon: "calendar-days" },
     ];
 
     const rows = metrics
@@ -448,9 +482,9 @@ function streakCard(data) {
     <g>
       <path d="M ${x + 8} ${y} H ${x + 188} L ${x + 196} ${y + 8} V ${y + 50} H ${x + 8} Z" fill="${CARD2}" stroke="${BORDER}" stroke-width="1"/>
       <rect x="${x}" y="${y + 8}" width="4" height="34" fill="url(#accent)"/>
-      <text x="${x + 20}" y="${y + 30}" text-anchor="middle" font-family="monospace" font-size="12" fill="${GREEN}">${m.icon}</text>
-      <text x="${x + 36}" y="${y + 20}" font-family="${FONT_MONO}" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
-      <text x="${x + 36}" y="${y + 42}" font-family="${FONT_MONO}" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
+      ${tileIcon(m.icon, x + 20, y + 30, 16, GREEN, 1.8)}
+      <text x="${x + 34}" y="${y + 20}" font-family="${FONT_MONO}" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
+      <text x="${x + 34}" y="${y + 42}" font-family="${FONT_MONO}" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
       <path d="M ${x + 188} ${y} L ${x + 196} ${y + 8}" stroke="${GREEN}" stroke-opacity="0.4" stroke-width="1.2"/>
     </g>`;
         })
@@ -472,10 +506,10 @@ function commitsCard(data) {
     const w = 440;
     const h = 200;
     const metrics = [
-        { label: "TOTAL COMMITS", value: formatNumber(data.commits), icon: "✓" },
-        { label: "PULL REQUESTS", value: formatNumber(data.prs), icon: "⇄" },
-        { label: "ISSUES OPENED", value: formatNumber(data.issues), icon: "!" },
-        { label: "YEARS ACTIVE", value: formatNumber(data.years), icon: "◷" },
+        { label: "TOTAL COMMITS", value: formatNumber(data.commits), icon: "git-commit-horizontal" },
+        { label: "PULL REQUESTS", value: formatNumber(data.prs), icon: "git-pull-request" },
+        { label: "ISSUES OPENED", value: formatNumber(data.issues), icon: "circle-alert" },
+        { label: "YEARS ACTIVE", value: formatNumber(data.years), icon: "calendar" },
     ];
 
     const rows = metrics
@@ -488,9 +522,9 @@ function commitsCard(data) {
     <g>
       <path d="M ${x + 8} ${y} H ${x + 188} L ${x + 196} ${y + 8} V ${y + 50} H ${x + 8} Z" fill="${CARD2}" stroke="${BORDER}" stroke-width="1"/>
       <rect x="${x}" y="${y + 8}" width="4" height="34" fill="url(#accent)"/>
-      <text x="${x + 20}" y="${y + 30}" text-anchor="middle" font-family="monospace" font-size="12" fill="${GREEN}">${m.icon}</text>
-      <text x="${x + 36}" y="${y + 20}" font-family="${FONT_MONO}" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
-      <text x="${x + 36}" y="${y + 42}" font-family="${FONT_MONO}" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
+      ${tileIcon(m.icon, x + 20, y + 30, 16, GREEN, 1.8)}
+      <text x="${x + 34}" y="${y + 20}" font-family="${FONT_MONO}" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
+      <text x="${x + 34}" y="${y + 42}" font-family="${FONT_MONO}" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
       <path d="M ${x + 188} ${y} L ${x + 196} ${y + 8}" stroke="${GREEN}" stroke-opacity="0.4" stroke-width="1.2"/>
     </g>`;
         })
@@ -799,65 +833,71 @@ function aboutCard() {
     const AMUTED = MUTED;
 
     const spec = [
-        "Context Engines & RAG Systems",
-        "Vector Databases (Qdrant, Pinecone)",
-        "Graph Databases (Neo4j, ArangoDB)",
-        "Event Streaming (Kafka, RabbitMQ)",
-        "Search Engines (OpenSearch, Elasticsearch)",
-        "AI Agent Orchestration",
+        { name: "Context Engines & RAG Systems", icon: "cpu" },
+        { name: "Vector Databases (Qdrant, Pinecone)", icon: "database" },
+        { name: "Graph Databases (Neo4j, ArangoDB)", icon: "share-2" },
+        { name: "Event Streaming (Kafka, RabbitMQ)", icon: "zap" },
+        { name: "Search Engines (OpenSearch, Elasticsearch)", icon: "search" },
+        { name: "AI Agent Orchestration", icon: "bot" },
     ];
     const stack = [
-        { k: "vectorDB", v: "Qdrant, Pinecone, Weaviate" },
-        { k: "graphDB", v: "Neo4j, ArangoDB" },
-        { k: "search", v: "OpenSearch, Elasticsearch" },
-        { k: "streaming", v: "Kafka, RabbitMQ" },
-        { k: "databases", v: "PostgreSQL, MongoDB, Redis" },
-        { k: "ai", v: "LangChain, LlamaIndex, CrewAI" },
-        { k: "backend", v: "Node.js, Python, FastAPI" },
-        { k: "cloud", v: "AWS, Docker, Kubernetes" },
+        { k: "vectorDB", v: "Qdrant, Pinecone, Weaviate", icon: "database" },
+        { k: "graphDB", v: "Neo4j, ArangoDB", icon: "share-2" },
+        { k: "search", v: "OpenSearch, Elasticsearch", icon: "search" },
+        { k: "streaming", v: "Kafka, RabbitMQ", icon: "zap" },
+        { k: "databases", v: "PostgreSQL, MongoDB, Redis", icon: "database" },
+        { k: "ai", v: "LangChain, LlamaIndex, CrewAI", icon: "bot" },
+        { k: "backend", v: "Node.js, Python, FastAPI", icon: "code-2" },
+        { k: "cloud", v: "AWS, Docker, Kubernetes", icon: "cloud" },
     ];
     const working = [
-        "Building context-aware AI systems with vector & graph DBs",
-        "Learning advanced RAG patterns & multi-agent systems",
-        "Interested in semantic search & LLM orchestration",
-        "Debugging vector embeddings & Kafka streams at 3 AM!",
+        { name: "Building context-aware AI systems with vector & graph DBs", icon: "activity" },
+        { name: "Learning advanced RAG patterns & multi-agent systems", icon: "book-open" },
+        { name: "Interested in semantic search & LLM orchestration", icon: "lightbulb" },
+        { name: "Debugging vector embeddings & Kafka streams at 3 AM!", icon: "bug" },
     ];
     const expertise = [
-        "Context Engines & RAG",
-        "Vector & Graph Search",
-        "Real-time AI Pipelines",
-        "Multi-Agent Systems",
+        { name: "Context Engines & RAG", icon: "cpu" },
+        { name: "Vector & Graph Search", icon: "search" },
+        { name: "Real-time AI Pipelines", icon: "zap" },
+        { name: "Multi-Agent Systems", icon: "bot" },
     ];
 
     let specRows = spec
         .map(
-            (s, i) => `    <text x="72" y="${190 + i * 22}" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">
-      <tspan fill="${GREEN}" fill-opacity="0.8">▸</tspan>  ${escapeHtml(s)}
-    </text>`
+            (s, i) => `    <g>
+      ${tileIcon(s.icon, 54, 200 + i * 22, 13, GREEN, 1.6)}
+      <text x="68" y="${203 + i * 22}" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">${escapeHtml(s.name)}</text>
+    </g>`
         )
         .join("");
 
     let stackRows = stack
         .map(
-            (s, i) => `    <text x="560" y="${190 + i * 22}" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">
-      <tspan fill="${AMUTED}">${escapeHtml(s.k)}</tspan><tspan fill="${GREEN}" fill-opacity="0.6">:</tspan> <tspan fill="${A}">${escapeHtml(s.v)}</tspan>
-    </text>`
+            (s, i) => `    <g>
+      ${tileIcon(s.icon, 542, 200 + i * 22, 13, AMUTED, 1.6)}
+      <text x="556" y="${203 + i * 22}" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">
+        <tspan fill="${AMUTED}">${escapeHtml(s.k)}</tspan><tspan fill="${GREEN}" fill-opacity="0.6">:</tspan> <tspan fill="${A}">${escapeHtml(s.v)}</tspan>
+      </text>
+    </g>`
         )
         .join("");
 
     let workRows = working
         .map(
-            (s, i) => `    <text x="72" y="${432 + i * 22}" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">
-      <tspan fill="${GREEN}" fill-opacity="0.8">▸</tspan>  ${escapeHtml(s)}
-    </text>`
+            (s, i) => `    <g>
+      ${tileIcon(s.icon, 54, 442 + i * 22, 13, GREEN, 1.6)}
+      <text x="68" y="${445 + i * 22}" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">${escapeHtml(s.name)}</text>
+    </g>`
         )
         .join("");
 
     let expRows = expertise
         .map(
-            (s, i) => `    <text x="560" y="${432 + i * 22}" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">
-      <tspan fill="${GREEN}" fill-opacity="0.8">▸</tspan>  ${escapeHtml(s)}
-    </text>`
+            (s, i) => `    <g>
+      ${tileIcon(s.icon, 542, 442 + i * 22, 13, GREEN, 1.6)}
+      <text x="556" y="${445 + i * 22}" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}">${escapeHtml(s.name)}</text>
+    </g>`
         )
         .join("");
 
@@ -904,21 +944,25 @@ function aboutCard() {
 
   <text x="40" y="112" font-family="${FONT_MONO}" font-size="12" fill="${TEXT}" fill-opacity="0.9">Building next-generation context engines &amp; intelligent systems that power AI applications at scale.</text>
 
-  <text x="40" y="156" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ SPECIALIZATION</text>
+  ${tileIcon("target", 48, 150, 12, A, 1.6)}
+  <text x="60" y="156" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">SPECIALIZATION</text>
   <path d="M 40 164 H 500" stroke="${BORDER}" stroke-width="1"/>
   ${specRows}
 
-  <text x="528" y="156" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ TECH STACK</text>
+  ${tileIcon("layers", 536, 150, 12, A, 1.6)}
+  <text x="548" y="156" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">TECH STACK</text>
   <path d="M 528 164 H 1020" stroke="${BORDER}" stroke-width="1"/>
   ${stackRows}
 
   <line x1="40" y1="384" x2="1020" y2="384" stroke="${BORDER}" stroke-width="1"/>
 
-  <text x="40" y="412" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ CURRENTLY WORKING ON</text>
+  ${tileIcon("workflow", 48, 406, 12, A, 1.6)}
+  <text x="60" y="412" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">CURRENTLY WORKING ON</text>
   <path d="M 40 420 H 500" stroke="${BORDER}" stroke-width="1"/>
   ${workRows}
 
-  <text x="528" y="412" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ CORE EXPERTISE</text>
+  ${tileIcon("award", 536, 406, 12, A, 1.6)}
+  <text x="548" y="412" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">CORE EXPERTISE</text>
   <path d="M 528 420 H 1020" stroke="${BORDER}" stroke-width="1"/>
   ${expRows}
 
