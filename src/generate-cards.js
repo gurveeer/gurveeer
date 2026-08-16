@@ -461,27 +461,45 @@ function contributionGraphCard(data) {
 `;
 }
 
+const BRAND_LOGOS = {
+    LinkedIn:
+        '<path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>',
+    Gmail:
+        '<path fill="#D14836" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>',
+    X: '<path fill="#e6edf3" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>',
+    Portfolio:
+        '<path fill="#00FF41" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm7.753 7.5c.161.803.247 1.633.247 2.5 0 3.313-1.344 6.31-3.514 8.48-.18.18-.36.348-.543.512a9.96 9.96 0 0 1-3.943 1.93V15h1.5a1 1 0 0 0 0-2h-4a1 1 0 0 0 0 2h.5v3.04a9.96 9.96 0 0 1-4.28-2.245c-.233-.211-.458-.434-.675-.666A9.975 9.975 0 0 1 2 10c0-.5.037-.99.107-1.47A9.98 9.98 0 0 0 12 14c5.425 0 9.868-4.326 9.99-9.743a10.04 10.04 0 0 1-2.237 3.243zM12 2c.348 0 .693.022 1.033.064A9.998 9.998 0 0 0 12 9c0 1.497.327 2.918.918 4.194A10.04 10.04 0 0 1 8.5 16.58 10.036 10.036 0 0 1 2 10c0-1.168.2-2.29.565-3.337C4.562 8.594 8.007 9.88 12 9.88c4.046 0 7.534-1.328 9.531-3.29A10.042 10.042 0 0 0 12 2z"/>',
+};
+
 function connectCard(platform, handle, url, color, icon, note) {
-    const w = 440;
-    const h = 200;
+    const w = 170;
+    const h = 54;
+    const logo = BRAND_LOGOS[platform] || "";
 
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
-  ${defs()}
-  ${frame(w, h)}
-  ${corners(w, h)}
-  ${matrixColumn(13, 44, 110, "01")}
-  ${matrixColumn(427, 92, 160, "10")}
+  <defs>
+    <linearGradient id="cb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="${BG}"/>
+      <stop offset="100%" stop-color="${CARD}"/>
+    </linearGradient>
+    <radialGradient id="cg" cx="85%" cy="6%" r="55%">
+      <stop offset="0%" stop-color="${GREEN}" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="${GREEN}" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
 
-  <rect x="24" y="40" width="44" height="44" fill="${color}" fill-opacity="0.15" stroke="${color}" stroke-width="1.2"/>
-  <text x="46" y="69" text-anchor="middle" font-family="'Segoe UI', monospace" font-size="20" fill="${color}">${icon}</text>
+  <path d="M 8 0 H 162 L 170 8 V 46 L 162 54 H 8 L 0 46 V 8 Z" fill="url(#cb)"/>
+  <path d="M 8 0 H 162 L 170 8 V 46 L 162 54 H 8 L 0 46 V 8 Z" fill="url(#cg)"/>
+  <path d="M 8 0 H 162 L 170 8 V 46 L 162 54 H 8 L 0 46 V 8 Z" fill="none" stroke="${BORDER}"/>
+  <path d="M 8 0 H 162 L 170 8 V 46 L 162 54 H 8 L 0 46 V 8 Z" fill="none" stroke="${GREEN}" stroke-opacity="0.35" stroke-width="1.2"/>
 
-  <text x="84" y="60" font-family="'Segoe UI', monospace" font-size="13" font-weight="700" fill="${WHITE}">${platform}</text>
-  <text x="84" y="78" font-family="'Segoe UI', monospace" font-size="10" fill="${MUTED}">${handle}</text>
+  <g transform="translate(13 13) scale(0.78)">${logo}</g>
 
-  <path d="M 24 108 H 416" stroke="${BORDER}" stroke-width="1"/>
-  <text x="24" y="134" font-family="'Segoe UI', sans-serif" font-size="11" fill="${TEXT}">${note}</text>
+  <text x="46" y="23" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="${WHITE}">${platform}</text>
+  <text x="46" y="38" font-family="'Segoe UI', monospace" font-size="8.5" fill="${MUTED}">${handle}</text>
 
-  <text x="416" y="${h - 20}" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${GREEN}" fill-opacity="0.7">[ CONNECT ]</text>
+  <path d="M 158 14 H 166" stroke="${GREEN}" stroke-opacity="0.5" stroke-width="1.4"/>
+  <path d="M 164 8 V 46" stroke="${GREEN}" stroke-opacity="0.5" stroke-width="1.4"/>
 </svg>
 `;
 }
@@ -503,6 +521,104 @@ function footerCard() {
   <text x="892" y="52" text-anchor="end" font-family="'Segoe UI', monospace" font-size="10" fill="${MUTED}">access granted ✓</text>
 
   ${liveDot(892, 56)}
+</svg>
+`;
+}
+
+function snakeCard(data) {
+    const w = 920;
+    const h = 240;
+    const days = data.days || [];
+    const cell = 12;
+    const gap = 3;
+    const startX = 28;
+    const startY = 62;
+
+    const weeks = [];
+    let week = [];
+    days.forEach((d) => {
+        const date = new Date(d.date + "T00:00:00Z");
+        const dow = date.getUTCDay();
+        while (week.length < dow) week.push({ count: 0, level: 0 });
+        week.push(d);
+        if (dow === 6) {
+            weeks.push(week);
+            week = [];
+        }
+    });
+    if (week.length) {
+        while (week.length < 7) week.push({ count: 0, level: 0 });
+        weeks.push(week);
+    }
+
+    const maxCount = Math.max(...days.map((d) => d.count), 1);
+
+    let cells = "";
+    weeks.forEach((ww, wi) => {
+        ww.forEach((d, di) => {
+            const x = startX + wi * (cell + gap);
+            const y = startY + di * (cell + gap);
+            let fill = BG;
+            let stroke = BORDER;
+            if (d.count > 0) {
+                const alpha = 0.15 + (d.count / maxCount) * 0.85;
+                fill = `rgba(0,255,65,${alpha})`;
+                stroke = "none";
+                cells += `      <rect x="${x}" y="${y}" width="${cell}" height="${cell}" fill="${fill}">
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="2.4s" begin="${(wi * 3) % 12}s" repeatCount="indefinite"/>
+      </rect>`;
+            } else {
+                cells += `      <rect x="${x}" y="${y}" width="${cell}" height="${cell}" fill="${fill}" stroke="${stroke}" stroke-width="0.5"/>`;
+            }
+        });
+    });
+
+    let pathD = "";
+    let first = true;
+    weeks.forEach((ww, wi) => {
+        const order = wi % 2 === 0 ? [0, 1, 2, 3, 4, 5, 6] : [6, 5, 4, 3, 2, 1, 0];
+        order.forEach((di) => {
+            const cx = startX + wi * (cell + gap) + cell / 2;
+            const cy = startY + di * (cell + gap) + cell / 2;
+            pathD += (first ? "M" : "L") + ` ${cx.toFixed(1)} ${cy.toFixed(1)} `;
+            first = false;
+        });
+        if (wi < weeks.length - 1) {
+            const nextCx = startX + (wi + 1) * (cell + gap) + cell / 2;
+            const lastDi = wi % 2 === 0 ? 6 : 0;
+            const cy = startY + lastDi * (cell + gap) + cell / 2;
+            pathD += `L ${nextCx.toFixed(1)} ${cy.toFixed(1)} `;
+        }
+    });
+
+    let trail = "";
+    for (let i = 1; i <= 6; i++) {
+        const r = 4.2 - i * 0.5;
+        const o = 0.55 - i * 0.07;
+        trail += `    <circle r="${r.toFixed(1)}" fill="${GREEN}" fill-opacity="${o.toFixed(2)}">
+      <animateMotion dur="26s" repeatCount="indefinite" begin="-${i * 0.35}s" path="${pathD}"/>
+    </circle>`;
+    }
+
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
+  ${defs()}
+  ${frame(w, h)}
+  ${corners(w, h)}
+  ${matrixColumn(13, 44, 100, "01")}
+  ${matrixColumn(907, 90, 150, "10")}
+  ${header(w, "CONTRIB_SNAKE", "auto feeder")}
+
+  ${cells}
+
+  <g filter="url(#blur)">${trail}</g>
+  <circle r="4.6" fill="${GREEN}" fill-opacity="0.9" filter="url(#blur)">
+    <animateMotion dur="26s" repeatCount="indefinite" path="${pathD}"/>
+  </circle>
+  <circle r="2.4" fill="#d8ffde">
+    <animateMotion dur="26s" repeatCount="indefinite" path="${pathD}"/>
+  </circle>
+
+  <text x="28" y="${h - 18}" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${GREEN}" fill-opacity="0.7">[ FEED THE SERPENT ]</text>
 </svg>
 `;
 }
@@ -595,6 +711,10 @@ async function main() {
             total: contribData.total ? contribData.total.lastYear : 0,
         })
     );
+    fs.writeFileSync(
+        path.join(__dirname, "..", "assets", "github-snake.svg"),
+        snakeCard({ days: contribData.contributions || [] })
+    );
 
     const connects = [
         { file: "connect-linkedin", platform: "LinkedIn", handle: "@gurveeer", url: "https://www.linkedin.com/in/gurveeer/", color: "#0A66C2", icon: "in", note: "Connect on LinkedIn" },
@@ -621,4 +741,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { statsCard, langsCard, projectCard, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };
+module.exports = { statsCard, langsCard, projectCard, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };

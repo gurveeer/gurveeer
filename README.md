@@ -118,7 +118,7 @@ const gurveer = {
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f40d/512.gif" width="24" height="24"/> Contribution Graph
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/output/snake.svg" width="100%" alt="Snake Animation" />
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/github-snake.svg" width="100%" alt="Snake Animation" />
 </div>
 
 ---
@@ -127,19 +127,16 @@ const gurveer = {
 
 <p align="center">
   <a href="https://www.linkedin.com/in/gurveeer/">
-    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/connect-linkedin.svg" alt="LinkedIn" width="49%" />
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/connect-linkedin.svg" alt="LinkedIn" width="24%" />
   </a>
   <a href="mailto:singh5134957@gmail.com">
-    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/connect-gmail.svg" alt="Gmail" width="49%" />
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/connect-gmail.svg" alt="Gmail" width="24%" />
   </a>
-</p>
-
-<p align="center">
   <a href="https://twitter.com/gurveeer">
-    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/connect-x.svg" alt="X" width="49%" />
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/connect-x.svg" alt="X" width="24%" />
   </a>
   <a href="https://gurveeer.github.io/new-portfolio/">
-    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/connect-portfolio.svg" alt="Portfolio" width="49%" />
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/connect-portfolio.svg" alt="Portfolio" width="24%" />
   </a>
 </p>
 
