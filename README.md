@@ -106,10 +106,10 @@ const gurveer = {
 
 <p align="center">
   <a href="https://github.com/gurveeer/TG-DL-BOT">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin?username=gurveeer&repo=TG-DL-BOT&theme=chartreuse-dark&hide_border=true" alt="TG-DL-BOT" />
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/project-tg-dl-bot.svg" alt="TG-DL-BOT" width="49%" />
   </a>
   <a href="https://github.com/gurveeer/hnm-clone">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin?username=gurveeer&repo=hnm-clone&theme=chartreuse-dark&hide_border=true" alt="hnm-clone" />
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/project-hnm-clone.svg" alt="hnm-clone" width="49%" />
   </a>
 </p>
 

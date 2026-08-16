@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="200" viewBox="0 0 440 200" role="img">
+  <defs>
+    <linearGradient id="pb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00FF41"/>
+      <stop offset="100%" stop-color="#00c530"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="439" height="199" rx="12" fill="url(#pb)" stroke="#21262d"/>
+  <rect x="0.5" y="0.5" width="4" height="199" rx="2" fill="url(#pg)"/>
+
+  <text x="26" y="34" font-family="'Segoe UI', monospace" font-size="16" font-weight="700" fill="#f0f6fc">TG-DL-BOT</text>
+  <text x="414" y="34" text-anchor="end" font-family="monospace" font-size="10" fill="#8b949e">▸ repo</text>
+
+  <text x="26" y="70" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">⚡ A powerful Telegram bot built with Pyrogram that can save </text>
+
+  <line x1="26" y1="94" x2="414" y2="94" stroke="#21262d" stroke-width="1"/>
+
+  <text x="26" y="128" font-family="'Segoe UI', monospace" font-size="13" fill="#c9d1d9">
+    <tspan fill="#3572A5">●</tspan> Python
+  </text>
+
+  <text x="414" y="128" text-anchor="end" font-family="monospace" font-size="13" fill="#f0f6fc">20 ★</text>
+  <text x="414" y="150" text-anchor="end" font-family="monospace" font-size="13" fill="#f0f6fc">4 ⑂</text>
+
+  <text x="26" y="186" font-family="monospace" font-size="9" fill="#8b949e">auto-generated · updated daily</text>
+</svg>

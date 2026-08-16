@@ -147,6 +147,49 @@ function langsCard(data) {
 `;
 }
 
+function projectCard(repo) {
+    const w = 440;
+    const h = 200;
+    const desc = (repo.description || "No description provided").slice(0, 60);
+    const lang = repo.language || "Unknown";
+    const color = langColor(lang);
+    const starLabel = repo.stargazers_count ? `${formatNumber(repo.stargazers_count)} ★` : "0 ★";
+    const forkLabel = repo.forks_count ? `${formatNumber(repo.forks_count)} ⑂` : "0 ⑂";
+
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
+  <defs>
+    <linearGradient id="pb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="${BG}"/>
+      <stop offset="100%" stop-color="${CARD}"/>
+    </linearGradient>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="${GREEN}"/>
+      <stop offset="100%" stop-color="${GREEN_DARK}"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="12" fill="url(#pb)" stroke="${BORDER}"/>
+  <rect x="0.5" y="0.5" width="4" height="${h - 1}" rx="2" fill="url(#pg)"/>
+
+  <text x="26" y="34" font-family="'Segoe UI', monospace" font-size="16" font-weight="700" fill="${WHITE}">${escapeHtml(repo.name)}</text>
+  <text x="414" y="34" text-anchor="end" font-family="monospace" font-size="10" fill="${MUTED}">▸ repo</text>
+
+  <text x="26" y="70" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">${escapeHtml(desc)}</text>
+
+  <line x1="26" y1="94" x2="414" y2="94" stroke="${BORDER}" stroke-width="1"/>
+
+  <text x="26" y="128" font-family="'Segoe UI', monospace" font-size="13" fill="${TEXT}">
+    <tspan fill="${color}">●</tspan> ${escapeHtml(lang)}
+  </text>
+
+  <text x="414" y="128" text-anchor="end" font-family="monospace" font-size="13" fill="${WHITE}">${starLabel}</text>
+  <text x="414" y="150" text-anchor="end" font-family="monospace" font-size="13" fill="${WHITE}">${forkLabel}</text>
+
+  <text x="26" y="${h - 14}" font-family="monospace" font-size="9" fill="${MUTED}">auto-generated · updated daily</text>
+</svg>
+`;
+}
+
 async function main() {
     if (!token) {
         console.error("GHT token not provided");
@@ -184,9 +227,22 @@ async function main() {
         langs,
     };
 
+    const featured = ["TG-DL-BOT", "hnm-clone"];
+    featured.forEach((name) => {
+        const repo = repos.find((r) => r.name === name);
+        if (repo) {
+            fs.writeFileSync(
+                path.join(__dirname, "..", "assets", `project-${name.toLowerCase()}.svg`),
+                projectCard(repo)
+            );
+        } else {
+            console.warn(`Repo ${name} not found`);
+        }
+    });
+
     fs.writeFileSync(path.join(__dirname, "..", "assets", "github-stats.svg"), statsCard(data));
     fs.writeFileSync(path.join(__dirname, "..", "assets", "github-langs.svg"), langsCard(data));
-    console.log("Custom stats cards generated for", username);
+    console.log("Custom stats & project cards generated for", username);
 }
 
 if (require.main === module) {
@@ -196,4 +252,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { statsCard, langsCard, formatNumber, langColor, escapeHtml };
+module.exports = { statsCard, langsCard, projectCard, formatNumber, langColor, escapeHtml };
