@@ -208,15 +208,36 @@ function langsCard(data) {
 `;
 }
 
+function wrapText(text, maxChars) {
+    const words = text.split(" ");
+    const lines = [];
+    let line = "";
+    words.forEach((word) => {
+        if ((line + " " + word).trim().length <= maxChars) {
+            line = (line + " " + word).trim();
+        } else {
+            if (line) lines.push(line);
+            line = word;
+        }
+    });
+    if (line) lines.push(line);
+    return lines;
+}
+
 function projectCard(repo) {
     const w = 440;
-    const h = 200;
+    const h = 240;
     const desc = (repo.description || "No description provided").replace(/\s+/g, " ").trim();
-    const shortDesc = desc.length > 56 ? desc.slice(0, 53) + "…" : desc;
+    const descLines = wrapText(desc, 54).slice(0, 4);
     const lang = repo.language || "Unknown";
     const color = langColor(lang);
     const stars = repo.stargazers_count ? formatNumber(repo.stargazers_count) : "0";
     const forks = repo.forks_count ? formatNumber(repo.forks_count) : "0";
+
+    let descHtml = "";
+    descLines.forEach((line, i) => {
+        descHtml += `      <text x="28" y="${56 + i * 18}" font-family="'Segoe UI', sans-serif" font-size="12" fill="${TEXT}">${escapeHtml(line)}</text>\n`;
+    });
 
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
   ${defs()}
@@ -229,19 +250,18 @@ function projectCard(repo) {
   <text x="36" y="29" font-family="'Segoe UI', monospace" font-size="15" font-weight="700" fill="${WHITE}">${escapeHtml(repo.name)}</text>
   <rect x="${36 + repo.name.length * 9 + 4}" y="24" width="6" height="6" fill="${GREEN}" fill-opacity="0.7"/>
 
-  <text x="28" y="70" font-family="'Segoe UI', sans-serif" font-size="12" fill="${TEXT}">${escapeHtml(shortDesc)}</text>
+  ${descHtml}
+  <line x1="28" y1="136" x2="412" y2="136" stroke="${BORDER}" stroke-width="1"/>
+  <path d="M 28 136 H 120" stroke="${GREEN}" stroke-opacity="0.6" stroke-width="1.6"/>
 
-  <line x1="28" y1="94" x2="412" y2="94" stroke="${BORDER}" stroke-width="1"/>
-  <path d="M 28 94 H 120" stroke="${GREEN}" stroke-opacity="0.6" stroke-width="1.6"/>
-
-  <text x="28" y="134" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
+  <text x="28" y="176" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
     <tspan fill="${color}">■</tspan>  ${escapeHtml(lang)}
   </text>
 
-  <text x="412" y="130" text-anchor="end" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="${WHITE}">★ ${stars}</text>
-  <text x="412" y="148" text-anchor="end" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="${WHITE}">⑂ ${forks}</text>
+  <text x="412" y="172" text-anchor="end" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="${WHITE}">★ ${stars}</text>
+  <text x="412" y="190" text-anchor="end" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="${WHITE}">⑂ ${forks}</text>
 
-  <text x="28" y="${h - 18}" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${GREEN}" fill-opacity="0.7">[ ${escapeHtml(repo.name.toUpperCase())} ]</text>
+  <text x="28" y="${h - 16}" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${GREEN}" fill-opacity="0.7">[ ${escapeHtml(repo.name.toUpperCase())} ]</text>
 </svg>
 `;
 }
@@ -914,4 +934,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { statsCard, langsCard, projectCard, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, heroCard, aboutCard, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };
+module.exports = { statsCard, langsCard, projectCard, wrapText, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, heroCard, aboutCard, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };

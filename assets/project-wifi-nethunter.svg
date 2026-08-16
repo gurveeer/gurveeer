@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="440" height="200" viewBox="0 0 440 200" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="240" viewBox="0 0 440 240" role="img">
   
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -19,16 +19,16 @@
     </pattern>
   </defs>
   
-  <path d="M 12 0 H 428 L 440 12 V 188 L 428 200 H 12 L 0 188 V 12 Z" fill="url(#bg)"/>
-  <path d="M 12 0 H 428 L 440 12 V 188 L 428 200 H 12 L 0 188 V 12 Z" fill="url(#glow)"/>
-  <path d="M 12 0 H 428 L 440 12 V 188 L 428 200 H 12 L 0 188 V 12 Z" fill="none" stroke="#232a33"/>
-  <path d="M 12 0 H 428 L 440 12 V 188 L 428 200 H 12 L 0 188 V 12 Z" fill="none" stroke="#00FF41" stroke-opacity="0.35" stroke-width="1.4"/>
-  <rect x="0" y="0" width="440" height="200" fill="url(#grid)"/>
+  <path d="M 12 0 H 428 L 440 12 V 228 L 428 240 H 12 L 0 228 V 12 Z" fill="url(#bg)"/>
+  <path d="M 12 0 H 428 L 440 12 V 228 L 428 240 H 12 L 0 228 V 12 Z" fill="url(#glow)"/>
+  <path d="M 12 0 H 428 L 440 12 V 228 L 428 240 H 12 L 0 228 V 12 Z" fill="none" stroke="#232a33"/>
+  <path d="M 12 0 H 428 L 440 12 V 228 L 428 240 H 12 L 0 228 V 12 Z" fill="none" stroke="#00FF41" stroke-opacity="0.35" stroke-width="1.4"/>
+  <rect x="0" y="0" width="440" height="240" fill="url(#grid)"/>
   
   <path d="M 0 24 V 0 H 24" fill="none" stroke="#00FF41" stroke-opacity="0.65" stroke-width="2"/>
   <path d="M 416 0 H 440 V 24" fill="none" stroke="#00FF41" stroke-opacity="0.65" stroke-width="2"/>
-  <path d="M 440 176 V 200 H 416" fill="none" stroke="#00FF41" stroke-opacity="0.65" stroke-width="2"/>
-  <path d="M 24 200 H 0 V 176" fill="none" stroke="#00FF41" stroke-opacity="0.65" stroke-width="2"/>
+  <path d="M 440 216 V 240 H 416" fill="none" stroke="#00FF41" stroke-opacity="0.65" stroke-width="2"/>
+  <path d="M 24 240 H 0 V 216" fill="none" stroke="#00FF41" stroke-opacity="0.65" stroke-width="2"/>
       <text x="13" y="44" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.05">1</text>    <text x="13" y="58" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.085">0</text>    <text x="13" y="72" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.12000000000000001">1</text>    <text x="13" y="86" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.15500000000000003">0</text>    <text x="13" y="100" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.19">1</text>
       <text x="427" y="92" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.05">0</text>    <text x="427" y="106" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.085">1</text>    <text x="427" y="120" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.12000000000000001">0</text>    <text x="427" y="134" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.15500000000000003">1</text>    <text x="427" y="148" font-family="monospace" font-size="8" fill="#00FF41" fill-opacity="0.19">0</text>
 
@@ -36,17 +36,20 @@
   <text x="36" y="29" font-family="'Segoe UI', monospace" font-size="15" font-weight="700" fill="#f0f6fc">WiFi-NetHunter</text>
   <rect x="166" y="24" width="6" height="6" fill="#00FF41" fill-opacity="0.7"/>
 
-  <text x="28" y="70" font-family="'Segoe UI', sans-serif" font-size="12" fill="#c9d1d9">⚠️ A powerful Python-based WiFi network scanner and B…</text>
+        <text x="28" y="56" font-family="'Segoe UI', sans-serif" font-size="12" fill="#c9d1d9">⚠️ A powerful Python-based WiFi network scanner and</text>
+      <text x="28" y="74" font-family="'Segoe UI', sans-serif" font-size="12" fill="#c9d1d9">Brute-Force password attacking tool for educational</text>
+      <text x="28" y="92" font-family="'Segoe UI', sans-serif" font-size="12" fill="#c9d1d9">and authorized testing purposes. Features a terminal</text>
+      <text x="28" y="110" font-family="'Segoe UI', sans-serif" font-size="12" fill="#c9d1d9">interface with comprehensive network intelligence.</text>
 
-  <line x1="28" y1="94" x2="412" y2="94" stroke="#232a33" stroke-width="1"/>
-  <path d="M 28 94 H 120" stroke="#00FF41" stroke-opacity="0.6" stroke-width="1.6"/>
+  <line x1="28" y1="136" x2="412" y2="136" stroke="#232a33" stroke-width="1"/>
+  <path d="M 28 136 H 120" stroke="#00FF41" stroke-opacity="0.6" stroke-width="1.6"/>
 
-  <text x="28" y="134" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
-    <tspan fill="#3572A5">■</tspan>  Python
+  <text x="28" y="176" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+    <tspan fill="#0a3960">■</tspan>  Python
   </text>
 
-  <text x="412" y="130" text-anchor="end" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="#f0f6fc">★ 26</text>
-  <text x="412" y="148" text-anchor="end" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="#f0f6fc">⑂ 5</text>
+  <text x="412" y="172" text-anchor="end" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="#f0f6fc">★ 26</text>
+  <text x="412" y="190" text-anchor="end" font-family="'Segoe UI', monospace" font-size="12" font-weight="700" fill="#f0f6fc">⑂ 5</text>
 
-  <text x="28" y="182" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="#00FF41" fill-opacity="0.7">[ WIFI-NETHUNTER ]</text>
+  <text x="28" y="224" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="#00FF41" fill-opacity="0.7">[ WIFI-NETHUNTER ]</text>
 </svg>
