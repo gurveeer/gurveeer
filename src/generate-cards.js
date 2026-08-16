@@ -5,6 +5,32 @@ const { Octokit } = require("@octokit/rest");
 const token = process.env.GHT;
 const username = process.argv[2] || "gurveeer";
 
+const EMBED_FONT = process.argv[4] === "embed" || false;
+let FONT_B64 = null;
+if (EMBED_FONT) {
+    try {
+        const fontPath = path.join(__dirname, "..", "Voga-Medium.woff2");
+        if (fs.existsSync(fontPath)) {
+            FONT_B64 = fs.readFileSync(fontPath).toString("base64");
+        }
+    } catch (e) {
+        console.warn("Font embed failed:", e.message);
+    }
+}
+
+function fontFace() {
+    if (!FONT_B64) return "";
+    return `  <style>
+    @font-face {
+      font-family: 'Voga';
+      font-style: normal;
+      font-weight: 500;
+      src: url(data:font/woff2;base64,${FONT_B64}) format('woff2');
+    }
+  </style>
+`;
+}
+
 const THEMES = {
     hacker: {
         name: "hacker",
@@ -67,6 +93,7 @@ const MUTED = THEME.muted;
 const WHITE = THEME.white;
 const FONT_MONO = THEME.fontMono;
 const FONT_SANS = THEME.fontSans;
+const FONT_DISPLAY = EMBED_FONT && FONT_B64 ? "'Voga'" : FONT_MONO;
 
 function escapeHtml(s) {
     return String(s ?? "")
@@ -602,12 +629,12 @@ function footerCard() {
 
   <text x="28" y="52" font-family="${FONT_MONO}" font-size="13" letter-spacing="3" font-weight="700" fill="${GREEN}">[ SYSTEM ONLINE ]</text>
 
-  <text x="420" y="52" text-anchor="middle" font-family="${FONT_MONO}" font-size="11" fill="${MUTED}">crafted by</text>
-  <text x="460" y="52" font-family="${FONT_MONO}" font-size="13" font-weight="700" fill="${WHITE}">GURVEER</text>
+  <circle cx="420" cy="49" r="1.6" fill="${GREEN}" fill-opacity="0.5"/>
+  <text x="432" y="53" font-family="${FONT_MONO}" font-size="10" letter-spacing="1.5" fill="${MUTED}">nice to see you here</text>
 
-  <text x="892" y="52" text-anchor="end" font-family="${FONT_MONO}" font-size="10" fill="${MUTED}">access granted ✓</text>
+  <text x="892" y="53" text-anchor="end" font-family="${FONT_MONO}" font-size="10" letter-spacing="1" fill="${MUTED}">access granted ✓</text>
 
-  ${liveDot(892, 56)}
+  ${liveDot(892, 57)}
 </svg>
 `;
 }
@@ -716,6 +743,7 @@ function heroCard() {
     const h = 260;
 
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
+  ${fontFace()}
   ${defs()}
   ${frame(w, h)}
   ${corners(w, h)}
@@ -724,19 +752,19 @@ function heroCard() {
   ${liveDot(w - 60, 40)}
   ${particles(w, h)}
 
-  <text x="40" y="40" font-family="${FONT_MONO}" font-size="10" letter-spacing="3" fill="${GREEN}" fill-opacity="0.8">[ SYSTEM BOOT ]</text>
-  <text x="${w - 200}" y="40" text-anchor="end" font-family="${FONT_MONO}" font-size="10" letter-spacing="2" fill="${MUTED}">gurveeer@github</text>
+  <text x="40" y="40" font-family="${FONT_DISPLAY}" font-size="10" letter-spacing="3" fill="${GREEN}" fill-opacity="0.8">[ SYSTEM BOOT ]</text>
+  <text x="${w - 200}" y="40" text-anchor="end" font-family="${FONT_DISPLAY}" font-size="10" letter-spacing="2" fill="${MUTED}">gurveeer@github</text>
 
-  <text x="40" y="120" font-family="${FONT_MONO}" font-size="42" font-weight="700" fill="${WHITE}">Hi, I'm <tspan fill="${GREEN}">Gurveer</tspan></text>
+  <text x="40" y="120" font-family="${FONT_DISPLAY}" font-size="42" font-weight="700" fill="${WHITE}">Hi, I'm <tspan fill="${GREEN}">Gurveer</tspan></text>
 
-  <text x="40" y="162" font-family="${FONT_MONO}" font-size="18" fill="${TEXT}">AI Infrastructure Engineer</text>
+  <text x="40" y="162" font-family="${FONT_DISPLAY}" font-size="18" fill="${TEXT}">AI Infrastructure Engineer</text>
 
   <path d="M 40 178 H 1020" stroke="${BORDER}" stroke-width="1"/>
   <path d="M 40 178 H 260" stroke="${GREEN}" stroke-opacity="0.8" stroke-width="2"/>
 
-  <text x="40" y="210" font-family="${FONT_MONO}" font-size="13" fill="${MUTED}">Building context engines &amp; RAG systems · vector &amp; graph databases · event-driven AI pipelines</text>
+  <text x="40" y="210" font-family="${FONT_SANS}" font-size="13" fill="${MUTED}">Building context engines &amp; RAG systems · vector &amp; graph databases · event-driven AI pipelines</text>
 
-  <text x="40" y="${h - 24}" font-family="${FONT_MONO}" font-size="10" letter-spacing="3" fill="${GREEN}" fill-opacity="0.7">[ IIT ROORKEE '23 ]</text>
+  <text x="40" y="${h - 24}" font-family="${FONT_DISPLAY}" font-size="10" letter-spacing="3" fill="${GREEN}" fill-opacity="0.7">[ IIT ROORKEE '23 ]</text>
 </svg>
 `;
 }
@@ -882,6 +910,7 @@ function sectionHeader(title, icon) {
     const h = 84;
 
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
+  ${fontFace()}
   <defs>
     <linearGradient id="sb" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="${BG}"/>
@@ -912,7 +941,7 @@ function sectionHeader(title, icon) {
   <rect x="24" y="18" width="48" height="48" fill="${GREEN_DIM}" fill-opacity="0.25" stroke="${GREEN}" stroke-opacity="0.6" stroke-width="1.2"/>
   <text x="48" y="50" text-anchor="middle" font-size="24">${icon}</text>
 
-  <text x="90" y="42" font-family="${FONT_MONO}" font-size="22" letter-spacing="2.5" font-weight="700" fill="${WHITE}">${title}</text>
+  <text x="90" y="42" font-family="${FONT_DISPLAY}" font-size="22" letter-spacing="2.5" font-weight="700" fill="${WHITE}">${title}</text>
   <text x="90" y="62" font-family="${FONT_MONO}" font-size="9" letter-spacing="1.5" fill="${MUTED}">// SECTION</text>
 
   <path d="M ${w - 200} 42 H ${w - 60}" stroke="${BORDER}" stroke-width="1"/>
