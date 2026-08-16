@@ -672,7 +672,7 @@ function heroCard() {
 
 function aboutCard() {
     const w = 1060;
-    const h = 520;
+    const h = 560;
     const A = "#f0f6fc";
     const AMUTED = "#aab3c0";
 
@@ -758,16 +758,16 @@ function aboutCard() {
     </pattern>
   </defs>
 
-  <path d="M 12 0 H 1048 L 1060 12 V 508 L 1048 520 H 12 L 0 508 V 12 Z" fill="url(#ab)"/>
-  <path d="M 12 0 H 1048 L 1060 12 V 508 L 1048 520 H 12 L 0 508 V 12 Z" fill="url(#ag)"/>
-  <path d="M 12 0 H 1048 L 1060 12 V 508 L 1048 520 H 12 L 0 508 V 12 Z" fill="none" stroke="${BORDER}"/>
-  <path d="M 12 0 H 1048 L 1060 12 V 508 L 1048 520 H 12 L 0 508 V 12 Z" fill="none" stroke="${A}" stroke-opacity="0.22" stroke-width="1.2"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 548 L 1048 560 H 12 L 0 548 V 12 Z" fill="url(#ab)"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 548 L 1048 560 H 12 L 0 548 V 12 Z" fill="url(#ag)"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 548 L 1048 560 H 12 L 0 548 V 12 Z" fill="none" stroke="${BORDER}"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 548 L 1048 560 H 12 L 0 548 V 12 Z" fill="none" stroke="${A}" stroke-opacity="0.22" stroke-width="1.2"/>
   <rect x="0" y="0" width="${w}" height="${h}" fill="url(#aw-grid)"/>
 
   <path d="M 0 24 V 0 H 24" fill="none" stroke="${A}" stroke-opacity="0.5" stroke-width="2"/>
   <path d="M 1036 0 H 1060 V 24" fill="none" stroke="${A}" stroke-opacity="0.5" stroke-width="2"/>
-  <path d="M 1060 496 V 520 H 1036" fill="none" stroke="${A}" stroke-opacity="0.5" stroke-width="2"/>
-  <path d="M 24 520 H 0 V 496" fill="none" stroke="${A}" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M 1060 536 V 560 H 1036" fill="none" stroke="${A}" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M 24 560 H 0 V 536" fill="none" stroke="${A}" stroke-opacity="0.5" stroke-width="2"/>
   ${matrixColumn(24, 90, 180, "01")}
   ${matrixColumn(w - 24, 200, 300, "10")}
 
@@ -802,6 +802,50 @@ function aboutCard() {
 
   <text x="40" y="${h - 20}" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${A}" fill-opacity="0.6">[ RAG · VECTOR · GRAPH · STREAM ]</text>
   <text x="${w - 40}" y="${h - 20}" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${A}" fill-opacity="0.6">[ IIT ROORKEE '23 ]</text>
+</svg>
+`;
+}
+
+function sectionHeader(title, icon) {
+    const w = 1060;
+    const h = 84;
+
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
+  <defs>
+    <linearGradient id="sb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="${BG}"/>
+      <stop offset="100%" stop-color="${CARD}"/>
+    </linearGradient>
+    <radialGradient id="sg" cx="90%" cy="6%" r="55%">
+      <stop offset="0%" stop-color="${GREEN}" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="${GREEN}" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="sg-grid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="${GREEN}" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <path d="M 12 0 H 1048 L 1060 12 V 72 L 1048 84 H 12 L 0 72 V 12 Z" fill="url(#sb)"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 72 L 1048 84 H 12 L 0 72 V 12 Z" fill="url(#sg)"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 72 L 1048 84 H 12 L 0 72 V 12 Z" fill="none" stroke="${BORDER}"/>
+  <path d="M 12 0 H 1048 L 1060 12 V 72 L 1048 84 H 12 L 0 72 V 12 Z" fill="none" stroke="${GREEN}" stroke-opacity="0.35" stroke-width="1.2"/>
+  <rect x="0" y="0" width="${w}" height="${h}" fill="url(#sg-grid)"/>
+
+  <path d="M 0 16 V 0 H 16" fill="none" stroke="${GREEN}" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M 1044 0 H 1060 V 16" fill="none" stroke="${GREEN}" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M 1060 68 V 84 H 1044" fill="none" stroke="${GREEN}" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M 16 84 H 0 V 68" fill="none" stroke="${GREEN}" stroke-opacity="0.5" stroke-width="2"/>
+  ${matrixColumn(18, 20, 60, "01")}
+  ${matrixColumn(w - 18, 30, 70, "10")}
+
+  <rect x="24" y="18" width="48" height="48" fill="${GREEN_DIM}" fill-opacity="0.25" stroke="${GREEN}" stroke-opacity="0.6" stroke-width="1.2"/>
+  <text x="48" y="50" text-anchor="middle" font-size="24">${icon}</text>
+
+  <text x="90" y="42" font-family="'Segoe UI', monospace" font-size="22" letter-spacing="2.5" font-weight="700" fill="${WHITE}">${title}</text>
+  <text x="90" y="62" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="${MUTED}">// SECTION</text>
+
+  <path d="M ${w - 200} 42 H ${w - 60}" stroke="${BORDER}" stroke-width="1"/>
+  ${liveDot(w - 40, 42)}
 </svg>
 `;
 }
@@ -910,7 +954,7 @@ async function main() {
     const connects = [
         { file: "connect-linkedin", platform: "LinkedIn", handle: "@gurveeer", url: "https://www.linkedin.com/in/gurveeer/", color: "#0A66C2", icon: "in", note: "Connect on LinkedIn" },
         { file: "connect-gmail", platform: "Gmail", handle: "singh5134957@gmail.com", url: "mailto:singh5134957@gmail.com", color: "#D14836", icon: "@", note: "Drop an email anytime" },
-        { file: "connect-x", platform: "X", handle: "@gurveeer", url: "https://twitter.com/Gurveeeeeer", color: "#e6edf3", icon: "𝕏", note: "Follow on X / Twitter" },
+        { file: "connect-x", platform: "X", handle: "@gurveeer", url: "https://twitter.com/gurveeer", color: "#e6edf3", icon: "𝕏", note: "Follow on X / Twitter" },
         { file: "connect-portfolio", platform: "Portfolio", handle: "gurveeer.github.io", url: "https://gurveeer.github.io/new-portfolio/", color: "#00FF41", icon: "◉", note: "Explore my network" },
     ];
     connects.forEach((c) => {
@@ -924,7 +968,22 @@ async function main() {
     fs.writeFileSync(path.join(__dirname, "..", "assets", "hero.svg"), heroCard());
     fs.writeFileSync(path.join(__dirname, "..", "assets", "about.svg"), aboutCard());
 
-    console.log("Custom stats, streak, commits, heatmap, connect, footer & project cards generated for", username);
+    const headers = [
+        { file: "header-about", title: "ABOUT ME", icon: "🚀" },
+        { file: "header-techstack", title: "TECH STACK", icon: "🛠️" },
+        { file: "header-stats", title: "GITHUB STATS", icon: "📊" },
+        { file: "header-projects", title: "FEATURED PROJECTS", icon: "🚀" },
+        { file: "header-contrib", title: "CONTRIBUTION GRAPH", icon: "🐍" },
+        { file: "header-connect", title: "CONNECT WITH ME", icon: "🔗" },
+    ];
+    headers.forEach((h) => {
+        fs.writeFileSync(
+            path.join(__dirname, "..", "assets", `${h.file}.svg`),
+            sectionHeader(h.title, h.icon)
+        );
+    });
+
+    console.log("Custom stats, streak, commits, heatmap, connect, footer, headers & project cards generated for", username);
 }
 
 if (require.main === module) {
@@ -934,4 +993,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { statsCard, langsCard, projectCard, wrapText, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, heroCard, aboutCard, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };
+module.exports = { statsCard, langsCard, projectCard, wrapText, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, heroCard, aboutCard, sectionHeader, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };

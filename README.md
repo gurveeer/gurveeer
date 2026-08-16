@@ -8,7 +8,9 @@
 
 ---
 
-## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" width="24" height="24"/> About Me
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/header-about.svg" width="100%" alt="About Me" />
+</p>
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/about.svg" width="100%" alt="About Me" />
@@ -16,7 +18,9 @@
 
 ---
 
-## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6e0_fe0f/512.gif" width="24" height="24"/> Tech Stack
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/header-techstack.svg" width="100%" alt="Tech Stack" />
+</p>
 
 <h3 align="center">💻 Programming Languages</h3>
 
@@ -32,7 +36,9 @@
 
 ---
 
-## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4ca/512.gif" width="24" height="24"/> GitHub Stats
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/header-stats.svg" width="100%" alt="GitHub Stats" />
+</p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/github-stats.svg" alt="Custom GitHub Stats Card" width="49%" />
@@ -50,7 +56,9 @@
 
 ---
 
-## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" width="24" height="24"/> Featured Projects
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/header-projects.svg" width="100%" alt="Featured Projects" />
+</p>
 
 <p align="center">
   <a href="https://github.com/gurveeer/Hel-kit">
@@ -69,7 +77,9 @@
 
 ---
 
-## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f40d/512.gif" width="24" height="24"/> Contribution Graph
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/header-contrib.svg" width="100%" alt="Contribution Graph" />
+</p>
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/github-snake.svg" width="100%" alt="Snake Animation" />
@@ -77,7 +87,9 @@
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Link.png" width="24" height="24"/> Connect With Me
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/header-connect.svg" width="100%" alt="Connect With Me" />
+</p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/gurveeer/">
