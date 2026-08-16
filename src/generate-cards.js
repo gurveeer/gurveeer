@@ -30,14 +30,14 @@ function formatNumber(n) {
 }
 
 const LANGUAGE_COLORS = {
-    TypeScript: "#3178c6",
-    JavaScript: "#f1e05a",
-    Python: "#3572A5",
-    Go: "#00ADD8",
-    "C++": "#f34b7d",
+    TypeScript: "#0b74e5",
+    JavaScript: "#f1d60c",
+    Python: "#0a3960",
+    Go: "#0acafa",
+    "C++": "#de0747",
     Java: "#b07219",
     Rust: "#dea584",
-    HTML: "#e34c26",
+    HTML: "#ff3604",
     CSS: "#563d7c",
     Shell: "#89e051",
     Dockerfile: "#384d54",
@@ -369,14 +369,14 @@ function commitsCard(data) {
 }
 
 function contributionGraphCard(data) {
-    const w = 920;
-    const h = 240;
+    const w = 1060;
+    const h = 260;
     const days = data.days;
     const total = data.total;
     const maxCount = Math.max(...days.map((d) => d.count), 1);
 
-    const cell = 12;
-    const gap = 3;
+    const cell = 14;
+    const gap = 4;
     const weeks = [];
     let week = [];
     days.forEach((d) => {
@@ -395,8 +395,8 @@ function contributionGraphCard(data) {
     }
 
     const gridW = weeks.length * (cell + gap) - gap;
-    const startX = 28;
-    const startY = 62;
+    const startX = Math.round((w - gridW) / 2);
+    const startY = 72;
 
     let cells = "";
     weeks.forEach((w, wi) => {
@@ -421,42 +421,39 @@ function contributionGraphCard(data) {
     for (let wi = 0; wi < weeks.length; wi += labelStep) {
         const x = startX + wi * (cell + gap);
         const label = monthLabels[Math.floor(wi / (weeks.length / 12))] || "";
-        labels += `      <text x="${x}" y="52" font-family="'Segoe UI', monospace" font-size="8" letter-spacing="1" fill="${MUTED}">${label}</text>`;
+        labels += `      <text x="${x}" y="58" font-family="'Segoe UI', monospace" font-size="8" letter-spacing="1" fill="${MUTED}">${label}</text>`;
     }
 
     const weekdays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
     let dayLabels = "";
     [1, 3, 5].forEach((di) => {
         const y = startY + di * (cell + gap) + 8;
-        dayLabels += `      <text x="20" y="${y}" text-anchor="end" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">${weekdays[di]}</text>`;
+        dayLabels += `      <text x="${startX - 12}" y="${y}" text-anchor="end" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">${weekdays[di]}</text>`;
     });
-
-    const legend = [];
-    void legend;
 
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
   ${defs()}
   ${frame(w, h)}
   ${corners(w, h)}
   ${matrixColumn(13, 44, 100, "01")}
-  ${matrixColumn(907, 90, 150, "10")}
+  ${matrixColumn(w - 13, 90, 150, "10")}
   ${header(w, "CONTRIB_HEATMAP", "last 365 days")}
 
   ${labels}
   ${dayLabels}
   ${cells}
 
-  <rect x="728" y="210" width="11" height="11" fill="${BG}" stroke="${BORDER}" stroke-width="0.5"/>
-  <text x="746" y="219" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">0</text>
-  <rect x="770" y="210" width="11" height="11" fill="rgba(0,255,65,0.15)" stroke="none"/>
-  <text x="788" y="219" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">1-4</text>
-  <rect x="812" y="210" width="11" height="11" fill="rgba(0,255,65,0.45)"/>
-  <text x="830" y="219" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">5-9</text>
-  <rect x="854" y="210" width="11" height="11" fill="rgba(0,255,65,0.75)"/>
-  <text x="872" y="219" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">10+</text>
+  <rect x="${startX + gridW - 214}" y="${h - 24}" width="11" height="11" fill="${BG}" stroke="${BORDER}" stroke-width="0.5"/>
+  <text x="${startX + gridW - 196}" y="${h - 15}" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">0</text>
+  <rect x="${startX + gridW - 172}" y="${h - 24}" width="11" height="11" fill="rgba(0,255,65,0.15)" stroke="none"/>
+  <text x="${startX + gridW - 154}" y="${h - 15}" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">1-4</text>
+  <rect x="${startX + gridW - 130}" y="${h - 24}" width="11" height="11" fill="rgba(0,255,65,0.45)"/>
+  <text x="${startX + gridW - 112}" y="${h - 15}" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">5-9</text>
+  <rect x="${startX + gridW - 88}" y="${h - 24}" width="11" height="11" fill="rgba(0,255,65,0.75)"/>
+  <text x="${startX + gridW - 70}" y="${h - 15}" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">10+</text>
 
-  <text x="28" y="218" font-family="'Segoe UI', monospace" font-size="10" font-weight="700" fill="${WHITE}">${formatNumber(total)}</text>
-  <text x="28" y="231" font-family="'Segoe UI', monospace" font-size="8" letter-spacing="1" fill="${MUTED}">TOTAL CONTRIBUTIONS</text>
+  <text x="${startX}" y="${h - 15}" font-family="'Segoe UI', monospace" font-size="11" font-weight="700" fill="${WHITE}">${formatNumber(total)}</text>
+  <text x="${startX + 56}" y="${h - 15}" font-family="'Segoe UI', monospace" font-size="8" letter-spacing="1" fill="${MUTED}">TOTAL CONTRIBUTIONS</text>
 </svg>
 `;
 }
@@ -526,13 +523,12 @@ function footerCard() {
 }
 
 function snakeCard(data) {
-    const w = 920;
-    const h = 240;
+    const w = 1060;
+    const h = 260;
     const days = data.days || [];
-    const cell = 12;
-    const gap = 3;
-    const startX = 28;
-    const startY = 62;
+    const cell = 14;
+    const gap = 4;
+    const startY = 72;
 
     const weeks = [];
     let week = [];
@@ -552,6 +548,8 @@ function snakeCard(data) {
     }
 
     const maxCount = Math.max(...days.map((d) => d.count), 1);
+    const gridW = weeks.length * (cell + gap) - gap;
+    const startX = Math.round((w - gridW) / 2);
 
     let cells = "";
     weeks.forEach((ww, wi) => {
@@ -605,7 +603,7 @@ function snakeCard(data) {
   ${frame(w, h)}
   ${corners(w, h)}
   ${matrixColumn(13, 44, 100, "01")}
-  ${matrixColumn(907, 90, 150, "10")}
+  ${matrixColumn(w - 13, 90, 150, "10")}
   ${header(w, "CONTRIB_SNAKE", "auto feeder")}
 
   ${cells}
@@ -618,7 +616,36 @@ function snakeCard(data) {
     <animateMotion dur="26s" repeatCount="indefinite" path="${pathD}"/>
   </circle>
 
-  <text x="28" y="${h - 18}" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${GREEN}" fill-opacity="0.7">[ FEED THE SERPENT ]</text>
+  <text x="${startX}" y="${h - 18}" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${GREEN}" fill-opacity="0.7">[ FEED THE SERPENT ]</text>
+</svg>
+`;
+}
+
+function heroCard() {
+    const w = 1060;
+    const h = 260;
+
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
+  ${defs()}
+  ${frame(w, h)}
+  ${corners(w, h)}
+  ${matrixColumn(24, 80, 180, "01")}
+  ${matrixColumn(w - 24, 80, 180, "10")}
+  ${liveDot(w - 60, 40)}
+
+  <text x="40" y="40" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="3" fill="${GREEN}" fill-opacity="0.8">[ SYSTEM BOOT ]</text>
+  <text x="${w - 200}" y="40" text-anchor="end" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${MUTED}">gurveeer@github</text>
+
+  <text x="40" y="120" font-family="'Segoe UI', monospace" font-size="42" font-weight="700" fill="${WHITE}">Hi, I'm <tspan fill="${GREEN}">Gurveer</tspan></text>
+
+  <text x="40" y="162" font-family="'Segoe UI', monospace" font-size="18" fill="${TEXT}">AI Infrastructure Engineer</text>
+
+  <path d="M 40 178 H 1020" stroke="${BORDER}" stroke-width="1"/>
+  <path d="M 40 178 H 260" stroke="${GREEN}" stroke-opacity="0.8" stroke-width="2"/>
+
+  <text x="40" y="210" font-family="'Segoe UI', monospace" font-size="13" fill="${MUTED}">Building context engines &amp; RAG systems · vector &amp; graph databases · event-driven AI pipelines</text>
+
+  <text x="40" y="${h - 24}" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="3" fill="${GREEN}" fill-opacity="0.7">[ IIT ROORKEE '23 ]</text>
 </svg>
 `;
 }
@@ -730,6 +757,7 @@ async function main() {
     });
 
     fs.writeFileSync(path.join(__dirname, "..", "assets", "footer.svg"), footerCard());
+    fs.writeFileSync(path.join(__dirname, "..", "assets", "hero.svg"), heroCard());
 
     console.log("Custom stats, streak, commits, heatmap, connect, footer & project cards generated for", username);
 }
@@ -741,4 +769,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { statsCard, langsCard, projectCard, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };
+module.exports = { statsCard, langsCard, projectCard, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, heroCard, snakeCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };

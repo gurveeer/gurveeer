@@ -1,12 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/header_.png" width="100%" alt="Profile Banner" />
-</div>
-
-<!-- TYPING SVG -->
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&random=false&width=800&lines=Hi+%F0%9F%91%8B+I'm+Gurveer;AI+Infrastructure+Engineer;Building+Context+Engines+%26+RAG+Systems" alt="Typing SVG" />
-  </a>
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/hero.svg" width="100%" alt="Profile Hero" />
 </div>
 
 <p align="center">
