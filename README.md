@@ -61,6 +61,12 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/aurorallm/aurora">
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/project-aurora.svg" alt="aurora" width="49%" />
+  </a>
+</p>
+
 ---
 
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f40d/512.gif" width="24" height="24"/> Contribution Graph

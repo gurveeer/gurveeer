@@ -33,24 +33,23 @@
   <path d="M 16 20 H 1044" stroke="#232a33" stroke-width="1"/>
   <path d="M 24 20 H 150" stroke="#f0f6fc" stroke-opacity="0.7" stroke-width="2"/>
   <text x="28" y="16" font-family="'Segoe UI', monospace" font-size="12" letter-spacing="2.5" font-weight="700" fill="#f0f6fc">USER_PROFILE</text>
-  <text x="412" y="16" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="#aab3c0">gurveeer@github</text>
+  <text x="860" y="16" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="#aab3c0">gurveeer@github</text>
   
-  <circle cx="416" cy="14" r="3" fill="#00FF41">
+  <circle cx="1016" cy="14" r="3" fill="#00FF41">
     <animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="416" cy="14" r="7" fill="none" stroke="#00FF41" stroke-opacity="0.35">
+  <circle cx="1016" cy="14" r="7" fill="none" stroke="#00FF41" stroke-opacity="0.35">
     <animate attributeName="r" values="4;10" dur="2s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.5;0" dur="2s" repeatCount="indefinite"/>
   </circle>
 
-  <text x="40" y="64" font-family="'Segoe UI', monospace" font-size="22" font-weight="700" fill="#f0f6fc">Gurveer <tspan fill="#00FF41">Singh</tspan></text>
-  <text x="40" y="86" font-family="'Segoe UI', monospace" font-size="13" fill="#aab3c0">AI Infrastructure Engineer · IIT Roorkee '23</text>
+  <text x="40" y="66" font-family="'Segoe UI', monospace" font-size="18" font-weight="700" fill="#f0f6fc">AI Infrastructure Engineer</text>
+  <text x="40" y="88" font-family="'Segoe UI', monospace" font-size="12" fill="#aab3c0">IIT Roorkee '23 · specializing in RAG architectures, vector &amp; graph databases, event-driven AI pipelines</text>
 
-  <text x="40" y="116" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9" fill-opacity="0.9">Building next-generation context engines &amp; intelligent systems</text>
-  <text x="40" y="136" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9" fill-opacity="0.9">that power AI applications at scale.</text>
+  <text x="40" y="112" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9" fill-opacity="0.9">Building next-generation context engines &amp; intelligent systems that power AI applications at scale.</text>
 
-  <text x="40" y="168" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ SPECIALIZATION</text>
-  <path d="M 40 176 H 500" stroke="#232a33" stroke-width="1"/>
+  <text x="40" y="156" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ SPECIALIZATION</text>
+  <path d="M 40 164 H 500" stroke="#232a33" stroke-width="1"/>
       <text x="72" y="190" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
       <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Context Engines &amp; RAG Systems
     </text>    <text x="72" y="212" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
@@ -65,8 +64,8 @@
       <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  AI Agent Orchestration
     </text>
 
-  <text x="528" y="168" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ TECH STACK</text>
-  <path d="M 528 176 H 1020" stroke="#232a33" stroke-width="1"/>
+  <text x="528" y="156" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ TECH STACK</text>
+  <path d="M 528 164 H 1020" stroke="#232a33" stroke-width="1"/>
       <text x="560" y="190" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
       <tspan fill="#aab3c0">vectorDB</tspan><tspan fill="#00FF41" fill-opacity="0.6">:</tspan> <tspan fill="#f0f6fc">Qdrant, Pinecone, Weaviate</tspan>
     </text>    <text x="560" y="212" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
@@ -87,30 +86,30 @@
 
   <line x1="40" y1="384" x2="1020" y2="384" stroke="#232a33" stroke-width="1"/>
 
-  <text x="40" y="404" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ CURRENTLY WORKING ON</text>
-  <path d="M 40 412 H 500" stroke="#232a33" stroke-width="1"/>
-      <text x="72" y="412" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+  <text x="40" y="412" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ CURRENTLY WORKING ON</text>
+  <path d="M 40 420 H 500" stroke="#232a33" stroke-width="1"/>
+      <text x="72" y="432" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
       <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Building context-aware AI systems with vector &amp; graph DBs
-    </text>    <text x="72" y="434" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+    </text>    <text x="72" y="454" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
       <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Learning advanced RAG patterns &amp; multi-agent systems
-    </text>    <text x="72" y="456" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+    </text>    <text x="72" y="476" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
       <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Interested in semantic search &amp; LLM orchestration
-    </text>    <text x="72" y="478" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+    </text>    <text x="72" y="498" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
       <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Debugging vector embeddings &amp; Kafka streams at 3 AM!
     </text>
 
-  <text x="528" y="404" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ CORE EXPERTISE</text>
-  <path d="M 528 412 H 1020" stroke="#232a33" stroke-width="1"/>
-      <text x="560" y="412" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+  <text x="528" y="412" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.85">▮ CORE EXPERTISE</text>
+  <path d="M 528 420 H 1020" stroke="#232a33" stroke-width="1"/>
+      <text x="560" y="432" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
       <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Context Engines &amp; RAG
-    </text>    <text x="560" y="434" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+    </text>    <text x="560" y="454" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
       <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Vector &amp; Graph Search
-    </text>    <text x="560" y="456" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+    </text>    <text x="560" y="476" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
       <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Real-time AI Pipelines
-    </text>    <text x="560" y="478" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
+    </text>    <text x="560" y="498" font-family="'Segoe UI', monospace" font-size="12" fill="#c9d1d9">
       <tspan fill="#00FF41" fill-opacity="0.8">▸</tspan>  Multi-Agent Systems
     </text>
 
-  <text x="40" y="496" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.6">[ SINGH / GURVEER ]</text>
-  <text x="1020" y="496" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.6">[ RAG · VECTOR · GRAPH · STREAM ]</text>
+  <text x="40" y="500" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.6">[ RAG · VECTOR · GRAPH · STREAM ]</text>
+  <text x="1020" y="500" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="#f0f6fc" fill-opacity="0.6">[ IIT ROORKEE '23 ]</text>
 </svg>

@@ -705,7 +705,7 @@ function aboutCard() {
 
     let workRows = working
         .map(
-            (s, i) => `    <text x="72" y="${412 + i * 22}" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
+            (s, i) => `    <text x="72" y="${432 + i * 22}" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
       <tspan fill="${GREEN}" fill-opacity="0.8">▸</tspan>  ${escapeHtml(s)}
     </text>`
         )
@@ -713,7 +713,7 @@ function aboutCard() {
 
     let expRows = expertise
         .map(
-            (s, i) => `    <text x="560" y="${412 + i * 22}" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
+            (s, i) => `    <text x="560" y="${432 + i * 22}" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}">
       <tspan fill="${GREEN}" fill-opacity="0.8">▸</tspan>  ${escapeHtml(s)}
     </text>`
         )
@@ -754,35 +754,34 @@ function aboutCard() {
   <path d="M 16 20 H 1044" stroke="${BORDER}" stroke-width="1"/>
   <path d="M 24 20 H 150" stroke="${A}" stroke-opacity="0.7" stroke-width="2"/>
   <text x="28" y="16" font-family="'Segoe UI', monospace" font-size="12" letter-spacing="2.5" font-weight="700" fill="${A}">USER_PROFILE</text>
-  <text x="412" y="16" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="${AMUTED}">gurveeer@github</text>
-  ${liveDot(416, 14)}
+  <text x="${w - 200}" y="16" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="1.5" fill="${AMUTED}">gurveeer@github</text>
+  ${liveDot(w - 44, 14)}
 
-  <text x="40" y="64" font-family="'Segoe UI', monospace" font-size="22" font-weight="700" fill="${A}">Gurveer <tspan fill="${GREEN}">Singh</tspan></text>
-  <text x="40" y="86" font-family="'Segoe UI', monospace" font-size="13" fill="${AMUTED}">AI Infrastructure Engineer · IIT Roorkee '23</text>
+  <text x="40" y="66" font-family="'Segoe UI', monospace" font-size="18" font-weight="700" fill="${A}">AI Infrastructure Engineer</text>
+  <text x="40" y="88" font-family="'Segoe UI', monospace" font-size="12" fill="${AMUTED}">IIT Roorkee '23 · specializing in RAG architectures, vector &amp; graph databases, event-driven AI pipelines</text>
 
-  <text x="40" y="116" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}" fill-opacity="0.9">Building next-generation context engines &amp; intelligent systems</text>
-  <text x="40" y="136" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}" fill-opacity="0.9">that power AI applications at scale.</text>
+  <text x="40" y="112" font-family="'Segoe UI', monospace" font-size="12" fill="${TEXT}" fill-opacity="0.9">Building next-generation context engines &amp; intelligent systems that power AI applications at scale.</text>
 
-  <text x="40" y="168" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ SPECIALIZATION</text>
-  <path d="M 40 176 H 500" stroke="${BORDER}" stroke-width="1"/>
+  <text x="40" y="156" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ SPECIALIZATION</text>
+  <path d="M 40 164 H 500" stroke="${BORDER}" stroke-width="1"/>
   ${specRows}
 
-  <text x="528" y="168" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ TECH STACK</text>
-  <path d="M 528 176 H 1020" stroke="${BORDER}" stroke-width="1"/>
+  <text x="528" y="156" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ TECH STACK</text>
+  <path d="M 528 164 H 1020" stroke="${BORDER}" stroke-width="1"/>
   ${stackRows}
 
   <line x1="40" y1="384" x2="1020" y2="384" stroke="${BORDER}" stroke-width="1"/>
 
-  <text x="40" y="404" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ CURRENTLY WORKING ON</text>
-  <path d="M 40 412 H 500" stroke="${BORDER}" stroke-width="1"/>
+  <text x="40" y="412" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ CURRENTLY WORKING ON</text>
+  <path d="M 40 420 H 500" stroke="${BORDER}" stroke-width="1"/>
   ${workRows}
 
-  <text x="528" y="404" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ CORE EXPERTISE</text>
-  <path d="M 528 412 H 1020" stroke="${BORDER}" stroke-width="1"/>
+  <text x="528" y="412" font-family="'Segoe UI', monospace" font-size="10" letter-spacing="2" fill="${A}" fill-opacity="0.85">▮ CORE EXPERTISE</text>
+  <path d="M 528 420 H 1020" stroke="${BORDER}" stroke-width="1"/>
   ${expRows}
 
-  <text x="40" y="${h - 24}" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${A}" fill-opacity="0.6">[ SINGH / GURVEER ]</text>
-  <text x="${w - 40}" y="${h - 24}" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${A}" fill-opacity="0.6">[ RAG · VECTOR · GRAPH · STREAM ]</text>
+  <text x="40" y="${h - 20}" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${A}" fill-opacity="0.6">[ RAG · VECTOR · GRAPH · STREAM ]</text>
+  <text x="${w - 40}" y="${h - 20}" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${A}" fill-opacity="0.6">[ IIT ROORKEE '23 ]</text>
 </svg>
 `;
 }
@@ -824,18 +823,26 @@ async function main() {
         langs,
     };
 
-    const featured = ["Hel-kit", "WiFi-NetHunter"];
-    featured.forEach((name) => {
-        const repo = repos.find((r) => r.name === name);
-        if (repo) {
+    const featured = [
+        { owner: username, name: "Hel-kit" },
+        { owner: username, name: "WiFi-NetHunter" },
+        { owner: "aurorallm", name: "aurora" },
+    ];
+    for (const { owner, name } of featured) {
+        const repo =
+            owner === username ? repos.find((r) => r.name === name) : null;
+        try {
+            const repoData =
+                repo ||
+                (await octokit.request("GET /repos/{owner}/{repo}", { owner, repo: name })).data;
             fs.writeFileSync(
                 path.join(__dirname, "..", "assets", `project-${name.toLowerCase()}.svg`),
-                projectCard(repo)
+                projectCard(repoData)
             );
-        } else {
-            console.warn(`Repo ${name} not found`);
+        } catch (e) {
+            console.warn(`Repo ${owner}/${name} fetch failed: ${e.message}`);
         }
-    });
+    }
 
     fs.writeFileSync(path.join(__dirname, "..", "assets", "github-stats.svg"), statsCard(data));
     fs.writeFileSync(path.join(__dirname, "..", "assets", "github-langs.svg"), langsCard(data));
@@ -884,7 +891,7 @@ async function main() {
         { file: "connect-linkedin", platform: "LinkedIn", handle: "@gurveeer", url: "https://www.linkedin.com/in/gurveeer/", color: "#0A66C2", icon: "in", note: "Connect on LinkedIn" },
         { file: "connect-gmail", platform: "Gmail", handle: "singh5134957@gmail.com", url: "mailto:singh5134957@gmail.com", color: "#D14836", icon: "@", note: "Drop an email anytime" },
         { file: "connect-x", platform: "X", handle: "@gurveeer", url: "https://twitter.com/Gurveeeeeer", color: "#e6edf3", icon: "𝕏", note: "Follow on X / Twitter" },
-        { file: "connect-portfolio", platform: "Portfolio", handle: "gurveeer.github.io", url: "https://gurveeer.github.io/new-portfolio/", color: "#00FF41", icon: "◉", note: "Explore my work" },
+        { file: "connect-portfolio", platform: "Portfolio", handle: "gurveeer.github.io", url: "https://gurveeer.github.io/new-portfolio/", color: "#00FF41", icon: "◉", note: "Explore my network" },
     ];
     connects.forEach((c) => {
         fs.writeFileSync(
