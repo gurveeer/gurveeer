@@ -10,15 +10,8 @@
 </div>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=gurveer&style=for-the-badge&color=00FF41&label=profile+views" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=gurveeer&style=for-the-badge&color=00FF41&label=profile+views" alt="Profile Views" />
 </p>
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/gurveeer/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=00FF41" alt="LinkedIn" /></a>
-  <a href="mailto:singh5134957@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=00FF41" alt="Gmail" /></a>
-  <a href="https://twitter.com/gurveeer"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=00FF41" alt="Twitter" /></a>
-  <a href="https://gurveeer.github.io/new-portfolio/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=00FF41" alt="Portfolio" /></a>
-</div>
 
 ---
 
@@ -98,17 +91,17 @@ const gurveer = {
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4ca/512.gif" width="24" height="24"/> GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=gurveer&theme=chartreuse-dark&hide_border=true&show_icons=true&count_private=true&include_all_commits=true" alt="GitHub Stats" width="49%" />
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=gurveer&theme=chartreuse-dark&hide_border=true&layout=compact&langs_count=8" alt="Top Languages" width="49%" />
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=gurveeer&theme=chartreuse-dark&hide_border=true&show_icons=true&count_private=true&include_all_commits=true" alt="GitHub Stats" width="49%" />
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=gurveeer&theme=chartreuse-dark&hide_border=true&layout=compact&langs_count=8" alt="Top Languages" width="49%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=gurveer&theme=chartreuse-dark&hide_border=true&show_icons=true&count_private=true&custom_title=Streak" alt="GitHub Streak" width="49%" />
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=gurveer&theme=chartreuse-dark&hide_border=true&layout=compact" alt="Top Languages Compact" width="49%" />
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=gurveeer&theme=chartreuse-dark&hide_border=true&show_icons=true&count_private=true&custom_title=Streak" alt="GitHub Streak" width="49%" />
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=gurveeer&theme=chartreuse-dark&hide_border=true&layout=compact" alt="Top Languages Compact" width="49%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=gurveer&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Activity&color=00FF41&point=00FF41&line=00FF41&bg_color=0d1117" alt="Contribution Graph" width="98%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=gurveeer&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Activity&color=00FF41&point=00FF41&line=00FF41&bg_color=0d1117" alt="Contribution Graph" width="98%" />
 </p>
 
 ---
@@ -158,3 +151,4 @@ const gurveer = {
 
   <p>💻 <strong>[ SYSTEM INITIALIZED ]</strong> — Crafted with ❤️ by <strong>Gurveer</strong></p>
 </div>
+
