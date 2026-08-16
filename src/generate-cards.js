@@ -368,6 +368,145 @@ function commitsCard(data) {
 `;
 }
 
+function contributionGraphCard(data) {
+    const w = 920;
+    const h = 240;
+    const days = data.days;
+    const total = data.total;
+    const maxCount = Math.max(...days.map((d) => d.count), 1);
+
+    const cell = 12;
+    const gap = 3;
+    const weeks = [];
+    let week = [];
+    days.forEach((d) => {
+        const date = new Date(d.date + "T00:00:00Z");
+        const dow = date.getUTCDay();
+        while (week.length < dow) week.push({ count: 0, level: 0 });
+        week.push(d);
+        if (dow === 6) {
+            weeks.push(week);
+            week = [];
+        }
+    });
+    if (week.length) {
+        while (week.length < 7) week.push({ count: 0, level: 0 });
+        weeks.push(week);
+    }
+
+    const gridW = weeks.length * (cell + gap) - gap;
+    const startX = 28;
+    const startY = 62;
+
+    let cells = "";
+    weeks.forEach((w, wi) => {
+        w.forEach((d, di) => {
+            const x = startX + wi * (cell + gap);
+            const y = startY + di * (cell + gap);
+            let fill = BG;
+            let stroke = BORDER;
+            if (d.count > 0) {
+                const ratio = d.count / maxCount;
+                const alpha = 0.15 + ratio * 0.85;
+                fill = `rgba(0,255,65,${alpha})`;
+                stroke = "none";
+            }
+            cells += `      <rect x="${x}" y="${y}" width="${cell}" height="${cell}" fill="${fill}" stroke="${stroke}" stroke-width="0.5"/>`;
+        });
+    });
+
+    const monthLabels = ["", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC", ""];
+    let labels = "";
+    const labelStep = Math.max(1, Math.round(weeks.length / 12));
+    for (let wi = 0; wi < weeks.length; wi += labelStep) {
+        const x = startX + wi * (cell + gap);
+        const label = monthLabels[Math.floor(wi / (weeks.length / 12))] || "";
+        labels += `      <text x="${x}" y="52" font-family="'Segoe UI', monospace" font-size="8" letter-spacing="1" fill="${MUTED}">${label}</text>`;
+    }
+
+    const weekdays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+    let dayLabels = "";
+    [1, 3, 5].forEach((di) => {
+        const y = startY + di * (cell + gap) + 8;
+        dayLabels += `      <text x="20" y="${y}" text-anchor="end" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">${weekdays[di]}</text>`;
+    });
+
+    const legend = [];
+    void legend;
+
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
+  ${defs()}
+  ${frame(w, h)}
+  ${corners(w, h)}
+  ${matrixColumn(13, 44, 100, "01")}
+  ${matrixColumn(907, 90, 150, "10")}
+  ${header(w, "CONTRIB_HEATMAP", "last 365 days")}
+
+  ${labels}
+  ${dayLabels}
+  ${cells}
+
+  <rect x="728" y="210" width="11" height="11" fill="${BG}" stroke="${BORDER}" stroke-width="0.5"/>
+  <text x="746" y="219" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">0</text>
+  <rect x="770" y="210" width="11" height="11" fill="rgba(0,255,65,0.15)" stroke="none"/>
+  <text x="788" y="219" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">1-4</text>
+  <rect x="812" y="210" width="11" height="11" fill="rgba(0,255,65,0.45)"/>
+  <text x="830" y="219" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">5-9</text>
+  <rect x="854" y="210" width="11" height="11" fill="rgba(0,255,65,0.75)"/>
+  <text x="872" y="219" font-family="'Segoe UI', monospace" font-size="8" fill="${MUTED}">10+</text>
+
+  <text x="28" y="218" font-family="'Segoe UI', monospace" font-size="10" font-weight="700" fill="${WHITE}">${formatNumber(total)}</text>
+  <text x="28" y="231" font-family="'Segoe UI', monospace" font-size="8" letter-spacing="1" fill="${MUTED}">TOTAL CONTRIBUTIONS</text>
+</svg>
+`;
+}
+
+function connectCard(platform, handle, url, color, icon, note) {
+    const w = 440;
+    const h = 200;
+
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
+  ${defs()}
+  ${frame(w, h)}
+  ${corners(w, h)}
+  ${matrixColumn(13, 44, 110, "01")}
+  ${matrixColumn(427, 92, 160, "10")}
+
+  <rect x="24" y="40" width="44" height="44" fill="${color}" fill-opacity="0.15" stroke="${color}" stroke-width="1.2"/>
+  <text x="46" y="69" text-anchor="middle" font-family="'Segoe UI', monospace" font-size="20" fill="${color}">${icon}</text>
+
+  <text x="84" y="60" font-family="'Segoe UI', monospace" font-size="13" font-weight="700" fill="${WHITE}">${platform}</text>
+  <text x="84" y="78" font-family="'Segoe UI', monospace" font-size="10" fill="${MUTED}">${handle}</text>
+
+  <path d="M 24 108 H 416" stroke="${BORDER}" stroke-width="1"/>
+  <text x="24" y="134" font-family="'Segoe UI', sans-serif" font-size="11" fill="${TEXT}">${note}</text>
+
+  <text x="416" y="${h - 20}" text-anchor="end" font-family="'Segoe UI', monospace" font-size="9" letter-spacing="2" fill="${GREEN}" fill-opacity="0.7">[ CONNECT ]</text>
+</svg>
+`;
+}
+
+function footerCard() {
+    const w = 920;
+    const h = 90;
+
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
+  ${defs()}
+  ${frame(w, h)}
+  ${corners(w, h)}
+
+  <text x="28" y="52" font-family="'Segoe UI', monospace" font-size="13" letter-spacing="3" font-weight="700" fill="${GREEN}">[ SYSTEM ONLINE ]</text>
+
+  <text x="420" y="52" text-anchor="middle" font-family="'Segoe UI', monospace" font-size="11" fill="${MUTED}">crafted by</text>
+  <text x="460" y="52" font-family="'Segoe UI', monospace" font-size="13" font-weight="700" fill="${WHITE}">GURVEER</text>
+
+  <text x="892" y="52" text-anchor="end" font-family="'Segoe UI', monospace" font-size="10" fill="${MUTED}">access granted ✓</text>
+
+  ${liveDot(892, 56)}
+</svg>
+`;
+}
+
 async function main() {
     if (!token) {
         console.error("GHT token not provided");
@@ -449,7 +588,30 @@ async function main() {
             years: new Date().getFullYear() - new Date(user.created_at).getFullYear(),
         })
     );
-    console.log("Custom stats, streak, commits & project cards generated for", username);
+    fs.writeFileSync(
+        path.join(__dirname, "..", "assets", "github-contrib.svg"),
+        contributionGraphCard({
+            days: contribData.contributions || [],
+            total: contribData.total ? contribData.total.lastYear : 0,
+        })
+    );
+
+    const connects = [
+        { file: "connect-linkedin", platform: "LinkedIn", handle: "@gurveeer", url: "https://www.linkedin.com/in/gurveeer/", color: "#0A66C2", icon: "in", note: "Connect on LinkedIn" },
+        { file: "connect-gmail", platform: "Gmail", handle: "singh5134957@gmail.com", url: "mailto:singh5134957@gmail.com", color: "#D14836", icon: "@", note: "Drop an email anytime" },
+        { file: "connect-x", platform: "X", handle: "@gurveeer", url: "https://twitter.com/gurveeer", color: "#e6edf3", icon: "𝕏", note: "Follow on X / Twitter" },
+        { file: "connect-portfolio", platform: "Portfolio", handle: "gurveeer.github.io", url: "https://gurveeer.github.io/new-portfolio/", color: "#00FF41", icon: "◉", note: "Explore my work" },
+    ];
+    connects.forEach((c) => {
+        fs.writeFileSync(
+            path.join(__dirname, "..", "assets", `${c.file}.svg`),
+            connectCard(c.platform, c.handle, c.url, c.color, c.icon, c.note)
+        );
+    });
+
+    fs.writeFileSync(path.join(__dirname, "..", "assets", "footer.svg"), footerCard());
+
+    console.log("Custom stats, streak, commits, heatmap, connect, footer & project cards generated for", username);
 }
 
 if (require.main === module) {
@@ -459,4 +621,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { statsCard, langsCard, projectCard, streakCard, commitsCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };
+module.exports = { statsCard, langsCard, projectCard, streakCard, commitsCard, contributionGraphCard, connectCard, footerCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };

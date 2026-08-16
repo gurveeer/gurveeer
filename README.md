@@ -97,7 +97,7 @@ const gurveer = {
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=gurveeer&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Activity&color=00FF41&point=00FF41&line=00FF41&bg_color=0d1117" alt="Contribution Graph" width="98%" />
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/github-contrib.svg" alt="Custom Contribution Heatmap" width="100%" />
 </p>
 
 ---
@@ -125,18 +125,27 @@ const gurveer = {
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Link.png" width="24" height="24"/> Connect With Me
 
-<div align="center">
-  <a href="https://www.linkedin.com/in/gurveeer/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=00FF41" alt="LinkedIn" /></a>
-  <a href="mailto:singh5134957@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=00FF41" alt="Gmail" /></a>
-  <a href="https://twitter.com/gurveeer"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=00FF41" alt="X" /></a>
-  <a href="https://gurveeer.github.io/new-portfolio/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=00FF41" alt="Portfolio" /></a>
-</div>
+<p align="center">
+  <a href="https://www.linkedin.com/in/gurveeer/">
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/connect-linkedin.svg" alt="LinkedIn" width="49%" />
+  </a>
+  <a href="mailto:singh5134957@gmail.com">
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/connect-gmail.svg" alt="Gmail" width="49%" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://twitter.com/gurveeer">
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/connect-x.svg" alt="X" width="49%" />
+  </a>
+  <a href="https://gurveeer.github.io/new-portfolio/">
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/connect-portfolio.svg" alt="Portfolio" width="49%" />
+  </a>
+</p>
 
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00FF41&height=120&section=footer&text=Access%20Granted&fontSize=32&fontAlignY=65&animation=twinkling&fontColor=000000" width="100%" alt="Footer" />
-
-  <p>💻 <strong>[ SYSTEM INITIALIZED ]</strong> — Crafted with ❤️ by <strong>Gurveer</strong></p>
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/footer.svg" width="100%" alt="Footer" />
 </div>
 
