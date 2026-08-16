@@ -73,18 +73,13 @@ const gurveer = {
 <h3 align="center">💻 Programming Languages</h3>
 
 <p align="center">
-  <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="50" height="50" />
-  <img src="https://skillicons.dev/icons?i=go" alt="Go" width="50" height="50" />
+  <img src="https://skillicons.dev/icons?i=js,ts,python,cpp,java,go&perline=6" alt="Programming Languages" />
 </p>
 
 <h3 align="center">⚙️ Frameworks, Databases &amp; Tools</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,python,go,react,nextjs,tailwind,postgres,mongodb,redis,kafka,rabbitmq,elasticsearch,pytorch,tensorflow,aws,docker,kubernetes,grafana,prometheus,jenkins,git,github,linux,bash" alt="Tech Stack" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,react,nextjs,tailwind,postgres,mongodb,redis,kafka,rabbitmq,elasticsearch,pytorch,tensorflow,aws,docker,kubernetes,grafana,prometheus,jenkins,git,github,linux,bash&perline=12" alt="Frameworks, Databases &amp; Tools" />
 </p>
 
 ---
