@@ -92,8 +92,8 @@ const gurveer = {
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=gurveeer&theme=chartreuse-dark&hide_border=true&border_radius=10" alt="GitHub Streak" width="49%" />
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=gurveeer&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&custom_title=Commits" alt="Commits" width="49%" />
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/github-streak.svg" alt="Custom Streak Card" width="49%" />
+  <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/github-commits.svg" alt="Custom Activity Card" width="49%" />
 </p>
 
 <p align="center">

@@ -246,6 +246,128 @@ function projectCard(repo) {
 `;
 }
 
+async function fetchContributions(username) {
+    const https = require("https");
+    return new Promise((resolve, reject) => {
+        https
+            .get(
+                `https://github-contributions-api.jogruber.de/v4/${username}?y=last`,
+                { headers: { "User-Agent": "stats-gen" } },
+                (r) => {
+                    let d = "";
+                    r.on("data", (c) => (d += c));
+                    r.on("end", () => {
+                        try {
+                            resolve(JSON.parse(d));
+                        } catch (e) {
+                            reject(e);
+                        }
+                    });
+                }
+            )
+            .on("error", reject);
+    });
+}
+
+function computeStreaks(contributions) {
+    let current = 0;
+    let longest = 0;
+    let run = 0;
+    contributions.forEach((day) => {
+        if (day.count > 0) {
+            run++;
+            longest = Math.max(longest, run);
+        } else {
+            run = 0;
+        }
+    });
+    for (let i = contributions.length - 1; i >= 0; i--) {
+        if (contributions[i].count > 0) current++;
+        else break;
+    }
+    return { current, longest };
+}
+
+function streakCard(data) {
+    const w = 440;
+    const h = 200;
+    const metrics = [
+        { label: "CURRENT STREAK", value: `${data.current} ${data.current === 1 ? "DAY" : "DAYS"}`, icon: "▮" },
+        { label: "LONGEST STREAK", value: `${data.longest} ${data.longest === 1 ? "DAY" : "DAYS"}`, icon: "◭" },
+        { label: "TOTAL CONTRIB", value: formatNumber(data.total), icon: "◆" },
+        { label: "ACTIVE DAYS", value: formatNumber(data.activeDays), icon: "▣" },
+    ];
+
+    const rows = metrics
+        .map((m, i) => {
+            const col = i % 2;
+            const row = Math.floor(i / 2);
+            const x = 20 + col * 210;
+            const y = 40 + row * 72;
+            return `
+    <g>
+      <path d="M ${x + 8} ${y} H ${x + 188} L ${x + 196} ${y + 8} V ${y + 50} H ${x + 8} Z" fill="${CARD2}" stroke="${BORDER}" stroke-width="1"/>
+      <rect x="${x}" y="${y + 8}" width="4" height="34" fill="url(#accent)"/>
+      <text x="${x + 20}" y="${y + 30}" text-anchor="middle" font-family="monospace" font-size="12" fill="${GREEN}">${m.icon}</text>
+      <text x="${x + 36}" y="${y + 20}" font-family="'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
+      <text x="${x + 36}" y="${y + 42}" font-family="'Segoe UI', monospace" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
+      <path d="M ${x + 188} ${y} L ${x + 196} ${y + 8}" stroke="${GREEN}" stroke-opacity="0.4" stroke-width="1.2"/>
+    </g>`;
+        })
+        .join("");
+
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
+  ${defs()}
+  ${frame(w, h)}
+  ${corners(w, h)}
+  ${matrixColumn(13, 44, 110, "01")}
+  ${matrixColumn(427, 92, 160, "10")}
+  ${header(w, "STREAK_TRACK", "gurveeer")}
+  ${rows}
+</svg>
+`;
+}
+
+function commitsCard(data) {
+    const w = 440;
+    const h = 200;
+    const metrics = [
+        { label: "TOTAL COMMITS", value: formatNumber(data.commits), icon: "✓" },
+        { label: "PULL REQUESTS", value: formatNumber(data.prs), icon: "⇄" },
+        { label: "ISSUES OPENED", value: formatNumber(data.issues), icon: "!" },
+        { label: "YEARS ACTIVE", value: formatNumber(data.years), icon: "◷" },
+    ];
+
+    const rows = metrics
+        .map((m, i) => {
+            const col = i % 2;
+            const row = Math.floor(i / 2);
+            const x = 20 + col * 210;
+            const y = 40 + row * 72;
+            return `
+    <g>
+      <path d="M ${x + 8} ${y} H ${x + 188} L ${x + 196} ${y + 8} V ${y + 50} H ${x + 8} Z" fill="${CARD2}" stroke="${BORDER}" stroke-width="1"/>
+      <rect x="${x}" y="${y + 8}" width="4" height="34" fill="url(#accent)"/>
+      <text x="${x + 20}" y="${y + 30}" text-anchor="middle" font-family="monospace" font-size="12" fill="${GREEN}">${m.icon}</text>
+      <text x="${x + 36}" y="${y + 20}" font-family="'Segoe UI', monospace" font-size="8.5" letter-spacing="1.4" fill="${MUTED}">${m.label}</text>
+      <text x="${x + 36}" y="${y + 42}" font-family="'Segoe UI', monospace" font-size="18" font-weight="700" fill="${WHITE}">${m.value}</text>
+      <path d="M ${x + 188} ${y} L ${x + 196} ${y + 8}" stroke="${GREEN}" stroke-opacity="0.4" stroke-width="1.2"/>
+    </g>`;
+        })
+        .join("");
+
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">
+  ${defs()}
+  ${frame(w, h)}
+  ${corners(w, h)}
+  ${matrixColumn(13, 44, 110, "10")}
+  ${matrixColumn(427, 92, 160, "01")}
+  ${header(w, "ACTIVITY_LOG", "gurveeer")}
+  ${rows}
+</svg>
+`;
+}
+
 async function main() {
     if (!token) {
         console.error("GHT token not provided");
@@ -298,7 +420,36 @@ async function main() {
 
     fs.writeFileSync(path.join(__dirname, "..", "assets", "github-stats.svg"), statsCard(data));
     fs.writeFileSync(path.join(__dirname, "..", "assets", "github-langs.svg"), langsCard(data));
-    console.log("Custom stats & project cards generated for", username);
+
+    const [commitRes, prRes, issueRes, contribData] = await Promise.all([
+        octokit.search.commits({ q: `author:${username}` }),
+        octokit.search.issuesAndPullRequests({ q: `type:pr author:${username}` }),
+        octokit.search.issuesAndPullRequests({ q: `type:issue author:${username}` }),
+        fetchContributions(username),
+    ]);
+
+    const streaks = computeStreaks(contribData.contributions || []);
+    const activeDays = (contribData.contributions || []).filter((d) => d.count > 0).length;
+
+    fs.writeFileSync(
+        path.join(__dirname, "..", "assets", "github-streak.svg"),
+        streakCard({
+            current: streaks.current,
+            longest: streaks.longest,
+            total: contribData.total ? contribData.total.lastYear : 0,
+            activeDays,
+        })
+    );
+    fs.writeFileSync(
+        path.join(__dirname, "..", "assets", "github-commits.svg"),
+        commitsCard({
+            commits: commitRes.data.total_count,
+            prs: prRes.data.total_count,
+            issues: issueRes.data.total_count,
+            years: new Date().getFullYear() - new Date(user.created_at).getFullYear(),
+        })
+    );
+    console.log("Custom stats, streak, commits & project cards generated for", username);
 }
 
 if (require.main === module) {
@@ -308,4 +459,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { statsCard, langsCard, projectCard, formatNumber, langColor, escapeHtml };
+module.exports = { statsCard, langsCard, projectCard, streakCard, commitsCard, fetchContributions, computeStreaks, formatNumber, langColor, escapeHtml };
