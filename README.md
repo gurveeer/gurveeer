@@ -105,11 +105,11 @@ const gurveer = {
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" width="24" height="24"/> Featured Projects
 
 <p align="center">
-  <a href="https://github.com/gurveeer/TG-DL-BOT">
-    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/project-tg-dl-bot.svg" alt="TG-DL-BOT" width="49%" />
+  <a href="https://github.com/gurveeer/Hel-kit">
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/project-hel-kit.svg" alt="Hel-kit" width="49%" />
   </a>
-  <a href="https://github.com/gurveeer/hnm-clone">
-    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/project-hnm-clone.svg" alt="hnm-clone" width="49%" />
+  <a href="https://github.com/gurveeer/WiFi-NetHunter">
+    <img src="https://raw.githubusercontent.com/gurveeer/gurveeer/main/assets/project-wifi-nethunter.svg" alt="WiFi-NetHunter" width="49%" />
   </a>
 </p>
 
